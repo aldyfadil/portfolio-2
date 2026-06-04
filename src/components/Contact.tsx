@@ -27,7 +27,7 @@ export default function Contact() {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
       setFormState('error');
-      setErrorMessage('Please fill in all required inputs.');
+      setErrorMessage('Harap isi semua kolom yang diperlukan.');
       return;
     }
 
@@ -90,13 +90,13 @@ export default function Contact() {
         {/* Header Title */}
         <div className="text-center max-w-2xl mx-auto space-y-4 mb-16">
           <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em] block">
-            // SECURE CLIENT ACQUISITION GATEWAY
+            // GERBANG AMAN KLIEN BISNIS
           </span>
           <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-white leading-tight">
-            Let's launch your premium web profile.
+            Mari luncurkan profil web premium Anda.
           </h2>
           <p className="text-white/60 text-sm leading-relaxed max-w-md mx-auto font-sans">
-            Have a project in mind? Fill out the secure client form below, or reach out directly on WhatsApp for instant 15-minute consultations.
+            Punya proyek impian? Isi formulir klien yang aman di bawah ini, atau hubungi saya langsung via WhatsApp untuk konsultasi instan 15 menit.
           </p>
         </div>
 
@@ -107,9 +107,9 @@ export default function Contact() {
             
             <div className="bg-bg-card border border-white/5 p-8 rounded-3xl space-y-6">
               <div className="space-y-2">
-                <span className="font-mono text-[9px] text-brand-gold uppercase tracking-widest block">// DIRECT CLIENT HOTLINES</span>
-                <h3 className="font-display font-semibold text-lg text-white">Direct Channels</h3>
-                <p className="text-white/50 text-xs font-sans">Skip forms entirely if you prefer direct team messaging. I am online daily.</p>
+                <span className="font-mono text-[9px] text-brand-gold uppercase tracking-widest block">// HOTLINE LANGSUNG KLIEN</span>
+                <h3 className="font-display font-semibold text-lg text-white">Hubungi langsung</h3>
+                <p className="text-white/50 text-xs font-sans">Lewati formulir sepenuhnya jika Anda lebih menyukai komunikasi langsung. Saya online setiap hari.</p>
               </div>
 
               <div className="space-y-4">
@@ -130,7 +130,7 @@ export default function Contact() {
                       <p className="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">+62 812-3456-7890</p>
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono text-emerald-400 font-bold tracking-wider">// OPEN_CHAT</span>
+                  <span className="text-[10px] font-mono text-emerald-400 font-bold tracking-wider">// CHAT_WA</span>
                 </a>
 
                 {/* Email direct anchor */}
@@ -143,11 +143,11 @@ export default function Contact() {
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-mono text-white/40 uppercase">Corporate Email</h4>
+                      <h4 className="text-xs font-mono text-white/40 uppercase">Email Bisnis</h4>
                       <p className="text-sm font-semibold text-white group-hover:text-brand-gold transition-colors">aldifadilla883@gmail.com</p>
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono text-brand-gold font-bold tracking-wider">// SEND_MAIL</span>
+                  <span className="text-[10px] font-mono text-brand-gold font-bold tracking-wider">// KIRIM_EMAIL</span>
                 </a>
 
                 {/* GitHub profile links */}
@@ -162,11 +162,11 @@ export default function Contact() {
                       <Github className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-mono text-white/40 uppercase">Open Codebase Repository</h4>
+                      <h4 className="text-xs font-mono text-white/40 uppercase">Repositori Kode Sumber Terbuka</h4>
                       <p className="text-sm font-semibold text-white group-hover:text-brand-gold transition-colors">github.com/aldifadilla</p>
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono text-white/50">// FOLLOW</span>
+                  <span className="text-[10px] font-mono text-white/50">// IKUTI</span>
                 </a>
 
               </div>
@@ -175,11 +175,11 @@ export default function Contact() {
             {/* Indonesia localization note */}
             <div className="p-6 bg-white/[0.01] border border-white/5 rounded-2xl space-y-2">
               <div className="flex items-center space-x-2">
-                <MessageSquareCode className="w-4 h-4 text-brand-gold animate-bounce" />
-                <h4 className="text-xs font-mono font-bold text-white tracking-wider">PROJECT LOCALIZATION SPEC</h4>
+                <MessageSquareCode className="w-4 h-4 text-brand-gold" />
+                <h4 className="text-xs font-mono font-bold text-white tracking-wider">SPESIFIKASI LOKALISASI PROYEK</h4>
               </div>
               <p className="text-[11px] text-white/50 leading-relaxed font-sans">
-                Service area coverage includes Makassar, Sidoarjo, Surabaya, and fully remote contracts across Indonesia. All payments processed securely on Indonesian standard bank transfers or local payment gates.
+                Cakupan wilayah layanan mencakup Makassar, Sidoarjo, Surabaya, dan kontrak pengerjaan jarak jauh (remote) di seluruh Indonesia. Semua pembayaran diproses dengan aman melalui transfer bank standar Indonesia atau QRIS/E-Wallet lokal.
               </p>
             </div>
 
@@ -190,9 +190,9 @@ export default function Contact() {
             
             <form ref={formRef} onSubmit={handleFormSubmit} className="space-y-6">
               <div className="space-y-2 border-b border-white/5 pb-4">
-                <span className="font-mono text-[9px] text-yellow-500/80 uppercase tracking-widest block">// ENCRYPTED VISITOR LOGFORM</span>
-                <h3 className="font-display font-semibold text-lg text-white">Project Inquiry Workspace</h3>
-                <p className="text-white/50 text-xs font-sans">Supply correct business coordinates to request immediate quote and design milestones draft.</p>
+                <span className="font-mono text-[9px] text-yellow-500/80 uppercase tracking-widest block">// FORMULIR PENGUNJUNG TERENKRIPSI</span>
+                <h3 className="font-display font-semibold text-lg text-white">Ruang Diskusi Pembuatan Proyek</h3>
+                <p className="text-white/50 text-xs font-sans">Berikan kontak bisnis yang benar untuk meminta penawaran instan dan membuat draf rancangan awal.</p>
               </div>
 
               {/* Success Notification element */}
@@ -206,8 +206,8 @@ export default function Contact() {
                   >
                     <CheckCircle className="w-5 h-5 shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-bold uppercase tracking-wider">Message Dispatched Successfully via EmailJS!</p>
-                      <p className="opacity-80 mt-1">Thank you. Aldi will review your requirements on our secure dashboard and respond within 4 hours maximum.</p>
+                      <p className="font-bold uppercase tracking-wider">Pesan Berhasil Terkirim via EmailJS!</p>
+                      <p className="opacity-80 mt-1">Terima kasih. Aldi akan meninjau rincian kebutuhan Anda secara ketat dan merespons dalam waktu maksimal 4 jam.</p>
                     </div>
                   </motion.div>
                 )}
@@ -221,7 +221,7 @@ export default function Contact() {
                   >
                     <AlertTriangle className="w-5 h-5 shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-bold uppercase">Incomplete Coordinates</p>
+                      <p className="font-bold uppercase">Koordinat Tidak Lengkap</p>
                       <p className="opacity-80 mt-1">{errorMessage}</p>
                     </div>
                   </motion.div>
@@ -231,7 +231,7 @@ export default function Contact() {
               {/* Form Input name */}
               <div className="space-y-2">
                 <label htmlFor="name" className="block text-xs font-mono uppercase tracking-wider text-white/70">
-                  Full Name / Company Representative *
+                  Nama Lengkap / Perwakilan Perusahaan *
                 </label>
                 <input
                   id="name"
@@ -240,7 +240,7 @@ export default function Contact() {
                   required
                   value={formData.name}
                   onChange={handleInputChange}
-                  placeholder="e.g. Pak Adrian (Amanttara Architectural)"
+                  placeholder="misal: Pak Adrian (Amanttara Architectural)"
                   className="w-full bg-white/5 text-white/90 text-sm border border-white/10 hover:border-white/20 focus:border-brand-gold rounded-xl px-4 py-3.5 outline-none transition-colors placeholder:text-white/20"
                 />
               </div>
@@ -248,7 +248,7 @@ export default function Contact() {
               {/* Form Input Email */}
               <div className="space-y-2">
                 <label htmlFor="email" className="block text-xs font-mono uppercase tracking-wider text-white/70">
-                  Email Coordinates *
+                  Alamat Email Kontak *
                 </label>
                 <input
                   id="email"
@@ -257,7 +257,7 @@ export default function Contact() {
                   required
                   value={formData.email}
                   onChange={handleInputChange}
-                  placeholder="e.g. client@domain.id"
+                  placeholder="misal: client@domain.id"
                   className="w-full bg-white/5 text-white/90 text-sm border border-white/10 hover:border-white/20 focus:border-brand-gold rounded-xl px-4 py-3.5 outline-none transition-colors placeholder:text-white/20"
                 />
               </div>
@@ -265,7 +265,7 @@ export default function Contact() {
               {/* Form Input Message */}
               <div className="space-y-2">
                 <label htmlFor="message" className="block text-xs font-mono uppercase tracking-wider text-white/70">
-                  Provide Brief Project Objectives / Target Budget Range *
+                  Tujuan Singkat Proyek / Target Kebutuhan Sistem *
                 </label>
                 <textarea
                   id="message"
@@ -274,7 +274,7 @@ export default function Contact() {
                   rows={5}
                   value={formData.message}
                   onChange={handleInputChange}
-                  placeholder="Describe your website needs (e.g., Company profile architectural, target budget Rp6,500,000, deadline 4 weeks)..."
+                  placeholder="Jelaskan kebutuhan situs web Anda (misal: Company profile properti, target anggaran Rp6.500.000, tenggat waktu pengerjaan 4 minggu)..."
                   className="w-full bg-white/5 text-white/90 text-sm border border-white/10 hover:border-white/20 focus:border-brand-gold rounded-xl px-4 py-3.5 outline-none transition-colors placeholder:text-white/20 resize-none"
                 />
               </div>
@@ -283,7 +283,7 @@ export default function Contact() {
               <div className="pt-2 flex flex-col sm:flex-row justify-between items-center gap-4">
                 <span className="text-[10px] font-mono text-white/30 flex items-center gap-1">
                   <Sparkles className="w-3.5 h-3.5 text-brand-gold shrink-0" />
-                  <span>Secure TLS Encryption Active</span>
+                  <span>Enkripsi TLS Aman Aktif</span>
                 </span>
 
                 <button
@@ -294,7 +294,7 @@ export default function Contact() {
                 >
                   <span className="flex items-center space-x-2">
                     <Send className="w-4 h-4" />
-                    <span>{formState === 'sending' ? 'Transmitting...' : 'Submit Form'}</span>
+                    <span>{formState === 'sending' ? 'Mengirimkan...' : 'Kirim Formulir'}</span>
                   </span>
                 </button>
               </div>

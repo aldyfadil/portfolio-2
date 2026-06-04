@@ -4,135 +4,135 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: 'amanttara',
     title: 'amanttara.co.id',
-    category: 'Company Profile',
-    description: 'High-end architecture and villa construction group virtual showroom featuring modern minimalist layouts with premium media transition systems.',
-    fullStory: 'Amanttara is an architectural and luxury building construction consultant. They required an exquisite digital catalog that would instantly communicate luxury, precision, and reliable execution to prospective high-net-worth clients.',
+    category: 'Profil Perusahaan',
+    description: 'Showroom virtual grup arsitektur dan konstruksi vila kelas atas yang menampilkan tata letak minimalis modern dengan sistem transisi media premium.',
+    fullStory: 'Amanttara adalah konsultan arsitektur dan konstruksi bangunan mewah. Mereka membutuhkan katalog digital indah yang dapat langsung mengomunikasikan kemewahan, presisi, dan eksekusi yang andal kepada calon klien bernilai tinggi.',
     techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite'],
-    role: 'Lead Developer & UI Designer',
-    duration: '4 Weeks',
+    role: 'Pimpinan Pengembang & Desainer UI',
+    duration: '4 Minggu',
     url: 'https://amanttara.co.id',
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-    scope: ['Minimalist Editorial Design', 'Interactive Architectural Gallery', 'Responsive Media Loading System', 'Custom SEO & Performance Audit'],
-    challenge: 'Architectural catalogs include extremely high-resolution photos that initially caused severe layout shift and loading times exceeding 6 seconds on high-end mobile devices.',
-    solution: 'Optimized via custom picture format pipelines, progressive blur hashing, and custom Framer Motion drag animations for image swiping, dropping the loading time to 1.2s.'
+    scope: ['Desain Editorial Minimalis', 'Galeri Arsitektur Interaktif', 'Sistem Pemuatan Media Responsif', 'Audit Kinerja & SEO Kustom'],
+    challenge: 'Katalog arsitektur menyertakan foto beresolusi sangat tinggi yang awalnya menyebabkan pergeseran tata letak yang parah dan waktu pemuatan melebihi 6 detik pada perangkat seluler kelas atas.',
+    solution: 'Dioptimalkan melalui saluran format gambar kustom, blur hashing progresif, dan animasi seret Framer Motion kustom untuk menggeser gambar, menurunkan waktu pemuatan menjadi 1,2 detik.'
   },
   {
     id: 'tridayamanunggal',
     title: 'tridayamanunggalsejahtera.com',
-    category: 'Corporate Platform',
-    description: 'A structural, logistics-heavy enterprise website for an industrial construction and logistics service supplier based in Indonesia.',
-    fullStory: 'PT Tridaya Manunggal Sejahtera serves major mining and building outfits and required an extremely robust, functional, and search-optimized presence to handle international vendor screening audits.',
+    category: 'Platform Korporat',
+    description: 'Situs web perusahaan struktural berorientasi logistik berat untuk pemasok jasa konstruksi industri dan logistik yang berbasis di Indonesia.',
+    fullStory: 'PT Tridaya Manunggal Sejahtera melayani perusahaan pertambangan dan konstruksi besar, serta membutuhkan kehadiran yang sangat kuat, fungsional, dan dioptimalkan untuk pencarian guna memenuhi audit penyaringan vendor internasional.',
     techStack: ['React', 'Tailwind CSS', 'Node.js', 'Lucide Icons'],
-    role: 'Full-stack Developer',
-    duration: '5 Weeks',
+    role: 'Pengembang Full-stack',
+    duration: '5 Minggu',
     url: 'https://tridayamanunggalsejahtera.com',
     image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80',
-    scope: ['Technical Content Structuring', 'Enterprise Infrastructure Security', 'Automated Quote Generator Form', 'Interactive PDF Datasheet Generation'],
-    challenge: 'Translating complex logistics workflows and high-weight heavy machinery specs into a web-digestible format that corporate procurement officers can understand within 10 seconds.',
-    solution: 'Engineered a highly categorized equipment inventory layout with live specifications, instant PDF flyer downloads, and direct procurement WhatsApp channels.'
+    scope: ['Penstrukturan Konten Jasa Teknis', 'Keamanan Infrastruktur Perusahaan', 'Formulir Generator Kutipan Otomatis', 'Pembuatan Lembar Data PDF Interaktif'],
+    challenge: 'Menerjemahkan alur kerja logistik yang kompleks dan spesifikasi mesin berat menjadi format web yang mudah dipahami yang dapat dipahami oleh staf pengadaan korporat dalam waktu 10 detik.',
+    solution: 'Merancang tata letak inventaris peralatan yang sangat terorganisir dengan spesifikasi langsung, unduhan brosur PDF instan, dan saluran WhatsApp pengadaan langsung.'
   },
   {
     id: 'kantamasolusi',
     title: 'kantamasolusi.com',
-    category: 'SaaS / Agency Portal',
-    description: 'Clean business management consulting website featuring digital consulting services booking, dynamic pricing models, and team scheduling modules.',
-    fullStory: 'Kantama Solusi Indonesia is an innovative professional training and business management consultant. They wanted to move away from text-heavy traditional landing pages and offer a modern consultancy portal.',
+    category: 'SaaS / Portal Agensi',
+    description: 'Situs web konsultasi manajemen bisnis yang bersih, menampilkan fitur pemesanan layanan konsultasi digital, model harga dinamis, dan modul penjadwalan tim.',
+    fullStory: 'Kantama Solusi Indonesia adalah konsultan pelatihan profesional dan manajemen bisnis yang inovatif. Mereka ingin beralih dari halaman pendaratan tradisional yang padat teks dan menawarkan portal konsultasi modern.',
     techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'State Hooks'],
-    role: 'UI Designer & Web Architect',
-    duration: '3 Weeks',
+    role: 'Desainer UI & Arsitek Web',
+    duration: '3 Minggu',
     url: 'https://kantamasolusi.com',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
-    scope: ['Brand Strategy Integration', 'Interactive Training Modules Selector', 'Direct Consultant Connect Dashboard', 'Speed-optimized Web Assets'],
-    challenge: 'Attracting enterprise executives require corporate maturity without looking traditional. The visual language needed a fine balance of playful interactivity and industrial authority.',
-    solution: 'Formulated an elegant navy-slate grid system loaded with clean micro-interactions, dark mode elegance, and client-side scheduling widget integrations.'
+    scope: ['Integrasi Strategi Merek', 'Selektor Modul Pelatihan Interaktif', 'Dasbor Hubungan Konsultan Langsung', 'Aset Web yang Dioptimalkan Kecepatannya'],
+    challenge: 'Menarik perhatian para eksekutif perusahaan memerlukan kedewasaan korporat tanpa terlihat tradisional. Bahasa visual membutuhkan keseimbangan yang baik antara interaktivitas yang menyenangkan dan otoritas industri.',
+    solution: 'Merumuskan sistem kisi slate-navy yang elegan dengan mikro-interaksi yang bersih, keanggunan mode gelap, dan integrasi widget penjadwalan sisi klien.'
   },
   {
     id: 'karanganbunga',
     title: 'karanganbungamks.com',
-    category: 'E-Commerce / Catalog',
-    description: 'E-commerce style local florist gallery and ordering hub in Makassar, facilitating seamless WhatsApp checkout flow and seasonal bouquet updates.',
-    fullStory: 'A local artisanal florist requested a lightweight shop showcase. Because Indonesian customers overwhelmingly prefer instant chat communication, a full standard database shopping cart was replaced with a quick-response custom WhatsApp checkout builder.',
+    category: 'E-Commerce / Katalog',
+    description: 'Galeri toko bunga lokal bergaya e-commerce dan pusat pemesanan di Makassar, memfasilitasi alur checkout WhatsApp yang mulus dan pembaruan karangan bunga musiman.',
+    fullStory: 'Seorang perajin bunga lokal meminta etalase toko yang ringan. Karena pelanggan Indonesia sangat menyukai komunikasi obrolan instan, keranjang belanja database standar diganti dengan generator checkout WhatsApp respon cepat.',
     techStack: ['React', 'Tailwind CSS', 'WhatsApp Api Integration'],
-    role: 'Solo Web Developer',
-    duration: '2 Weeks',
+    role: 'Pengembang Web Tunggal',
+    duration: '2 Minggu',
     url: 'https://karanganbungamks.com',
     image: 'https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=1200&q=80',
-    scope: ['Artisanal Catalog Presentation', 'Automated Invoice WhatsApp Compiler', 'Quick Category Smart Search', 'Lightweight Database-Free Architecture'],
-    challenge: 'A standard standard e-commerce flow with register/login walls was causing 45% cart abandonment. Customers simply wanted to snap a picture and order directly to their delivery address.',
-    solution: 'Built a 2-step direct checkout where inputting delivery details automatically compiles an artisanal invoice and transfers it safely to florist WhatsApp.'
+    scope: ['Presentasi Katalog Artisanal', 'Kompiler WhatsApp Faktur Otomatis', 'Pencarian Pintar Kategori Cepat', 'Arsitektur Ringan Tanpa Database'],
+    challenge: 'Alur e-commerce standar dengan dinding daftar/masuk menyebabkan 45% pengabaian keranjang belanja. Pelanggan hanya ingin mengirim foto produk dan memesan langsung ke alamat pengiriman mereka.',
+    solution: 'Membangun checkout langsung 2 langkah di mana pengisian rincian pengiriman secara otomatis menyusun faktur artisanal dan mentransfernya dengan aman ke WhatsApp toko bunga.'
   },
   {
     id: 'bioskop-online',
     title: 'pemesanan-bioskop-online.vercel.app',
-    category: 'Web Application',
-    description: 'Fully responsive rich web app mock seat reserving agent. Built mimicking major movie theater ticketing networks with local-storage transaction state.',
-    fullStory: 'A digital application showcase showing high-fidelity component state patterns. Simulates real-time theater grids, sound selection variables, custom snack checkouts, and dynamic invoice summaries.',
+    category: 'Aplikasi Web',
+    description: 'Aplikasi web responsif kaya fitur untuk agen pemesanan kursi bioskop. Dibangun meniru jaringan pemesanan tiket bioskop utama dengan status transaksi penyimpanan lokal (local storage).',
+    fullStory: 'Etalase aplikasi digital yang menunjukkan pola status komponen dengan fidelitas tinggi. Menyimulasikan kisi kursi teater waktu nyata, variabel pemilihan suara, checkout makanan ringan kustom, dan ringkasan faktur dinamis.',
     techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'Local Storage Persistence'],
-    role: 'Lead UI Engineer',
-    duration: '3 Weeks',
+    role: 'Pimpinan Rekayasa UI',
+    duration: '3 Minggu',
     url: 'https://pemesanan-bioskop-online.vercel.app/',
     image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80',
-    scope: ['Dynamic SVG Seat Coordinate Grid', 'Interactive Ticket Selector Hooks', 'Subtle Cinematic Soundscape Trigger', 'Simulated Local Invoice Voucher'],
-    challenge: 'Efficiently handling complex grid selections with varying ticket tiers in a purely responsive framework so mobile users can coordinate seat selections without pinch-zooming.',
-    solution: 'Designed an interactive zoom-and-pan canvas overlay block coupled with simple responsive touch nodes that provide clear tactile haptic sensations.'
+    scope: ['Kisi Koordinat Kursi SVG Dinamis', 'Hook Selektor Tiket Interaktif', 'Pemicu Suasana Sinematik Halus', 'Voucher Faktur Lokal yang Disimulasikan'],
+    challenge: 'Menangani pemilihan kisi yang rumit dengan tingkatan tiket yang bervariasi dalam kerangka kerja yang responsif secara efisien agar pengguna seluler dapat mengoordinasikan pemilihan kursi tanpa cubit-zoom.',
+    solution: 'Merancang hamparan kanvas zoom-dan-geser interaktif yang digabungkan dengan simpul sentuh responsif sederhana yang memberikan sensasi taktil yang jelas.'
   },
   {
     id: 'cafe-website',
     title: 'cafe-website-481p.vercel.app',
-    category: 'Creative Marketing Site',
-    description: 'Hyper-interactive, modern restaurant and barista coffee portal featuring organic grain animations, responsive menu navigation, and direct order integrations.',
-    fullStory: 'A modern visual concept developed for local coffee house chains. Designed with rich sensory aesthetics, including glowing micro-illustrations, parallax horizontal scrolls, and localized custom menus.',
+    category: 'Situs Pemasaran Kreatif',
+    description: 'Portal kopi barista dan restoran modern yang sangat interaktif, menampilkan animasi biji kopi organik, navigasi menu responsif, dan integrasi pesanan langsung.',
+    fullStory: 'Konsep visual modern yang dikembangkan untuk rantai kedai kopi lokal. Dirancang dengan estetika sensoris yang kaya, termasuk ilustrasi mikro yang bercahaya, gulir horizontal paralaks, dan menu kustom yang dilokalkan.',
     techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'Micro-Interactions'],
-    role: 'Creative Web Designer',
-    duration: '3 Weeks',
+    role: 'Desainer Web Kreatif',
+    duration: '3 Minggu',
     url: 'https://cafe-website-481p.vercel.app/',
     image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80',
-    scope: ['Barista Scent Parallax Theme', 'Responsive Card Carousel with Swipe', 'Virtual Ordering Simulation', 'Custom SVGs for Coffee Pour Stages'],
-    challenge: 'Static cafe menus feel detached and unengaging, missing the tactile warmth and smells of a physical barista brew room.',
-    solution: 'Integrated dynamic scroll-triggered aroma particles, textured wood grains, elegant display layout heights, and direct call-to-action buttons for nearby branches.'
+    scope: ['Tema Paralaks Aroma Kopi Barista', 'Komidi Putar Kartu Responsif dengan Geser', 'Simulasi Pemesanan Virtual', 'SVG Kustom untuk Tahap Penuangan Kopi'],
+    challenge: 'Menu kafe statis terasa dingin dan kurang menarik, kehilangan kehangatan taktil dan aroma ruang seduh barista fisik.',
+    solution: 'Mengintegrasikan partikel aroma dinamis yang dipicu gulir, serat kayu bertekstur, tinggi tata letak tampilan yang elegan, dan tombol panggilan aksi langsung untuk cabang terdekat.'
   }
 ];
 
 export const SERVICES_DATA: Service[] = [
   {
     id: 'company-profile',
-    title: 'Company Profile Website',
-    description: 'Establish ultimate prestige and corporate authority. Best suited for real estate builders, industrial suppliers, consultants, and premium service firms.',
-    priceRange: 'Rp 4,500,000 - Rp 7,500,000',
-    deliverables: ['Custom Designer Layout', 'High Performance Audit (95+ score)', 'Dynamic Portfolio Management', 'Interactive Query Forms'],
-    features: ['Direct Owner Sync Consultation', 'Fully Responsive UI', '100% Handcoded (No slow WordPress themes)', '1-Year Maintenance Guarantee']
+    title: 'Website Profil Perusahaan',
+    description: 'Membangun prestise mutakhir dan otoritas korporat. Paling cocok untuk pengembang real estat, pemasok industri, konsultan, dan perusahaan jasa premium.',
+    priceRange: 'Rp 4.500.000 - Rp 7.500.000',
+    deliverables: ['Tata Letak Desain Kustom', 'Audit Performa Tinggi (Skor 95+)', 'Manajemen Portofolio Dinamis', 'Formulir Pertanyaan Interaktif'],
+    features: ['Konsultasi Sinkronisasi Langsung Pemilik', 'UI yang Sepenuhnya Responsif', '100% Ditulis Manual (Tanpa tema WordPress lambat)', 'Garansi Pemeliharaan 1 Tahun']
   },
   {
     id: 'landing-page',
-    title: 'High-Converting Landing Page',
-    description: 'Precision engineered to turn paid traffic into active clients. Optimized for marketing funnels, product launches, event registration, and digital validation.',
+    title: 'Landing Page Konversi Tinggi',
+    description: 'Direkayasa dengan presisi untuk mengubah trafik berbayar menjadi klien aktif. Dioptimalkan untuk corong pemasaran, peluncuran produk, pendaftaran acara, dan validasi digital.',
     priceRange: 'Rp 3,000,000 - Rp 4,500,000',
-    deliverables: ['Psychological Copy Integration', 'A/B Test Structured Grid', 'Lightweight 1-Second Speed Launch', 'Direct CRM and Leads Push'],
-    features: ['Custom Visual Assets', 'Micro-Interactions', 'Webhook Leads Tracker', 'SEO Search Engine Crawler Indexing']
+    deliverables: ['Integrasi Strategi Copywriting Psikologis', 'Sistem Kisi Terstruktur Uji A/B', 'Peluncuran Kecepatan 1 Detik Ringan', 'CRM Langsung dan Pengiriman Prospek'],
+    features: ['Aset Visual Kustom', 'Mikro-Interaksi', 'Pelacak Prospek Webhook', 'Pengindeksan Perayap Mesin Pencari SEO']
   },
   {
     id: 'ecommerce',
-    title: 'Eco-System E-Commerce',
-    description: 'Custom retail experiences prioritizing swift shopping checkouts. Say goodbye to heavy standard commerce templates and welcome lightning-fast checkouts.',
+    title: 'Hub E-Commerce Ekosistem',
+    description: 'Pengalaman ritel kustom yang memprioritaskan alur checkout yang cepat. Katakan selamat tinggal pada templat perdagangan standar yang berat dan nikmati checkout secepat kilat.',
     priceRange: 'Rp 6,500,000 - Rp 10,000,000',
-    deliverables: ['Tailored Catalog Showcase', 'Seamless Cart Engine & WhatsApp Integration', 'Automated PDF Business Receipts', 'Multi-payment Merchant Displays'],
-    features: ['No Monthly Subscription Bills', 'Secure Client Payments Flow', 'Intuitive Shop Inventory Panel', 'Disaster Safe Daily Backups']
+    deliverables: ['Etalase Katalog yang Disesuaikan', 'Sistem Keranjang & Integrasi WhatsApp Mulus', 'Kuitansi Bisnis PDF Otomatis', 'Tampilan Merchant Multi-pembayaran'],
+    features: ['Tanpa Biaya Berlangganan Bulanan', 'Alur Pembayaran Klien yang Aman', 'Panel Inventaris Toko yang Intuitif', 'Cadangan Harian Aman Bencana']
   },
   {
     id: 'custom-web-app',
-    title: 'Custom Web Application',
-    description: 'Solve complex corporate issues with tailormade utility platforms. Ideal for reservation platforms, member vaults, and localized cloud dashboards.',
+    title: 'Aplikasi Web Kustom (Bespoke)',
+    description: 'Selesaikan masalah korporat yang rumit dengan platform utilitas bawaan kustom. Ideal untuk platform reservasi, ruang anggota, dan dasbor cloud terlokalisasi.',
     priceRange: 'Rp 8,000,000 - Rp 15,000,000+',
-    deliverables: ['Advanced Interactive Frontends', 'Secure Authorization Controls', 'Robust Client-Server State Engines', 'Rest API Hook integration'],
-    features: ['Clean Modular Codebase', 'Complete Database System Config', 'State Synchronization Loops', 'High scale cloud infrastructure plan']
+    deliverables: ['Frontend Interaktif Tingkat Lanjut', 'Kontrol Otorisasi yang Aman', 'Sistem State Klien-Server yang Kuat', 'Integrasi Hook REST API'],
+    features: ['Codebase Modular yang Bersih', 'Konfigurasi Sistem Database Lengkap', 'Loop Sinkronisasi State', 'Rencana Infrastruktur Cloud Skala Tinggi']
   },
   {
     id: 'maintenance',
-    title: 'Website VIP Maintenance',
-    description: 'Peace of mind knowing your digital machine is running perfectly 24/7. Keep your business platform fast, updated, and invulnerable to external cyber attacks.',
-    priceRange: 'Rp 500,000 - Rp 1,500,000 / month',
-    deliverables: ['Bi-Weekly Performance Audits', 'Immediate Node / Library Patch Updates', 'Regular Design Alignment Tweaks', 'Daily Multi-Region Cold Storage Backup'],
-    features: ['Priority 4-Hour Support SLA', 'Direct Developer Call Hotline', 'Monthly Traffic Analysis Reports', 'Emergency Patch Fix Protection']
+    title: 'Pemeliharaan Website VIP',
+    description: 'Ketenangan pikiran mengetahui mesin digital Anda berjalan sempurna 24/7. Jaga agar platform bisnis Anda tetap cepat, diperbarui, dan kebal dari serangan siber luar.',
+    priceRange: 'Rp 500.000 - Rp 1.500.000 / bulan',
+    deliverables: ['Audit Performa Dua Mingguan', 'Pembaruan Patch Node / Pustaka Segera', 'Penyesuaian Penyelarasan Desain Rutin', 'Cadangan Cold Storage Multi-Wilayah Harian'],
+    features: ['SLA Dukungan Prioritas 4 Jam', 'Saluran Telepon Pengembang Langsung', 'Laporan Analis Trafik Bulanan', 'Perlindungan Perbaikan Kritis Darurat']
   }
 ];
 
@@ -140,27 +140,27 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: '1',
     name: 'Adrian Amanttara',
-    role: 'Managing Director & Partner',
+    role: 'Direktur Pengelola & Rekanan',
     company: 'Amanttara Architectural Group',
-    content: 'We approached several studios, but the portfolio and absolute commitment to pure, hand-coded performance stood out immediately. The website he built loaded in less than 2 seconds but looks like a cinematic artwork. Our high-net-worth clients frequently commend our digital presentation.',
+    content: 'Kami mendekati beberapa studio, tetapi portofolio dan komitmen mutlak terhadap performa murni yang ditulis manual langsung menonjol. Situs web yang ia bangun dimuat kurang dari 2 detik tetapi terlihat seperti karya seni sinematik. Klien-klien bernilai tinggi kami sering memuji presentasi digital kami.',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80',
     rating: 5
   },
   {
     id: '2',
     name: 'Ir. Farida Kusuma',
-    role: 'Corporate Communications Lead',
+    role: 'Pimpinan Komunikasi Korporat',
     company: 'PT Tridaya Manunggal Sejahtera',
-    content: 'Our complex machinery inventory was a mess on our old site. He organized everything into an elegant searchable table with PDF worksheets that our procurement officers can download instant details from. Security audits have been smooth since.',
+    content: 'Inventarisasi mesin kami yang rumit berantakan di situs lama kami. Ia mengatur semuanya menjadi tabel elegan yang dapat dicari dengan lembar kerja PDF yang dapat diunduh langsung oleh staf pengadaan kami. Audit keamanan berjalan lancar sejak saat itu.',
     avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&h=150&q=80',
     rating: 5
   },
   {
     id: '3',
     name: 'Rezza Akbar',
-    role: 'Founder & Head Barista',
+    role: 'Pendiri & Kepala Barista',
     company: 'Brew & Bloom Cafe Makassar',
-    content: 'I needed a landing page that could tell our artisanal coffee coffee story but also direct people directly to our WhatsApp booking list. The design matches the wood and metal aesthetics of our physical branches flawlessly. It is not just fancy CSS, our table bookings grew 35% in month one!',
+    content: 'Saya membutuhkan halaman pendaratan yang dapat menceritakan kisah kopi artisanal kami tetapi juga mengarahkan orang langsung ke daftar pemesanan WhatsApp kami. Desainnya sangat cocok dengan estetika kayu dan logam dari cabang fisik kami tanpa cela. Ini bukan hanya CSS mewah, pemesanan meja kami tumbuh 35% di bulan pertama!',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80',
     rating: 5
   }
@@ -169,60 +169,60 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
 export const PROCESS_STEPS: ProcessStep[] = [
   {
     phase: '01',
-    title: 'Discovery & Direct Dialogue',
-    subtitle: 'Extracting client core truth',
-    description: 'We meet via dynamic Google Meet. Rather than ticking standard feature checklists, we dive deep into your commercial target audience, existing client pain points, brand tone, and exact budgetary parameters.',
-    timeline: 'Days 1 - 3',
-    deliverables: ['Custom Business Briefing Workspace', 'Visual Styleboards Selection', 'Definitive Milestone Work Plan'],
+    title: 'Pertemuan & Dialog Langsung',
+    subtitle: 'Menggali nilai inti bisnis klien',
+    description: 'Kami bertemu melalui Google Meet yang dinamis. Alih-alih mencentang daftar fitur standar, kami menyelami lebih dalam audiens target komersial Anda, titik masalah klien yang ada, nada merek, dan parameter anggaran yang tepat.',
+    timeline: 'Hari 1 - 3',
+    deliverables: ['Ruang Kerja Pengarahan Bisnis Kustom', 'Pemilihan Papan Gaya Visual', 'Rencana Kerja Milestones Definitif'],
     color: 'from-amber-400 to-amber-600'
   },
   {
     phase: '02',
-    title: 'Strategic Architecture & Planning',
-    subtitle: 'Structuring the digital system blueprint',
-    description: 'Designing the comprehensive user flow. We formulate high-fidelity typography options, state hierarchies, navigation paths, and outline exact client checkout points before laying down a single line of markup.',
-    timeline: 'Days 4 - 7',
-    deliverables: ['Interactive Wireframe System Map', 'Performance & Loading Speed Blueprint', 'Content and Image Architecture Asset Map'],
+    title: 'Arsitektur Strategis & Perencanaan',
+    subtitle: 'Menyusun cetak biru sistem digital',
+    description: 'Merancang alur pengguna yang komprehensif. Kami merumuskan opsi tipografi dengan ketelitian tinggi, hierarki status, jalur navigasi, dan menguraikan poin checkout klien yang tepat sebelum menulis satu baris markup pun.',
+    timeline: 'Hari 4 - 7',
+    deliverables: ['Peta Sistem Bingkai Kawat (Wireframe) Interaktif', 'Cetak Biru Kinerja & Kecepatan Pemuatan', 'Peta Aset Arsitektur Konten & Gambar'],
     color: 'from-cyan-400 to-cyan-600'
   },
   {
     phase: '03',
-    title: 'High-Prestige UI/UX Design',
-    subtitle: 'Meticulous vector layout crafting',
-    description: 'We ignore generic AI templates and build custom CSS grid mockups in Figma. Every pixel, card rhythm, typography hierarchy and hover state is tailored to establish absolute elite business reputation.',
-    timeline: 'Days 8 - 14',
-    deliverables: ['Pixel-Perfect High Fidelity Presentation', 'Modular Design System Specification', 'Micro-Interaction Animation Blueprint'],
+    title: 'Desain UI/UX Kelas Premium',
+    subtitle: 'Pembuatan tata letak vektor dengan cermat',
+    description: 'Kami mengabaikan templat AI generik dan membangun maket kisi CSS kustom di Figma. Setiap piksel, ritme kartu, hierarki tipografi, dan status arahkan kursor (hover) disesuaikan untuk menetapkan reputasi bisnis elit yang mutlak.',
+    timeline: 'Hari 8 - 14',
+    deliverables: ['Presentasi Fidelitas Tinggi Sempurna Piksel', 'Spesifikasi Sistem Desain Modular', 'Cetak Biru Animasi Mikro-Interaksi'],
     color: 'from-emerald-400 to-emerald-600'
   },
   {
     phase: '04',
-    title: 'Modern Front-End Development',
-    subtitle: 'Clean, lightning-fast React coding',
-    description: 'Handcrafting your code in modular, type-safe React paired with optimized Tailwind classes. Fully responsive for all platforms, equipped with progressive asset-loading pipelines.',
-    timeline: 'Days 15 - 24',
-    deliverables: ['Git Repository access with clean modular hooks', 'Vite-bundled ultra responsive application engine', 'Advanced local storage tracking state systems'],
+    title: 'Pengembangan Front-End Modern',
+    subtitle: 'Pengodean React yang bersih & secepat kilat',
+    description: 'Membuat kode Anda secara manual dalam React modular yang aman tipe yang dipadukan dengan kelas Tailwind yang dioptimalkan. Sepenuhnya responsif untuk semua platform, dilengkapi dengan saluran pemuatan aset progresif.',
+    timeline: 'Hari 15 - 24',
+    deliverables: ['Akses Repositori Git dengan hook modular bersih', 'Mesin aplikasi responsif ultra terbundel Vite', 'Sistem status pelacakan penyimpanan lokal tingkat lanjut'],
     color: 'from-indigo-400 to-indigo-600'
   },
   {
     phase: '05',
-    title: 'SEO Audit, Launch & Handover',
-    subtitle: 'Flawless server deployment & testing',
-    description: 'Subjecting the applet to Google Lighthouse tests. Once we score 95+ across all performance metrics, we safely deploy your site to secure setups like Vercel or Cloud Run and supply a screen-recorded tutorial video.',
-    timeline: 'Days 25 - 28',
-    deliverables: ['Live verified URL and Domain redirection', 'Detailed Google Lighthouse Performance Audit', '10-Minute Custom Client Maintenance Guide Video'],
+    title: 'Audit SEO, Peluncuran & Serah Terima',
+    subtitle: 'Penyebaran & pengujian server yang sempurna',
+    description: 'Menundukkan aplikasi ke pengujian Google Lighthouse. Setelah kami mencetak skor 95+ di semua metrik kinerja, kami menyebarkannya dengan aman ke penyiapan aman seperti Vercel atau Cloud Run dan memberikan video tutorial rekam layar.',
+    timeline: 'Hari 25 - 28',
+    deliverables: ['URL Terverifikasi Langsung & Pengalihan Domain', 'Audit Kinerja Google Lighthouse Rinci', 'Video Panduan Pemeliharaan Klien Kustom 10 Menit'],
     color: 'from-purple-400 to-purple-600'
   }
 ];
 
 export const TECH_ITEMS: TechItem[] = [
-  { name: 'HTML5', category: 'frontend', iconName: 'Html5', level: 'Expert / Semantic markup' },
-  { name: 'CSS3', category: 'frontend', iconName: 'Css3', level: 'Expert / Custom layouts' },
-  { name: 'JavaScript', category: 'frontend', iconName: 'Js', level: 'Expert / ESNext standards' },
-  { name: 'React', category: 'frontend', iconName: 'React', level: 'Expert / Hooks & Complex States' },
-  { name: 'TypeScript', category: 'frontend', iconName: 'Ts', level: 'Advanced / Fully modular schemas' },
-  { name: 'Tailwind CSS', category: 'frontend', iconName: 'Tailwind', level: 'Expert / Fluid sizing grids' },
-  { name: 'Node.js', category: 'backend', iconName: 'Node', level: 'Intermediate / Express routing' },
-  { name: 'Git', category: 'tools', iconName: 'Git', level: 'Expert / Version branch merges' },
-  { name: 'GitHub', category: 'tools', iconName: 'Github', level: 'Expert / Pull requests workflows' },
-  { name: 'Figma', category: 'tools', iconName: 'Figma', level: 'Advanced / Aesthetic design prototyping' }
+  { name: 'HTML5', category: 'frontend', iconName: 'Html5', level: 'Ahli / Markup Semantik' },
+  { name: 'CSS3', category: 'frontend', iconName: 'Css3', level: 'Ahli / Tata Letak Kustom' },
+  { name: 'JavaScript', category: 'frontend', iconName: 'Js', level: 'Ahli / Standar ESNext' },
+  { name: 'React', category: 'frontend', iconName: 'React', level: 'Ahli / Hook & State Kompleks' },
+  { name: 'TypeScript', category: 'frontend', iconName: 'Ts', level: 'Lanjutan / Skema Sepenuhnya Modular' },
+  { name: 'Tailwind CSS', category: 'frontend', iconName: 'Tailwind', level: 'Ahli / Kisi Ukuran Fleksibel' },
+  { name: 'Node.js', category: 'backend', iconName: 'Node', level: 'Menengah / Perutean Express' },
+  { name: 'Git', category: 'tools', iconName: 'Git', level: 'Ahli / Penggabungan Cabang Versi' },
+  { name: 'GitHub', category: 'tools', iconName: 'Github', level: 'Ahli / Alur Kerja Pull Request' },
+  { name: 'Figma', category: 'tools', iconName: 'Figma', level: 'Lanjutan / Prototipe Desain Estetis' }
 ];

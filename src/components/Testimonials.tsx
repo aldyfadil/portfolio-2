@@ -36,10 +36,10 @@ export default function Testimonials() {
         {/* Header Title */}
         <div className="space-y-4">
           <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em] block">
-            // CLIENT RECOMMENDATION LOGS
+            // CATATAN REKOMENDASI KLIEN
           </span>
           <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-white leading-tight">
-            Endorsed by corporate partners & founders.
+            Didukung oleh mitra korporat & para pendiri usaha.
           </h2>
         </div>
 

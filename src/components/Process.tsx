@@ -15,13 +15,13 @@ export default function Process() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em]">
-            // REPLICABLE OUTCOME ENGINE
+            // ALUR KERJA SISTEMATIS
           </span>
           <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-white leading-tight">
-            How we translate your strategic objectives into optimized source code.
+            Cara kami menerjemahkan tujuan strategis Anda menjadi kode sumber yang dioptimalkan.
           </h2>
           <p className="text-white/60 text-sm md:text-base max-w-xl mx-auto">
-            A comprehensive, transparent 28-day workflow focused on structural communication, high visual prestige, and 100% zero-bloat.
+            Alur kerja 28 hari yang komprehensif dan transparan yang berfokus pada komunikasi terstruktur, prestise visual tinggi, dan 100% bebas sampah kode (no-bloat).
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export default function Process() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
                   <span className={`text-xs font-mono font-bold text-transparent bg-clip-text bg-gradient-to-r ${step.color}`}>
-                    PHASE_0{index + 1}
+                    FASE_0{index + 1}
                   </span>
                   <span className="text-[10px] font-mono text-white/40 tracking-wider bg-white/5 border border-white/5 rounded-full px-2 py-0.5">
                     {step.timeline}
@@ -71,7 +71,7 @@ export default function Process() {
               <div className="space-y-3 pt-4 border-t border-white/5">
                 <div className="flex items-center space-x-1.5 text-[10px] font-mono text-white/30 uppercase tracking-widest">
                   <Milestone className="w-3.5 h-3.5" />
-                  <span>CLIENT DISPATCHES:</span>
+                  <span>OUTPUT PENGIRIMAN:</span>
                 </div>
                 <div className="space-y-1.5">
                   {step.deliverables.map((out, oIdx) => (
@@ -90,14 +90,14 @@ export default function Process() {
         {/* Client Workflow Note */}
         <div className="p-6 bg-white/[0.01] border border-white/5 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 max-w-4xl mx-auto">
           <div className="space-y-1 text-center md:text-left">
-            <h4 className="text-sm font-semibold text-white">Need a tighter milestone delivery rate?</h4>
-            <p className="text-xs text-white/50">I sync on Slack or WhatsApp daily and provide staging servers for real-time progress checks.</p>
+            <h4 className="text-sm font-semibold text-white">Butuh jadwal pengerjaan yang lebih cepat?</h4>
+            <p className="text-xs text-white/50">Saya dapat berkoordinasi via WhatsApp setiap hari dan memberikan server staging lokal untuk peninjauan proses secara real-time.</p>
           </div>
           <a
             href="#contact"
             className="shrink-0 inline-flex items-center space-x-1.5 px-5 py-2.5 bg-white/5 hover:bg-white/10 text-white font-mono text-xs uppercase tracking-wider rounded-xl transition-all border border-white/10"
           >
-            <span>Learn terms</span>
+            <span>Pelajari Ketentuan</span>
             <ChevronRight className="w-3.5 h-3.5" />
           </a>
         </div>

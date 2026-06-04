@@ -7,14 +7,14 @@ interface LoadingScreenProps {
 
 export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
   const [progress, setProgress] = useState(0);
-  const [currentText, setCurrentText] = useState('BOOTSTRAPPING WORKSPACE');
+  const [currentText, setCurrentText] = useState('MEMULAI RUANG KERJA');
 
   const statements = [
-    'BOOTSTRAPPING WORKSPACE',
-    'RESOLVING ASSETS PACKS',
-    'CALCULATING VISUAL HYPER-CONTRAST',
-    'COMPILING MODULE HOOKS',
-    'SYSTEM IS PREPARED'
+    'MEMULAI RUANG KERJA',
+    'MENYELARASKAN PAKET ASET',
+    'MENGHITUNG HIPER-KONTRAS VISUAL',
+    'KOMPILASI MODUL HOOKS',
+    'SISTEM SIAP DIGUNAKAN'
   ];
 
   useEffect(() => {
@@ -64,7 +64,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
               AL_DI FAD_ILL_A // PORTFOLIO
             </h3>
             <p className="text-xs text-white/40 tracking-wider">
-              CREATIVE DEVELOPER & DESIGNER
+              PENGEMBANG & DESAINER KREATIF
             </p>
           </div>
           <div className="text-right">

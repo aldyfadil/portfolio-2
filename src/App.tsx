@@ -71,19 +71,19 @@ export default function App() {
                   <Code2 className="w-5 h-5 text-brand-gold" />
                   <span className="font-extrabold text-sm uppercase tracking-wider text-white">ALDI FADILLA</span>
                 </div>
-                <p className="text-white/40 text-[11px] font-mono">// ESTABLISHED FREELANCE WEB ARCHITECT // INDONESIA</p>
+                <p className="text-white/40 text-[11px] font-mono">// ARSITEK WEB FREELANCE TERPERCAYA // INDONESIA</p>
               </div>
 
               {/* Back to top button */}
               <div className="flex items-center space-x-6 text-xs text-white/50 font-mono">
-                <a href="#home" className="hover:text-brand-gold transition-colors block uppercase tracking-widest">// Back to top [↑]</a>
-                <span>© {new Date().getFullYear()} ALL RIGHTS RESERVED</span>
+                <a href="#home" className="hover:text-brand-gold transition-colors block uppercase tracking-widest">// KEMBALI KE ATAS [↑]</a>
+                <span>© {new Date().getFullYear()} HAK CIPTA DILINDUNGI</span>
               </div>
 
               {/* Fine disclaimer credits */}
               <div className="text-[10px] font-mono text-white/30 text-center md:text-right">
-                <span>Designed for RP3M - RP10M+ Enterprise Prestigers.</span>
-                <p className="mt-1">// 100% Custom React SPA with Zero Theme Clutter.</p>
+                <span>Didesain untuk Pelaku Usaha & Enterprise Berkualitas.</span>
+                <p className="mt-1">// 100% Kustom React SPA Tanpa Menggunakan Template Pasaran.</p>
               </div>
 
             </div>

@@ -42,31 +42,31 @@ export default function About() {
 
   const timelineItems = [
     {
-      year: '2024 - Present',
-      title: 'Senior Creative Freelancer',
-      institution: 'Independent Operations',
-      description: 'Crafting ultra-functional, high-performance company profiles and specialized React interfaces for Indonesian scale startups and local service networks. Managed clients paying Rp3M - Rp10M+.',
+      year: '2024 - Sekarang',
+      title: 'Pekerja Lepas Kreatif Senior',
+      institution: 'Operasional Mandiri',
+      description: 'Membuat profil perusahaan ultra-fungsional berkinerja tinggi dan antarmuka React khusus untuk startup Indonesia dan jaringan layanan lokal. Mengelola klien dengan nilai proyek Rp3 juta - Rp10 juta+.',
     },
     {
       year: '2022 - 2024',
-      title: 'UI Designer & Web Architect',
-      institution: 'Regional Design Studio',
-      description: 'Built vector prototypes and styled high-conversion landing pages for premium architecture catalogs, heavy logistics firms, and local florist networks.',
+      title: 'Desainer UI & Arsitek Web',
+      institution: 'Studio Desain Regional',
+      description: 'Membangun prototipe vektor dan merancang halaman pendaratan (landing page) konversi tinggi untuk katalog arsitektur premium, perusahaan logistik berat, dan jaringan toko bunga lokal.',
     },
     {
       year: '2020 - 2022',
-      title: 'Web Design Apprenticeship',
+      title: 'Magang Desain Web',
       institution: 'Core Digital Hub',
-      description: 'Honed custom responsive CSS configurations, client wireframes systems, semantic SEO structures, and direct-response content matrices.',
+      description: 'Mengasah konfigurasi CSS responsif kustom, sistem bingkai kawat klien, struktur SEO semantik, dan matriks konten respons langsung.',
     }
   ];
 
   const skillVisuals = [
-    { name: 'React Development (Functional / State)', level: '96%' },
-    { name: 'Tailwind Aesthetic Layout Work', level: '98%' },
-    { name: 'TypeScript Architecture Schemes', level: '85%' },
-    { name: 'Page Speed Craft & CDN Deployments', level: '99%' },
-    { name: 'Figma Premium Prototyping Systems', level: '90%' }
+    { name: 'Pengembangan React (Fungsional / State)', level: '96%' },
+    { name: 'Desain Tata Letak Estetis Tailwind', level: '98%' },
+    { name: 'Skema Arsitektur TypeScript', level: '85%' },
+    { name: 'Optimasi Kecepatan Halaman & Penerapan CDN', level: '99%' },
+    { name: 'Sistem Prototipe Figma Premium', level: '90%' }
   ];
 
   return (
@@ -84,24 +84,24 @@ export default function About() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em]">
-                // MEET ALDI FADILLA
+                // KENALKAN ALDI FADILLA
               </span>
             </div>
             
             <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-white leading-tight">
-              A developer who respects design, speed, & direct client communication.
+              Pengembang yang mementingkan desain, kecepatan, & komunikasi langsung dengan klien.
             </h2>
           </div>
 
           <div className="space-y-6 text-white/70 text-sm md:text-base leading-relaxed font-sans">
             <p>
-              I used to watch local businesses in Indonesia buy bloated WordPress templates for Rp3M–5M, only to receive a heavy dashboard that scored 40% on mobile performance test, loaded slower than five seconds, and failed to bring in leads.
+              Saya sering melihat bisnis lokal di Indonesia membeli templat WordPress yang berat seharga Rp3 juta–5 juta, hanya untuk mendapatkan dasbor lambat yang mencetak skor 40% pada uji performa seluler, memuat lebih lambat dari lima detik, dan gagal mendatangkan prospek.
             </p>
             <p className="border-l-2 border-brand-gold pl-4 text-white/95 italic font-medium bg-white/[0.01] py-2 pr-2">
-              "My mission became simple: craft custom-built, premium digital websites directly on React. By eliminating third-party blocks and generic template debris, my client sites load instantly and convert visitors."
+              "Misi saya sangat sederhana: membuat situs web digital premium kustom langsung dengan React. Dengan menghilangkan blok pihak ketiga dan sampah templat pasaran, situs klien saya termuat instan dan menghasilkan konversi pengunjung."
             </p>
             <p>
-              Whether it is organizing complex engineering tables for an industrial logistics provider, designing minimalist architecture portfolios, or building lightweight catalog systems with integrated direct WhatsApp payments, I build every single node from scratch to ensure your absolute corporate prestige.
+              Baik itu menyusun tabel teknik yang rumit untuk penyedia logistik industri, mendesain portofolio arsitektur minimalis, atau membangun sistem katalog ringan dengan integrasi pembayaran WhatsApp langsung, saya membangun setiap node dari awal untuk memastikan prestise korporat Anda.
             </p>
           </div>
 
@@ -111,11 +111,11 @@ export default function About() {
               <div className="absolute top-0 left-0 w-1 h-full bg-brand-gold" />
               <div className="flex justify-between items-start">
                 <Rocket className="w-5 h-5 text-brand-gold mb-3" />
-                <span className="font-mono text-[9px] text-white/30">CLIENT_SUCCESS</span>
+                <span className="font-mono text-[9px] text-white/30">KLIEN_SUKSES</span>
               </div>
               <h4 className="text-4xl font-extrabold font-display text-white">{counts.projects}+</h4>
               <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
-                Custom Projects Launched
+                Proyek Kustom Diluncurkan
               </p>
             </div>
 
@@ -123,11 +123,11 @@ export default function About() {
               <div className="absolute top-0 left-0 w-1 h-full bg-brand-cyan" />
               <div className="flex justify-between items-start">
                 <Timer className="w-5 h-5 text-brand-cyan mb-3" />
-                <span className="font-mono text-[9px] text-white/30">CORE_RATING</span>
+                <span className="font-mono text-[9px] text-white/30">PERFORMA_INTI</span>
               </div>
               <h4 className="text-4xl font-extrabold font-display text-white">{counts.performance}%</h4>
               <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
-                Avg. Mobile Speed Score
+                Skor Rata-rata Kecepatan Seluler
               </p>
             </div>
 
@@ -135,11 +135,11 @@ export default function About() {
               <div className="absolute top-0 left-0 w-1 h-full bg-brand-emerald" />
               <div className="flex justify-between items-start">
                 <Award className="w-5 h-5 text-brand-emerald mb-3" />
-                <span className="font-mono text-[9px] text-white/30">GUARANTEE</span>
+                <span className="font-mono text-[9px] text-white/30">GARANSI</span>
               </div>
-              <h4 className="text-4xl font-extrabold font-display text-white">{counts.launch} Yrs</h4>
+              <h4 className="text-4xl font-extrabold font-display text-white">{counts.launch} Tahun</h4>
               <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
-                Free Tech Maintenance
+                Pemeliharaan Teknis Gratis
               </p>
             </div>
 
@@ -147,11 +147,11 @@ export default function About() {
               <div className="absolute top-0 left-0 w-1 h-full bg-indigo-500" />
               <div className="flex justify-between items-start">
                 <UserCheck className="w-5 h-5 text-indigo-400 mb-3" />
-                <span className="font-mono text-[9px] text-white/30">RETENTION</span>
+                <span className="font-mono text-[9px] text-white/30">RETENSI</span>
               </div>
               <h4 className="text-4xl font-extrabold font-display text-white">{counts.speed}%+</h4>
               <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
-                Direct Conversion Growth
+                Pertumbuhan Konversi Langsung
               </p>
             </div>
           </div>
@@ -164,8 +164,8 @@ export default function About() {
           {/* Experience Timeline */}
           <div className="space-y-6">
             <h3 className="font-display font-bold text-lg text-white uppercase tracking-wider pb-3 border-b border-white/5 flex items-center justify-between">
-              <span>WORK EXPERIENCE</span>
-              <span className="font-mono text-xs text-white/40 tracking-normal normal-case">History</span>
+              <span>PENGALAMAN KERJA</span>
+              <span className="font-mono text-xs text-white/40 tracking-normal normal-case">Riwayat</span>
             </h3>
             
             <div className="space-y-8 relative before:absolute before:top-4 before:bottom-4 before:left-[17px] before:w-[1px] before:bg-white/10">
@@ -198,8 +198,8 @@ export default function About() {
           {/* Interactive Skills Visualization */}
           <div className="space-y-6">
             <h3 className="font-display font-bold text-lg text-white uppercase tracking-wider pb-3 border-b border-white/5 flex items-center justify-between">
-              <span>PROFESSIONAL FOCUS METRICS</span>
-              <span className="font-mono text-xs text-white/40 tracking-normal normal-case">Meters</span>
+              <span>METRIK FOKUS PROFESIONAL</span>
+              <span className="font-mono text-xs text-white/40 tracking-normal normal-case">Skala</span>
             </h3>
             
             <div className="space-y-5">

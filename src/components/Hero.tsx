@@ -8,10 +8,10 @@ export default function Hero() {
   const [isDeleting, setIsDeleting] = useState(false);
   
   const skillsList = [
-    'Clean Web Developer',
-    'Custom UI / UX Designer',
-    'Next-Gen React Engineer',
-    'High-Speed Optimization Specialist'
+    'Pengembang Web Bersih & Rapi',
+    'Desainer Kustom UI & UX',
+    'Insinyur React Generasi Baru',
+    'Spesialis Optimasi Kecepatan Tinggi'
   ];
 
   // Fine typing implementation that manages speed and flow organically
@@ -66,7 +66,7 @@ export default function Hero() {
         >
           <span className="w-2 h-2 rounded-full bg-brand-gold animate-pulse" />
           <span className="font-mono text-[10px] tracking-widest text-white/80 uppercase">
-            ESTABLISHED INDEPENDENT AGENCY // AVAILABLE FOR WORK
+            AGENSI MANDIRI MAPAN // BERSEDIA MENERIMA PROYEK
           </span>
         </motion.div>
 
@@ -78,11 +78,11 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight font-display text-white max-w-4xl"
           >
-            I build hyper-performant,{' '}
+            Saya membangun profil bisnis{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-yellow-600 font-extrabold block md:inline">
-              high-prestige profiles
+              berprestise tinggi
             </span>{' '}
-            with bespoke UI layouts.
+            dengan tata letak UI kustom yang sangat berperforma.
           </motion.h1>
 
           {/* Typing Terminal Display */}
@@ -93,7 +93,7 @@ export default function Hero() {
             className="flex items-center justify-center md:justify-start space-x-2 font-mono text-base md:text-xl text-white/60 min-h-[30px]"
           >
             <Terminal className="w-5 h-5 text-brand-gold hidden md:block" />
-            <span>freelancer_role:</span>
+            <span>peran_freelance:</span>
             <span className="text-white font-medium text-glow uppercase tracking-wider">{typedText}</span>
             <span className="w-1.5 h-5 bg-brand-gold animate-pulse inline-block" />
           </motion.div>
@@ -106,7 +106,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-white/70 max-w-2xl text-sm md:text-base leading-relaxed font-sans"
         >
-          Specializing in premium, custom React development & SEO architect schemes that look handcrafted, load in under 2 seconds, and position local businesses to attract Rp3M–Rp10M+ projects. No heavy themes or cookie-cutter templates.
+          Spesialisasi dalam pengembangan React kustom premium & skema arsitektur SEO yang terlihat buatan tangan, dimuat dalam waktu kurang dari 2 detik, serta memosisikan bisnis lokal untuk menarik proyek senilai Rp3 juta–Rp10 juta+. Tanpa tema berat atau templat pasaran.
         </motion.p>
 
         {/* Creative CTAs blocks */}
@@ -124,7 +124,7 @@ export default function Hero() {
             <span className="absolute inset-x-0 h-0 bg-white transition-all duration-300 group-hover:h-full top-0 left-0 -z-10" />
             <span className="flex items-center space-x-2">
               <Briefcase className="w-4 h-4" />
-              <span>View Projects</span>
+              <span>Lihat Proyek</span>
             </span>
           </a>
 
@@ -135,7 +135,7 @@ export default function Hero() {
           >
             <span className="flex items-center space-x-2">
               <Mail className="w-4 h-4" />
-              <span>Contact Me</span>
+              <span>Hubungi Saya</span>
             </span>
           </a>
         </motion.div>
@@ -148,16 +148,16 @@ export default function Hero() {
           className="pt-12 border-t border-white/5 flex flex-wrap justify-center md:justify-start gap-y-6 gap-x-12 text-left"
         >
           <div>
-            <div className="font-mono text-xs text-white/40 tracking-wider">PROJECTED AUDDITS</div>
-            <div className="font-display font-bold text-lg text-white">99/100 SPEED SCORE</div>
+            <div className="font-mono text-xs text-white/40 tracking-wider">AUDIT TERPROYEKSI</div>
+            <div className="font-display font-bold text-lg text-white">SKOR KECEPATAN 99/100</div>
           </div>
           <div>
-            <div className="font-mono text-xs text-white/40 tracking-wider">COMMITTED QUALITY</div>
-            <div className="font-display font-bold text-lg text-white">100% HANDCODED SPA</div>
+            <div className="font-mono text-xs text-white/40 tracking-wider">KOMITMEN KUALITAS</div>
+            <div className="font-display font-bold text-lg text-white">100% SPA DITULIS MANUAL</div>
           </div>
           <div>
-            <div className="font-mono text-xs text-white/40 tracking-wider">CLIENT CONVERSION</div>
-            <div className="font-display font-bold text-lg text-white">Direct Chat Integrations</div>
+            <div className="font-mono text-xs text-white/40 tracking-wider">KONVERSI KLIEN</div>
+            <div className="font-display font-bold text-lg text-white">Integrasi Chat Langsung</div>
           </div>
         </motion.div>
 
@@ -165,7 +165,7 @@ export default function Hero() {
 
       {/* Decorative arrow container on bottom */}
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center space-y-2 text-white/30 hover:text-white transition-colors duration-300 cursor-pointer">
-        <a href="#projects" className="text-[10px] font-mono tracking-widest uppercase">Scroll Down</a>
+        <a href="#projects" className="text-[10px] font-mono tracking-widest uppercase">Gulir ke Bawah</a>
         <ArrowDown className="w-4 h-4 animate-bounce" />
       </div>
     </section>

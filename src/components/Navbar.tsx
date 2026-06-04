@@ -8,13 +8,13 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState('home');
 
   const navLinks = [
-    { name: 'Home', href: '#home', id: 'home' },
-    { name: 'Projects', href: '#projects', id: 'projects' },
-    { name: 'About', href: '#about', id: 'about' },
-    { name: 'Workflow', href: '#process', id: 'process' },
-    { name: 'Services', href: '#services', id: 'services' },
-    { name: 'Endorsements', href: '#testimonials', id: 'testimonials' },
-    { name: 'Contact', href: '#contact', id: 'contact' },
+    { name: 'Beranda', href: '#home', id: 'home' },
+    { name: 'Proyek', href: '#projects', id: 'projects' },
+    { name: 'Tentang', href: '#about', id: 'about' },
+    { name: 'Alur Kerja', href: '#process', id: 'process' },
+    { name: 'Layanan', href: '#services', id: 'services' },
+    { name: 'Testimoni', href: '#testimonials', id: 'testimonials' },
+    { name: 'Kontak', href: '#contact', id: 'contact' },
   ];
 
   useEffect(() => {
@@ -95,7 +95,7 @@ export default function Navbar() {
           >
             <span className="absolute inset-x-0 h-0 bg-brand-gold transition-all duration-300 group-hover:h-full top-0 left-0 -z-10" />
             <span className="flex items-center space-x-1.5 transition-colors duration-300 group-hover:text-bg-dark">
-              <span>Launch Project</span>
+              <span>Mulai Proyek</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </span>
           </a>
@@ -139,7 +139,7 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="mt-4 flex items-center justify-center space-x-2 w-full py-3 border border-brand-gold text-brand-gold text-xs tracking-widest font-bold uppercase hover:bg-brand-gold hover:text-bg-dark transition-all rounded-full"
               >
-                <span>HAVE A PROJECT? CHAT</span>
+                <span>ADA PROYEK? CHAT SEKARANG</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </a>
             </div>

@@ -50,13 +50,13 @@ export default function TechStack() {
         {/* Header Block */}
         <div className="text-center space-y-4 max-w-2xl mx-auto">
           <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em] block">
-            // HARDENGINEERED TECHNOLOGY DECK
+            // DEK TEKNOLOGI UTAMA
           </span>
           <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-white leading-tight">
-            Our optimized technology suite for custom deployments.
+            Kumpulan teknologi pilihan untuk hasil web kustom berkinerja tinggi.
           </h2>
           <p className="text-white/60 text-sm leading-relaxed max-w-md mx-auto">
-            Each component is chosen carefully to maximize user interactions, SEO index readability, and millisecond paint intervals.
+            Setiap komponen dipilih secara cermat untuk memaksimalkan interaksi pengguna, keterbacaan indeks SEO, dan performa pemuatan milidetik.
           </p>
         </div>
 
@@ -113,12 +113,12 @@ export default function TechStack() {
               <Wrench className="w-5 h-5 text-brand-gold" />
             </div>
             <div>
-              <h4 className="text-xs font-mono text-white tracking-wider uppercase">CLEAN CODE PRINCIPLE SPECIFICATION</h4>
-              <p className="text-[11px] text-white/40 font-mono mt-0.5">// No bloated framework runtimes or unrequested library dependencies.</p>
+              <h4 className="text-xs font-mono text-white tracking-wider uppercase">SPESIFIKASI PRINSIP KODE BERSIH</h4>
+              <p className="text-[11px] text-white/40 font-mono mt-0.5">// Bebas bloatware runtime framework atau dependensi pustaka yang tidak perlu.</p>
             </div>
           </div>
           <span className="shrink-0 text-[10px] font-mono border border-white/10 rounded-full px-3 py-1 text-white/60 bg-white/5">
-            READY_FOR_COMMERCE
+            SIAP_UNTUK_BISNIS
           </span>
         </div>
 

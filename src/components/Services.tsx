@@ -8,31 +8,31 @@ export default function Services() {
     {
       borderColor: 'hover:border-yellow-500/25',
       accentColor: 'text-brand-gold bg-brand-gold/10',
-      badge: 'PRESTIGE / HIGH VISUAL',
+      badge: 'PRESTISE / VISUAL TINGGI',
       icon: Terminal
     },
     {
       borderColor: 'hover:border-cyan-500/25',
       accentColor: 'text-brand-cyan bg-brand-cyan/10',
-      badge: 'MARKETING / FUNNEL',
+      badge: 'PEMASARAN / FUNNEL',
       icon: Sparkles
     },
     {
       borderColor: 'hover:border-emerald-500/25',
       accentColor: 'text-brand-emerald bg-brand-emerald/10',
-      badge: 'CHECKOUT FLOW / DIRECT CHAT',
+      badge: 'ALUR CHECKOUT / CHAT LANGSUNG',
       icon: Coins
     },
     {
       borderColor: 'hover:border-indigo-500/25',
       accentColor: 'text-indigo-400 bg-indigo-500/10',
-      badge: 'COMPLEX LOGIC / SAAS',
+      badge: 'LOGIKA KOMPLEKS / SAAS',
       icon: ClipboardCheck
     },
     {
       borderColor: 'hover:border-purple-500/25',
       accentColor: 'text-purple-400 bg-purple-500/10',
-      badge: 'GUARANTEED UPTIME HEALTH',
+      badge: 'JAMINAN UPTIME & KEAMANAN',
       icon: Smartphone
     }
   ];
@@ -50,15 +50,15 @@ export default function Services() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-white/5">
           <div className="space-y-4 max-w-xl">
             <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em] block">
-              // DESIGN-INTELLIGENT SOLUTIONS
+              // SOLUSI DESAIN CERDAS
             </span>
             <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-white leading-tight">
-              Bespoke web capabilities structured for client business conversions.
+              Kemampuan web kustom yang terstruktur untuk konversi bisnis klien.
             </h2>
           </div>
           
           <p className="text-white/60 text-xs md:text-sm max-w-sm font-sans leading-relaxed">
-            I avoid cheap generic web engines that slow down your response rating. Every item built is crafted, search engine indexed, and optimized on React from ground zero.
+            Saya menghindari mesin web generik murah yang memperlambat tingkat respons Anda. Setiap item dibuat dengan cermat, terindeks di mesin pencari, dan dioptimalkan dengan React dari nol.
           </p>
         </div>
 
@@ -105,7 +105,7 @@ export default function Services() {
                   {/* Deliverables checklists */}
                   <div className="space-y-3 pt-4 border-t border-white/[0.05]">
                     <span className="text-[10px] font-mono text-white/30 tracking-wider uppercase block">
-                      Core deliverable scopes:
+                      Cakupan pengiriman inti:
                     </span>
                     <ul className="space-y-2">
                       {service.deliverables.map((item, idx) => (
@@ -120,7 +120,7 @@ export default function Services() {
                   {/* Features blocks */}
                   <div className="space-y-2 pt-2">
                     <span className="text-[10px] font-mono text-white/30 tracking-wider uppercase block">
-                      Quality advantages:
+                      Keunggulan kualitas:
                     </span>
                     <div className="flex flex-wrap gap-1.5">
                       {service.features.map((feat, fidx) => (
@@ -139,7 +139,7 @@ export default function Services() {
                 <div className="pt-6 border-t border-white/5 flex items-center justify-between">
                   <div className="space-y-0.5">
                     <span className="text-[9px] font-mono text-white/40 tracking-wider uppercase block">
-                      INVESTMENT RANGE
+                      RENTANG INVESTASI
                     </span>
                     <span className="text-xs font-mono font-bold text-white tracking-tight">
                       {service.priceRange}
@@ -150,7 +150,7 @@ export default function Services() {
                     href="#contact"
                     className="inline-flex items-center justify-center px-4 py-2 bg-white/5 group-hover:bg-brand-gold text-white group-hover:text-bg-dark font-mono text-[9px] font-extrabold uppercase tracking-widest rounded-lg transition-colors border border-white/10 group-hover:border-brand-gold"
                   >
-                    <span>Enquire</span>
+                    <span>Tanya</span>
                   </a>
                 </div>
 
