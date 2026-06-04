@@ -103,7 +103,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-white/70 max-w-2xl text-sm md:text-base leading-relaxed font-sans mx-auto"
+          className="text-white/70 max-w-xl text-xs sm:text-sm leading-relaxed font-sans mx-auto"
         >
           Berpengalaman mengembangkan website perusahaan, landing page, dan aplikasi web custom yang berfokus pada kualitas serta hasil nyata.
         </motion.p>
