@@ -51,103 +51,103 @@ export default function About() {
       <div className="absolute top-0 left-12 w-[1px] h-full bg-white/[0.015] hidden md:block" />
       <div className="absolute top-0 right-12 w-[1px] h-full bg-white/[0.015] hidden md:block" />
 
-      <div ref={containerRef} className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start relative z-20">
+      <div ref={containerRef} className="max-w-7xl mx-auto space-y-12 relative z-20">
         
-        {/* LEFT COLUMN: Story & Animated Counters */}
-        <div className="w-full lg:w-1/2 space-y-12">
-          
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em]">
-                // TENTANG KAMI
-              </span>
-            </div>
-            
-            <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-white leading-tight">
-              Bangun Kepercayaan Pelanggan Melalui Website Profesional
-            </h2>
-          </div>
-
-          <div className="space-y-6 text-white/70 text-sm md:text-base leading-relaxed font-sans">
-            <p>
-              Saya percaya bahwa website bukan sekadar identitas digital, melainkan aset bisnis yang harus mampu membangun kepercayaan, memperkuat citra profesional, dan membantu menghasilkan peluang baru.
-            </p>
-            <p className="border-l-2 border-brand-gold pl-4 text-white/95 italic font-medium bg-white/[0.01] py-2 pr-2">
-              Dengan fokus pada desain, performa, dan pengalaman pengguna, saya membangun website yang cepat, modern, dan dirancang untuk mendukung tujuan bisnis jangka panjang.
-            </p>
-          </div>
-
-          {/* Animated counter widgets */}
-          <div className="grid grid-cols-2 gap-6 pt-6">
-            <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-yellow-500/20 transition-colors">
-              <div className="absolute top-0 left-0 w-1 h-full bg-brand-gold" />
-              <div className="flex justify-between items-start">
-                <Rocket className="w-5 h-5 text-brand-gold mb-3" />
-                <span className="font-mono text-[9px] text-white/30">KLIEN_SUKSES</span>
+        <div className="flex flex-col lg:flex-row gap-16 items-start">
+          {/* LEFT COLUMN: Story */}
+          <div className="w-full lg:w-1/2 space-y-8">
+            <div className="space-y-4">
+              <div className="flex items-center space-x-2">
+                <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em]">
+                  // TENTANG KAMI
+                </span>
               </div>
-              <h4 className="text-4xl font-extrabold font-display text-white">{counts.projects}+</h4>
-              <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
-                Proyek Kustom Diluncurkan
+              
+              <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-white leading-tight">
+                Bangun Kepercayaan Pelanggan Melalui Website Profesional
+              </h2>
+            </div>
+
+            <div className="space-y-6 text-white/70 text-sm md:text-base leading-relaxed font-sans">
+              <p>
+                Saya percaya bahwa website bukan sekadar identitas digital, melainkan aset bisnis yang harus mampu membangun kepercayaan, memperkuat citra profesional, dan membantu menghasilkan peluang baru.
               </p>
-            </div>
-
-            <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-cyan-500/20 transition-colors">
-              <div className="absolute top-0 left-0 w-1 h-full bg-brand-cyan" />
-              <div className="flex justify-between items-start">
-                <Timer className="w-5 h-5 text-brand-cyan mb-3" />
-                <span className="font-mono text-[9px] text-white/30">PERFORMA_INTI</span>
-              </div>
-              <h4 className="text-4xl font-extrabold font-display text-white">{counts.performance}%</h4>
-              <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
-                Skor Rata-rata Kecepatan Seluler
-              </p>
-            </div>
-
-            <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-emerald-500/20 transition-colors">
-              <div className="absolute top-0 left-0 w-1 h-full bg-brand-emerald" />
-              <div className="flex justify-between items-start">
-                <Award className="w-5 h-5 text-brand-emerald mb-3" />
-                <span className="font-mono text-[9px] text-white/30">GARANSI</span>
-              </div>
-              <h4 className="text-4xl font-extrabold font-display text-white">{counts.launch} Tahun</h4>
-              <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
-                Pemeliharaan Teknis Gratis
-              </p>
-            </div>
-
-            <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-indigo-500/20 transition-colors">
-              <div className="absolute top-0 left-0 w-1 h-full bg-indigo-500" />
-              <div className="flex justify-between items-start">
-                <UserCheck className="w-5 h-5 text-indigo-400 mb-3" />
-                <span className="font-mono text-[9px] text-white/30">RETENSI</span>
-              </div>
-              <h4 className="text-4xl font-extrabold font-display text-white">{counts.speed}%+</h4>
-              <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
-                Pertumbuhan Konversi Langsung
+              <p className="border-l-2 border-brand-gold pl-4 text-white/95 italic font-medium bg-white/[0.01] py-2 pr-2">
+                Dengan fokus pada desain, performa, dan pengalaman pengguna, saya membangun website yang cepat, modern, dan dirancang untuk mendukung tujuan bisnis jangka panjang.
               </p>
             </div>
           </div>
 
+          {/* RIGHT COLUMN: Professional SEO & Digital Core Illustration */}
+          <div className="w-full lg:w-1/2 flex items-center justify-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 15 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="relative w-full rounded-2xl overflow-hidden border border-white/10 bg-bg-card/40 shadow-2xl group hover:border-brand-gold/30 transition-all duration-500"
+            >
+              <img 
+                src={seoIllustration}
+                alt="Website SEO Optimization & Professional Performance Illustration" 
+                className="w-full h-auto object-cover group-hover:scale-[1.015] transition-transform duration-700"
+                referrerPolicy="no-referrer"
+              />
+              {/* Soft Ambient Gold Outer Shadow Glow */}
+              <div className="absolute -inset-10 bg-brand-gold/5 blur-3xl rounded-full opacity-50 pointer-events-none group-hover:opacity-75 transition-opacity duration-700" />
+            </motion.div>
+          </div>
         </div>
 
-        {/* RIGHT COLUMN: Professional SEO & Digital Core Illustration */}
-        <div className="w-full lg:w-1/2 flex items-center justify-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 15 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="relative w-full rounded-2xl overflow-hidden border border-white/10 bg-bg-card/40 shadow-2xl group hover:border-brand-gold/30 transition-all duration-500"
-          >
-            <img 
-              src={seoIllustration}
-              alt="Website SEO Optimization & Professional Performance Illustration" 
-              className="w-full h-auto object-cover group-hover:scale-[1.015] transition-transform duration-700"
-              referrerPolicy="no-referrer"
-            />
-            {/* Soft Ambient Gold Outer Shadow Glow */}
-            <div className="absolute -inset-10 bg-brand-gold/5 blur-3xl rounded-full opacity-50 pointer-events-none group-hover:opacity-75 transition-opacity duration-700" />
-          </motion.div>
+        {/* Animated counter widgets - Full Width Side-by-Side (1 Row filled with 4 cards) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-8">
+          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-yellow-500/20 transition-colors">
+            <div className="absolute top-0 left-0 w-1 h-full bg-brand-gold" />
+            <div className="flex justify-between items-start">
+              <Rocket className="w-5 h-5 text-brand-gold mb-3" />
+              <span className="font-mono text-[9px] text-white/30">KLIEN_SUKSES</span>
+            </div>
+            <h4 className="text-4xl font-extrabold font-display text-white">{counts.projects}+</h4>
+            <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
+              Proyek Kustom Diluncurkan
+            </p>
+          </div>
+
+          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-cyan-500/20 transition-colors">
+            <div className="absolute top-0 left-0 w-1 h-full bg-brand-cyan" />
+            <div className="flex justify-between items-start">
+              <Timer className="w-5 h-5 text-brand-cyan mb-3" />
+              <span className="font-mono text-[9px] text-white/30">PERFORMA_INTI</span>
+            </div>
+            <h4 className="text-4xl font-extrabold font-display text-white">{counts.performance}%</h4>
+            <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
+              Skor Rata-rata Kecepatan Seluler
+            </p>
+          </div>
+
+          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-emerald-500/20 transition-colors">
+            <div className="absolute top-0 left-0 w-1 h-full bg-brand-emerald" />
+            <div className="flex justify-between items-start">
+              <Award className="w-5 h-5 text-brand-emerald mb-3" />
+              <span className="font-mono text-[9px] text-white/30">GARANSI</span>
+            </div>
+            <h4 className="text-4xl font-extrabold font-display text-white">{counts.launch} Tahun</h4>
+            <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
+              Pemeliharaan Teknis Gratis
+            </p>
+          </div>
+
+          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-indigo-500/20 transition-colors">
+            <div className="absolute top-0 left-0 w-1 h-full bg-indigo-500" />
+            <div className="flex justify-between items-start">
+              <UserCheck className="w-5 h-5 text-indigo-400 mb-3" />
+              <span className="font-mono text-[9px] text-white/30">RETENSI</span>
+            </div>
+            <h4 className="text-4xl font-extrabold font-display text-white">{counts.speed}%+</h4>
+            <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
+              Pertumbuhan Konversi Langsung
+            </p>
+          </div>
         </div>
 
       </div>
