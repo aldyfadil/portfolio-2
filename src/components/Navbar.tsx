@@ -58,7 +58,7 @@ export default function Navbar() {
         >
           <Code2 className="w-5 h-5 text-brand-gold group-hover:rotate-12 transition-transform duration-300" />
           <span className="font-extrabold text-white text-base md:text-lg">
-            ALDI<span className="text-brand-gold font-light tracking-widest text-sm ml-1.5 uppercase">.DEV</span>
+            VYNORA<span className="text-brand-gold font-light tracking-widest text-sm ml-1.5 uppercase">.ID</span>
           </span>
         </a>
 

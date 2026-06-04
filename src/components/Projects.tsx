@@ -25,18 +25,15 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto space-y-16 relative z-20">
         
         {/* Header Block */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-6 border-b border-white/5">
-          <div className="space-y-4 max-w-xl">
-            <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em] block">
-              // ETALASE PELUNCURAN KLIEN
-            </span>
-            <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-white">
-              Karya klien terpilih yang mendorong transaksi & reputasi bisnis.
-            </h2>
-          </div>
-          
-          <p className="text-white/60 text-xs md:text-sm max-w-sm leading-relaxed">
-            Profil perusahaan & produk web asli. Setiap proyek mendemonstrasikan tata letak 100% responsif, kecepatan pemuatan secepat kilat, dan arsitektur web modern yang disesuaikan.
+        <div className="flex flex-col gap-4 pb-6 border-b border-white/5">
+          <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em] block">
+            // PORTFOLIO
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold font-display tracking-tight text-white max-w-4xl">
+            Proyek Pilihan
+          </h2>
+          <p className="text-white/60 text-sm md:text-base max-w-2xl leading-relaxed font-sans">
+            Beberapa proyek yang telah saya kerjakan, mulai dari website perusahaan, landing page, hingga aplikasi web custom
           </p>
         </div>
 
