@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowDown, Mail, Briefcase, Terminal } from 'lucide-react';
+import { Mail, Briefcase, Terminal } from 'lucide-react';
 
 export default function Hero() {
   const [skillIndex, setSkillIndex] = useState(0);
@@ -89,12 +89,12 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex items-center justify-center md:justify-start space-x-2 font-mono text-base md:text-xl text-white/60 min-h-[30px]"
+            className="flex items-center justify-center md:justify-start space-x-2 font-mono text-xs md:text-sm text-white/50 min-h-[24px]"
           >
-            <Terminal className="w-5 h-5 text-brand-gold hidden md:block" />
+            <Terminal className="w-4 h-4 text-brand-gold/80 hidden md:block" />
             <span>peran_freelance:</span>
             <span className="text-white font-medium text-glow uppercase tracking-wider">{typedText}</span>
-            <span className="w-1.5 h-5 bg-brand-gold animate-pulse inline-block" />
+            <span className="w-1 h-4 bg-brand-gold animate-pulse inline-block" />
           </motion.div>
         </div>
 
@@ -139,33 +139,6 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        {/* Metric widgets representing realism to clients */}
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.7 }}
-          transition={{ duration: 1, delay: 0.7 }}
-          className="pt-12 border-t border-white/5 flex flex-wrap justify-center md:justify-start gap-y-6 gap-x-12 text-left"
-        >
-          <div>
-            <div className="font-mono text-xs text-white/40 tracking-wider">AUDIT TERPROYEKSI</div>
-            <div className="font-display font-bold text-lg text-white">SKOR KECEPATAN 99/100</div>
-          </div>
-          <div>
-            <div className="font-mono text-xs text-white/40 tracking-wider">KOMITMEN KUALITAS</div>
-            <div className="font-display font-bold text-lg text-white">100% SPA DITULIS MANUAL</div>
-          </div>
-          <div>
-            <div className="font-mono text-xs text-white/40 tracking-wider">KONVERSI KLIEN</div>
-            <div className="font-display font-bold text-lg text-white">Integrasi Chat Langsung</div>
-          </div>
-        </motion.div>
-
-      </div>
-
-      {/* Decorative arrow container on bottom */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center space-y-2 text-white/30 hover:text-white transition-colors duration-300 cursor-pointer">
-        <a href="#projects" className="text-[10px] font-mono tracking-widest uppercase">Gulir ke Bawah</a>
-        <ArrowDown className="w-4 h-4 animate-bounce" />
       </div>
     </section>
   );
