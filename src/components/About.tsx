@@ -84,24 +84,21 @@ export default function About() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em]">
-                // KENALKAN ALDI FADILLA
+                // TENTANG KAMI
               </span>
             </div>
             
             <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-white leading-tight">
-              Pengembang yang mementingkan desain, kecepatan, & komunikasi langsung dengan klien.
+              Bangun Kepercayaan Pelanggan Melalui Website Profesional
             </h2>
           </div>
 
           <div className="space-y-6 text-white/70 text-sm md:text-base leading-relaxed font-sans">
             <p>
-              Saya sering melihat bisnis lokal di Indonesia membeli templat WordPress yang berat seharga Rp3 juta–5 juta, hanya untuk mendapatkan dasbor lambat yang mencetak skor 40% pada uji performa seluler, memuat lebih lambat dari lima detik, dan gagal mendatangkan prospek.
+              Saya percaya bahwa website bukan sekadar identitas digital, melainkan aset bisnis yang harus mampu membangun kepercayaan, memperkuat citra profesional, dan membantu menghasilkan peluang baru.
             </p>
             <p className="border-l-2 border-brand-gold pl-4 text-white/95 italic font-medium bg-white/[0.01] py-2 pr-2">
-              "Misi saya sangat sederhana: membuat situs web digital premium kustom langsung dengan React. Dengan menghilangkan blok pihak ketiga dan sampah templat pasaran, situs klien saya termuat instan dan menghasilkan konversi pengunjung."
-            </p>
-            <p>
-              Baik itu menyusun tabel teknik yang rumit untuk penyedia logistik industri, mendesain portofolio arsitektur minimalis, atau membangun sistem katalog ringan dengan integrasi pembayaran WhatsApp langsung, saya membangun setiap node dari awal untuk memastikan prestise korporat Anda.
+              Dengan fokus pada desain, performa, dan pengalaman pengguna, saya membangun website yang cepat, modern, dan dirancang untuk mendukung tujuan bisnis jangka panjang.
             </p>
           </div>
 

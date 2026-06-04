@@ -30,7 +30,7 @@ export default function Projects() {
             My Project
           </span>
           <p className="text-white/60 text-sm md:text-base leading-relaxed font-sans">
-            Berikut adalah beberapa projek yang telah saya kerjakan, mulai dari website perusahaan, landing page, hingga aplikasi web custom
+            Berikut adalah beberapa projek yang telah dikerjakan, mulai dari website perusahaan, landing page, hingga aplikasi web custom
           </p>
         </div>
 
