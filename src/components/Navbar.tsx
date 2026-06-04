@@ -9,8 +9,8 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Beranda', href: '#home', id: 'home' },
-    { name: 'Proyek', href: '#projects', id: 'projects' },
     { name: 'Tentang', href: '#about', id: 'about' },
+    { name: 'Proyek', href: '#projects', id: 'projects' },
     { name: 'Alur Kerja', href: '#process', id: 'process' },
     { name: 'Layanan', href: '#services', id: 'services' },
     { name: 'Testimoni', href: '#testimonials', id: 'testimonials' },

@@ -53,8 +53,8 @@ export default function App() {
           {/* Structured Sections Deck */}
           <main className="flex-1">
             <Hero />
-            <Projects />
             <About />
+            <Projects />
             <Process />
             <Services />
             <Testimonials />
