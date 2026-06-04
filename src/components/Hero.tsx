@@ -78,11 +78,10 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight font-display text-white max-w-4xl"
           >
-            Saya membangun profil bisnis{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-yellow-600 font-extrabold block md:inline">
-              berprestise tinggi
+              Frontend Developer & Web Designer
             </span>{' '}
-            dengan tata letak UI kustom yang sangat berperforma.
+            yang berfokus pada pengalaman pengguna, performa, dan kualitas produk digital
           </motion.h1>
 
           {/* Typing Terminal Display */}
@@ -106,7 +105,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-white/70 max-w-2xl text-sm md:text-base leading-relaxed font-sans"
         >
-          Spesialisasi dalam pengembangan React kustom premium & skema arsitektur SEO yang terlihat buatan tangan, dimuat dalam waktu kurang dari 2 detik, serta memosisikan bisnis lokal untuk menarik proyek senilai Rp3 juta–Rp10 juta+. Tanpa tema berat atau templat pasaran.
+          Berpengalaman mengembangkan website perusahaan, landing page, dan aplikasi web custom yang berfokus pada kualitas serta hasil nyata.
         </motion.p>
 
         {/* Creative CTAs blocks */}
