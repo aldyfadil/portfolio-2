@@ -1,6 +1,8 @@
 import { useEffect, useState, useRef } from 'react';
 import { motion, useInView } from 'motion/react';
 import { Award, Timer, Rocket, UserCheck } from 'lucide-react';
+// @ts-ignore
+import seoIllustration from '../assets/images/seo_illustration_1780572122223.png';
 
 export default function About() {
   const containerRef = useRef(null);
@@ -40,34 +42,7 @@ export default function About() {
     }
   }, [isInView]);
 
-  const timelineItems = [
-    {
-      year: '2024 - Sekarang',
-      title: 'Pekerja Lepas Kreatif Senior',
-      institution: 'Operasional Mandiri',
-      description: 'Membuat profil perusahaan ultra-fungsional berkinerja tinggi dan antarmuka React khusus untuk startup Indonesia dan jaringan layanan lokal. Mengelola klien dengan nilai proyek Rp3 juta - Rp10 juta+.',
-    },
-    {
-      year: '2022 - 2024',
-      title: 'Desainer UI & Arsitek Web',
-      institution: 'Studio Desain Regional',
-      description: 'Membangun prototipe vektor dan merancang halaman pendaratan (landing page) konversi tinggi untuk katalog arsitektur premium, perusahaan logistik berat, dan jaringan toko bunga lokal.',
-    },
-    {
-      year: '2020 - 2022',
-      title: 'Magang Desain Web',
-      institution: 'Core Digital Hub',
-      description: 'Mengasah konfigurasi CSS responsif kustom, sistem bingkai kawat klien, struktur SEO semantik, dan matriks konten respons langsung.',
-    }
-  ];
 
-  const skillVisuals = [
-    { name: 'Pengembangan React (Fungsional / State)', level: '96%' },
-    { name: 'Desain Tata Letak Estetis Tailwind', level: '98%' },
-    { name: 'Skema Arsitektur TypeScript', level: '85%' },
-    { name: 'Optimasi Kecepatan Halaman & Penerapan CDN', level: '99%' },
-    { name: 'Sistem Prototipe Figma Premium', level: '90%' }
-  ];
 
   return (
     <section id="about" className="py-24 px-6 relative bg-bg-dark grid-overlay overflow-hidden">
@@ -155,71 +130,24 @@ export default function About() {
 
         </div>
 
-        {/* RIGHT COLUMN: Experience timeline & Skills meters */}
-        <div className="w-full lg:w-1/2 space-y-12">
-          
-          {/* Experience Timeline */}
-          <div className="space-y-6">
-            <h3 className="font-display font-bold text-lg text-white uppercase tracking-wider pb-3 border-b border-white/5 flex items-center justify-between">
-              <span>PENGALAMAN KERJA</span>
-              <span className="font-mono text-xs text-white/40 tracking-normal normal-case">Riwayat</span>
-            </h3>
-            
-            <div className="space-y-8 relative before:absolute before:top-4 before:bottom-4 before:left-[17px] before:w-[1px] before:bg-white/10">
-              {timelineItems.map((item, index) => (
-                <div key={index} className="flex gap-6 relative group">
-                  <div className="w-9 h-9 rounded-full bg-bg-card border border-white/10 flex items-center justify-center relative z-10 transition-colors group-hover:border-brand-gold">
-                    <div className="w-2.5 h-2.5 rounded-full bg-white/40 group-hover:bg-brand-gold transition-colors" />
-                  </div>
-                  <div className="flex-1 space-y-2">
-                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
-                      <div>
-                        <h4 className="text-white font-medium text-sm md:text-base group-hover:text-brand-gold transition-colors">
-                          {item.title}
-                        </h4>
-                        <p className="text-xs text-white/40 font-mono uppercase tracking-wider">{item.institution}</p>
-                      </div>
-                      <span className="shrink-0 text-[10px] font-mono border border-white/10 rounded-full px-2.5 py-0.5 text-white/60 bg-white/5 self-start">
-                        {item.year}
-                      </span>
-                    </div>
-                    <p className="text-xs md:text-sm text-white/60 leading-relaxed font-sans">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Interactive Skills Visualization */}
-          <div className="space-y-6">
-            <h3 className="font-display font-bold text-lg text-white uppercase tracking-wider pb-3 border-b border-white/5 flex items-center justify-between">
-              <span>METRIK FOKUS PROFESIONAL</span>
-              <span className="font-mono text-xs text-white/40 tracking-normal normal-case">Skala</span>
-            </h3>
-            
-            <div className="space-y-5">
-              {skillVisuals.map((skill, index) => (
-                <div key={index} className="space-y-2">
-                  <div className="flex justify-between items-center text-xs">
-                    <span className="font-mono text-white/80">{skill.name}</span>
-                    <span className="font-mono text-brand-gold">{skill.level}</span>
-                  </div>
-                  <div className="h-1 bg-white/5 w-full rounded-full overflow-hidden">
-                    <motion.div
-                      className="h-full bg-brand-gold"
-                      initial={{ width: 0 }}
-                      whileInView={{ width: skill.level }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, ease: "easeOut" }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
+        {/* RIGHT COLUMN: Professional SEO & Digital Core Illustration */}
+        <div className="w-full lg:w-1/2 flex items-center justify-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: 15 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative w-full rounded-2xl overflow-hidden border border-white/10 bg-bg-card/40 shadow-2xl group hover:border-brand-gold/30 transition-all duration-500"
+          >
+            <img 
+              src={seoIllustration}
+              alt="Website SEO Optimization & Professional Performance Illustration" 
+              className="w-full h-auto object-cover group-hover:scale-[1.015] transition-transform duration-700"
+              referrerPolicy="no-referrer"
+            />
+            {/* Soft Ambient Gold Outer Shadow Glow */}
+            <div className="absolute -inset-10 bg-brand-gold/5 blur-3xl rounded-full opacity-50 pointer-events-none group-hover:opacity-75 transition-opacity duration-700" />
+          </motion.div>
         </div>
 
       </div>
