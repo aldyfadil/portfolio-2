@@ -25,15 +25,12 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto space-y-16 relative z-20">
         
         {/* Header Block */}
-        <div className="flex flex-col gap-4 pb-6 border-b border-white/5">
+        <div className="flex flex-col items-center text-center gap-4 pb-6 border-b border-white/5 max-w-3xl mx-auto">
           <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em] block">
-            // PORTFOLIO
+            My Project
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold font-display tracking-tight text-white max-w-4xl">
-            Proyek Pilihan
-          </h2>
-          <p className="text-white/60 text-sm md:text-base max-w-2xl leading-relaxed font-sans">
-            Beberapa proyek yang telah saya kerjakan, mulai dari website perusahaan, landing page, hingga aplikasi web custom
+          <p className="text-white/60 text-sm md:text-base leading-relaxed font-sans">
+            Berikut adalah beberapa projek yang telah saya kerjakan, mulai dari website perusahaan, landing page, hingga aplikasi web custom
           </p>
         </div>
 
