@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-gold: #d4af37;
+  --color-brand-accent: #f59e0b; /* Amber */
+  --color-brand-emerald: #10b981;
+  --color-brand-cyan: #06b6d4;
+  --color-bg-dark: #070708;
+  --color-bg-card: #0f0f12;
+  --color-bg-panel: #141419;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-bg-dark);
+    color: #f3f4f6;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar matching agency design */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070708;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e1e24;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a2a35;
+}
+
+/* Custom selection styling */
+::selection {
+  background: rgba(212, 175, 55, 0.2);
+  color: #ffffff;
+}
+
+/* Non-deterministic grids or subtle overlay line elements to invoke "human handcrafted agency" feels */
+.grid-overlay {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* Text glow */
+.text-glow {
+  text-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+}
+
+/* Subtle border glow */
+.border-glow {
+  box-shadow: 0 0 15px rgba(214, 175, 55, 0.05);
+}
