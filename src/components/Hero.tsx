@@ -43,19 +43,15 @@ export default function Hero() {
         </div>
 
         {/* Dynamic professional description */}
-        <motion.div 
+        <motion.p 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-white/70 max-w-2xl text-xs sm:text-sm leading-relaxed font-sans mx-auto space-y-3"
+          className="text-white/70 max-w-3xl text-xs sm:text-sm md:text-base leading-relaxed font-sans mx-auto"
         >
-          <p className="font-medium text-white text-sm sm:text-base">
-            Website Cepat, Modern, dan Siap Mendukung Pertumbuhan Bisnis Anda. Mulai dari Rp1.750.000 🚀
-          </p>
-          <p className="text-white/60 text-xs sm:text-sm">
-            Solusi website custom untuk UMKM, perusahaan, dan bisnis jasa yang ingin tampil lebih profesional di era digital ✨
-          </p>
-        </motion.div>
+          <span className="font-semibold text-white">Website Cepat, Modern, dan Siap Mendukung Pertumbuhan Bisnis Anda. Mulai dari Rp1.750.000 🚀</span>{' '}
+          <span className="text-white/60 font-normal">Solusi website custom untuk UMKM, perusahaan, dan bisnis jasa yang ingin tampil lebih profesional di era digital ✨</span>
+        </motion.p>
 
         {/* Creative CTAs blocks */}
         <motion.div 
