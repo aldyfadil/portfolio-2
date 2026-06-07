@@ -1,50 +1,7 @@
-import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { Mail, Briefcase, Terminal } from 'lucide-react';
+import { motion } from 'motion/react';
+import { Mail, Briefcase } from 'lucide-react';
 
 export default function Hero() {
-  const [skillIndex, setSkillIndex] = useState(0);
-  const [typedText, setTypedText] = useState('');
-  const [isDeleting, setIsDeleting] = useState(false);
-  
-  const skillsList = [
-    'Pengembang Web Bersih & Rapi',
-    'Desainer Kustom UI & UX',
-    'Insinyur React Generasi Baru',
-    'Spesialis Optimasi Kecepatan Tinggi'
-  ];
-
-  // Fine typing implementation that manages speed and flow organically
-  useEffect(() => {
-    let timer: NodeJS.Timeout;
-    const currentFullText = skillsList[skillIndex];
-    
-    const tick = () => {
-      if (isDeleting) {
-        setTypedText((prev) => prev.slice(0, -1));
-      } else {
-        setTypedText((prev) => currentFullText.slice(0, prev.length + 1));
-      }
-
-      let speed = isDeleting ? 25 : 65;
-
-      if (!isDeleting && typedText === currentFullText) {
-        // Delay at peak
-        speed = 1800;
-        setIsDeleting(true);
-      } else if (isDeleting && typedText === '') {
-        setIsDeleting(false);
-        setSkillIndex((prev) => (prev + 1) % skillsList.length);
-        speed = 200;
-      }
-
-      timer = setTimeout(tick, speed);
-    };
-
-    timer = setTimeout(tick, 100);
-    return () => clearTimeout(timer);
-  }, [typedText, isDeleting, skillIndex]);
-
   return (
     <section 
       id="home" 
@@ -66,7 +23,7 @@ export default function Hero() {
         >
           <span className="w-2 h-2 rounded-full bg-brand-gold animate-pulse" />
           <span className="font-mono text-[10px] tracking-widest text-white/80 uppercase">
-            AGENSI MANDIRI MAPAN // BERSEDIA MENERIMA PROYEK
+            Buat Website Impianmu Hari ini!
           </span>
         </motion.div>
 
@@ -79,34 +36,26 @@ export default function Hero() {
             className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight font-display text-white max-w-3xl mx-auto"
           >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-yellow-600 font-extrabold block md:inline">
-              Frontend Developer & Web Designer
+              Semua Pasti Bisa
             </span>{' '}
-            yang berfokus pada pengalaman pengguna, performa, dan kualitas produk digital
+            Punya Website Profesional!
           </motion.h1>
-
-          {/* Typing Terminal Display */}
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex items-center justify-center space-x-2 font-mono text-xs md:text-sm text-white/50 min-h-[24px]"
-          >
-            <Terminal className="w-4 h-4 text-brand-gold/80" />
-            <span>peran_freelance:</span>
-            <span className="text-white font-medium text-glow uppercase tracking-wider">{typedText}</span>
-            <span className="w-1 h-4 bg-brand-gold animate-pulse inline-block" />
-          </motion.div>
         </div>
 
         {/* Dynamic professional description */}
-        <motion.p 
+        <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-white/70 max-w-xl text-xs sm:text-sm leading-relaxed font-sans mx-auto"
+          className="text-white/70 max-w-2xl text-xs sm:text-sm leading-relaxed font-sans mx-auto space-y-3"
         >
-          Berpengalaman mengembangkan website perusahaan, landing page, dan aplikasi web custom yang berfokus pada kualitas serta hasil nyata.
-        </motion.p>
+          <p className="font-medium text-white text-sm sm:text-base">
+            Website Cepat, Modern, dan Siap Mendukung Pertumbuhan Bisnis Anda. Mulai dari Rp1.750.000 🚀
+          </p>
+          <p className="text-white/60 text-xs sm:text-sm">
+            Solusi website custom untuk UMKM, perusahaan, dan bisnis jasa yang ingin tampil lebih profesional di era digital ✨
+          </p>
+        </motion.div>
 
         {/* Creative CTAs blocks */}
         <motion.div 
