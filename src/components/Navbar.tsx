@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, ArrowUpRight, Code2 } from 'lucide-react';
+import { Menu, X, ArrowUpRight, Code2, MessageCircle } from 'lucide-react';
 
 export default function Navbar() {
   const [scrollActive, setScrollActive] = useState(false);
@@ -90,13 +90,15 @@ export default function Navbar() {
         {/* CTA Direct connect button */}
         <div className="hidden lg:flex items-center">
           <a
-            href="#contact"
+            href="https://wa.me/6281234567890?text=Halo%2520Aldi%252C%2520saya%2520tertarik%2520untuk%2520mengkonsultasikan%2520pembuatan%2520website%2520company%2520profile%2520%252F%2520landing%2520page."
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative inline-flex items-center justify-center overflow-hidden rounded-full border border-brand-gold px-5 py-2 text-xs font-medium tracking-widest uppercase text-white transition-all duration-300 focus:outline-none"
           >
             <span className="absolute inset-x-0 h-0 bg-brand-gold transition-all duration-300 group-hover:h-full top-0 left-0 -z-10" />
             <span className="flex items-center space-x-1.5 transition-colors duration-300 group-hover:text-bg-dark">
-              <span>Mulai Proyek</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
+              <span>WhatsApp Kami</span>
+              <MessageCircle className="w-3.5 h-3.5" />
             </span>
           </a>
         </div>
