@@ -26,7 +26,7 @@ export default function About() {
         setCounts({
           projects: Math.min(Math.round((36 / steps) * stepCounter), 36),
           performance: Math.min(Math.round((99 / steps) * stepCounter), 99),
-          launch: Math.min(Math.round((2 / steps) * stepCounter), 2),
+          launch: Math.min(Math.round((1 / steps) * stepCounter), 1),
           speed: Math.min(Math.round((95 / steps) * stepCounter), 95),
         });
 
@@ -67,7 +67,7 @@ export default function About() {
                 Banyak bisnis kehilangan peluang karena belum memiliki website profesional yang mampu menunjukkan kualitas dan kredibilitas mereka secara maksimal.
               </p>
               <p className="border-l-2 border-brand-gold pl-4 text-white/95 italic font-medium bg-white/[0.01] py-2 pr-2">
-                Saya membantu UMKM, perusahaan, kontraktor, dan bisnis jasa membangun website yang cepat, modern, dan responsif untuk meningkatkan kepercayaan pelanggan serta memperkuat citra profesional di dunia digital.
+                Kami membantu UMKM, perusahaan, kontraktor, dan bisnis jasa membangun website yang cepat, modern, dan responsif untuk meningkatkan kepercayaan pelanggan serta memperkuat citra profesional di dunia digital.
               </p>
               <p>
                 Dengan desain yang elegan, performa cepat, dan pengalaman pengguna yang optimal, website Anda akan menjadi aset digital yang siap bekerja untuk bisnis Anda setiap hari.
