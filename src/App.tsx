@@ -71,7 +71,7 @@ export default function App() {
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-white/5">
                 
                 {/* Brand Column */}
-                <div className="md:col-span-4 space-y-4">
+                <div className="md:col-span-6 space-y-4">
                   <a href="#home" className="flex items-center space-x-2 font-display select-none">
                     <Code2 className="w-5 h-5 text-brand-gold animate-pulse" />
                     <span className="font-extrabold text-white text-lg tracking-tight">
@@ -113,17 +113,6 @@ export default function App() {
                     <p className="hover:text-brand-gold transition-colors">
                       <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">+62 812-3456-7890</a>
                     </p>
-                  </div>
-                </div>
-
-                {/* Specification Column */}
-                <div className="md:col-span-2 space-y-4">
-                  <h4 className="font-mono text-xs font-bold text-white uppercase tracking-widest">// SPESIFIKASI</h4>
-                  <div className="space-y-1 text-[10px] font-mono text-white/40">
-                    <p>ENGINE: VITE + REACT</p>
-                    <p>STYLING: TAILWIND CSS</p>
-                    <p>DEPLOY: CLOUD INSTANCE</p>
-                    <p>LOCATION: INDONESIA</p>
                   </div>
                 </div>
 
