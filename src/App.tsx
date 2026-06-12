@@ -61,27 +61,89 @@ export default function App() {
           </main>
 
           {/* Premium Handcrafted Footer representation */}
-          <footer className="bg-bg-dark border-t border-white/5 py-12 px-6 grid-overlay relative overflow-hidden">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 relative z-20">
+          <footer className="bg-bg-dark border-t border-white/5 pt-16 pb-12 px-6 relative overflow-hidden">
+            {/* Fine grid design lines elements to give developer feel */}
+            <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+            
+            <div className="max-w-7xl mx-auto relative z-20 space-y-12">
               
-              <div className="space-y-2 text-center md:text-left">
-                <div className="flex items-center justify-center md:justify-start space-x-2 font-display">
-                  <Code2 className="w-5 h-5 text-brand-gold" />
-                  <span className="font-extrabold text-sm uppercase tracking-wider text-white">ALDI FADILLA</span>
+              {/* Top Section: Structured Columns */}
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-white/5">
+                
+                {/* Brand Column */}
+                <div className="md:col-span-4 space-y-4">
+                  <a href="#home" className="flex items-center space-x-2 font-display select-none">
+                    <Code2 className="w-5 h-5 text-brand-gold animate-pulse" />
+                    <span className="font-extrabold text-white text-lg tracking-tight">
+                      VYNORA<span className="text-brand-gold font-light tracking-widest text-sm ml-1.5 uppercase">.ID</span>
+                    </span>
+                  </a>
+                  <p className="text-white/60 text-xs leading-relaxed max-w-sm">
+                    Arsitektur website premium konversi tinggi untuk entitas bisnis, inovator, dan korporat berkualitas tinggi. 100% kustom berbasis React dari nol.
+                  </p>
+                  <p className="text-brand-gold text-[10px] font-mono tracking-widest uppercase block">
+                    // ARCHITECTURE & INTERACTION
+                  </p>
                 </div>
-                <p className="text-white/40 text-[11px] font-mono">// ARSITEK WEB FREELANCE TERPERCAYA // INDONESIA</p>
+
+                {/* Quick Navigation Column */}
+                <div className="md:col-span-3 space-y-4">
+                  <h4 className="font-mono text-xs font-bold text-white uppercase tracking-widest">// NAVIGASI</h4>
+                  <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
+                    <li><a href="#home" className="text-white/50 hover:text-brand-gold transition-colors block">Beranda</a></li>
+                    <li><a href="#about" className="text-white/50 hover:text-brand-gold transition-colors block">Tentang</a></li>
+                    <li><a href="#projects" className="text-white/50 hover:text-brand-gold transition-colors block">Proyek</a></li>
+                    <li><a href="#process" className="text-white/50 hover:text-brand-gold transition-colors block">Alur Kerja</a></li>
+                    <li><a href="#services" className="text-white/50 hover:text-brand-gold transition-colors block">Layanan</a></li>
+                    <li><a href="#testimonials" className="text-white/50 hover:text-brand-gold transition-colors block">Testimoni</a></li>
+                  </ul>
+                </div>
+
+                {/* Contacts & Availability Column */}
+                <div className="md:col-span-3 space-y-4">
+                  <h4 className="font-mono text-xs font-bold text-white uppercase tracking-widest">// HUBUNGI KAMI</h4>
+                  <div className="space-y-2 text-xs text-white/60">
+                    <p className="flex items-center space-x-2">
+                      <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-ping shrink-0" />
+                      <span>Online / Tersedia Diskusi</span>
+                    </p>
+                    <p className="hover:text-brand-gold transition-colors">
+                      <a href="mailto:aldifadilla883@gmail.com">aldifadilla883@gmail.com</a>
+                    </p>
+                    <p className="hover:text-brand-gold transition-colors">
+                      <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">+62 812-3456-7890</a>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Specification Column */}
+                <div className="md:col-span-2 space-y-4">
+                  <h4 className="font-mono text-xs font-bold text-white uppercase tracking-widest">// SPESIFIKASI</h4>
+                  <div className="space-y-1 text-[10px] font-mono text-white/40">
+                    <p>ENGINE: VITE + REACT</p>
+                    <p>STYLING: TAILWIND CSS</p>
+                    <p>DEPLOY: CLOUD INSTANCE</p>
+                    <p>LOCATION: INDONESIA</p>
+                  </div>
+                </div>
+
               </div>
 
-              {/* Back to top button */}
-              <div className="flex items-center space-x-6 text-xs text-white/50 font-mono">
-                <a href="#home" className="hover:text-brand-gold transition-colors block uppercase tracking-widest">// KEMBALI KE ATAS [↑]</a>
-                <span>© {new Date().getFullYear()} HAK CIPTA DILINDUNGI</span>
-              </div>
-
-              {/* Fine disclaimer credits */}
-              <div className="text-[10px] font-mono text-white/30 text-center md:text-right">
-                <span>Didesain untuk Pelaku Usaha & Enterprise Berkualitas.</span>
-                <p className="mt-1">// 100% Kustom React SPA Tanpa Menggunakan Template Pasaran.</p>
+              {/* Bottom Section: Copyright & Back to Top */}
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-6 text-[11px] font-mono text-white/40">
+                <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-center sm:text-left">
+                  <span>© {new Date().getFullYear()} VYNORA.ID. ALL RIGHTS RESERVED.</span>
+                  <span className="hidden sm:inline text-white/10">|</span>
+                  <span>KARYA DIKEMBANGKAN OLEH ALDI FADILLA</span>
+                </div>
+                
+                <a 
+                  href="#home" 
+                  className="group flex items-center space-x-1.5 text-white/50 hover:text-brand-gold transition-all duration-300 uppercase tracking-widest text-[10px] bg-white/5 hover:bg-brand-gold/10 px-4 py-2 border border-white/10 hover:border-brand-gold/30 rounded-xl"
+                >
+                  <span>KEMBALI KE ATAS</span>
+                  <ArrowUp className="w-3.5 h-3.5 group-hover:-translate-y-0.5 transition-transform" />
+                </a>
               </div>
 
             </div>
