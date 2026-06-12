@@ -119,7 +119,7 @@ export default function App() {
               </div>
 
               {/* Bottom Section: Copyright */}
-              <div className="flex justify-end text-[11px] font-mono text-white/40">
+              <div className="flex justify-center text-[11px] font-mono text-white/40">
                 <span>© {new Date().getFullYear()} VYNORA.ID. ALL RIGHTS RESERVED.</span>
               </div>
 
