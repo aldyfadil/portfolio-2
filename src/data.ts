@@ -134,7 +134,7 @@ export const SERVICES_DATA: Service[] = [
   {
     id: 'professional',
     title: '💎 Professional',
-    priceRange: 'Rp 5.990.000',
+    priceRange: 'Rp 6.500.000',
     description: 'Untuk perusahaan yang membutuhkan website premium dengan fitur yang lebih lengkap dan siap berkembang.',
     extraTitle: 'Semua Fitur Business +',
     deliverables: [
