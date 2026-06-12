@@ -169,47 +169,47 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
 export const PROCESS_STEPS: ProcessStep[] = [
   {
     phase: '01',
-    title: 'Pertemuan & Dialog Langsung',
-    subtitle: 'Menggali nilai inti bisnis klien',
-    description: 'Kami bertemu melalui Google Meet yang dinamis. Alih-alih mencentang daftar fitur standar, kami menyelami lebih dalam audiens target komersial Anda, titik masalah klien yang ada, nada merek, dan parameter anggaran yang tepat.',
-    timeline: 'Hari 1 - 3',
-    deliverables: ['Ruang Kerja Pengarahan Bisnis Kustom', 'Pemilihan Papan Gaya Visual', 'Rencana Kerja Milestones Definitif'],
+    title: 'Konsultasi & Analisis Kebutuhan',
+    subtitle: '',
+    description: 'Kami memahami bisnis, target pelanggan, dan tujuan website Anda sebelum memulai pengerjaan.',
+    timeline: '',
+    deliverables: ['Diskusi kebutuhan bisnis', 'Analisis target pelanggan', 'Rencana pengerjaan proyek'],
     color: 'from-amber-400 to-amber-600'
   },
   {
     phase: '02',
-    title: 'Arsitektur Strategis & Perencanaan',
-    subtitle: 'Menyusun cetak biru sistem digital',
-    description: 'Merancang alur pengguna yang komprehensif. Kami merumuskan opsi tipografi dengan ketelitian tinggi, hierarki status, jalur navigasi, dan menguraikan poin checkout klien yang tepat sebelum menulis satu baris markup pun.',
-    timeline: 'Hari 4 - 7',
-    deliverables: ['Peta Sistem Bingkai Kawat (Wireframe) Interaktif', 'Cetak Biru Kinerja & Kecepatan Pemuatan', 'Peta Aset Arsitektur Konten & Gambar'],
+    title: 'Desain Tampilan Website',
+    subtitle: '',
+    description: 'Membuat desain modern yang profesional, mudah digunakan, dan sesuai identitas bisnis Anda.',
+    timeline: '',
+    deliverables: ['Desain responsif desktop & mobile', 'Struktur halaman yang jelas', 'Tampilan sesuai branding bisnis'],
     color: 'from-cyan-400 to-cyan-600'
   },
   {
     phase: '03',
-    title: 'Desain UI/UX Kelas Premium',
-    subtitle: 'Pembuatan tata letak vektor dengan cermat',
-    description: 'Kami mengabaikan templat AI generik dan membangun maket kisi CSS kustom di Figma. Setiap piksel, ritme kartu, hierarki tipografi, dan status arahkan kursor (hover) disesuaikan untuk menetapkan reputasi bisnis elit yang mutlak.',
-    timeline: 'Hari 8 - 14',
-    deliverables: ['Presentasi Fidelitas Tinggi Sempurna Piksel', 'Spesifikasi Sistem Desain Modular', 'Cetak Biru Animasi Mikro-Interaksi'],
+    title: 'Pengembangan Website',
+    subtitle: '',
+    description: 'Website dibangun dengan teknologi modern yang cepat, aman, dan mudah diakses di semua perangkat.',
+    timeline: '',
+    deliverables: ['Website cepat dan responsif', 'Optimasi performa', 'Integrasi formulir & WhatsApp'],
     color: 'from-emerald-400 to-emerald-600'
   },
   {
     phase: '04',
-    title: 'Pengembangan Front-End Modern',
-    subtitle: 'Pengodean React yang bersih & secepat kilat',
-    description: 'Membuat kode Anda secara manual dalam React modular yang aman tipe yang dipadukan dengan kelas Tailwind yang dioptimalkan. Sepenuhnya responsif untuk semua platform, dilengkapi dengan saluran pemuatan aset progresif.',
-    timeline: 'Hari 15 - 24',
-    deliverables: ['Akses Repositori Git dengan hook modular bersih', 'Mesin aplikasi responsif ultra terbundel Vite', 'Sistem status pelacakan penyimpanan lokal tingkat lanjut'],
+    title: 'Optimasi SEO Dasar',
+    subtitle: '',
+    description: 'Website dipersiapkan agar mudah ditemukan oleh Google dan memiliki fondasi SEO yang baik.',
+    timeline: '',
+    deliverables: ['Meta title & description', 'Sitemap XML', 'Google Search Console setup'],
     color: 'from-indigo-400 to-indigo-600'
   },
   {
     phase: '05',
-    title: 'Audit SEO, Peluncuran & Serah Terima',
-    subtitle: 'Penyebaran & pengujian server yang sempurna',
-    description: 'Menundukkan aplikasi ke pengujian Google Lighthouse. Setelah kami mencetak skor 95+ di semua metrik kinerja, kami menyebarkannya dengan aman ke penyiapan aman seperti Vercel atau Cloud Run dan memberikan video tutorial rekam layar.',
-    timeline: 'Hari 25 - 28',
-    deliverables: ['URL Terverifikasi Langsung & Pengalihan Domain', 'Audit Kinerja Google Lighthouse Rinci', 'Video Panduan Pemeliharaan Klien Kustom 10 Menit'],
+    title: 'Launching & Pendampingan',
+    subtitle: '',
+    description: 'Setelah website selesai, kami membantu proses publikasi dan memberikan panduan penggunaan.',
+    timeline: '',
+    deliverables: ['Website online dengan domain sendiri', 'Panduan penggunaan', 'Dukungan setelah website aktif'],
     color: 'from-purple-400 to-purple-600'
   }
 ];
