@@ -20,7 +20,9 @@ export interface Service {
   description: string;
   priceRange: string;
   deliverables: string[];
-  features: string[];
+  features?: string[];
+  popular?: boolean;
+  extraTitle?: string;
 }
 
 export interface Testimonial {

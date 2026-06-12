@@ -95,44 +95,89 @@ export const PROJECTS_DATA: Project[] = [
 
 export const SERVICES_DATA: Service[] = [
   {
-    id: 'company-profile',
-    title: 'Website Profil Perusahaan',
-    description: 'Membangun prestise mutakhir dan otoritas korporat. Paling cocok untuk pengembang real estat, pemasok industri, konsultan, dan perusahaan jasa premium.',
-    priceRange: 'Rp 4.500.000 - Rp 7.500.000',
-    deliverables: ['Tata Letak Desain Kustom', 'Audit Performa Tinggi (Skor 95+)', 'Manajemen Portofolio Dinamis', 'Formulir Pertanyaan Interaktif'],
-    features: ['Konsultasi Sinkronisasi Langsung Pemilik', 'UI yang Sepenuhnya Responsif', '100% Ditulis Manual (Tanpa tema WordPress lambat)', 'Garansi Pemeliharaan 1 Tahun']
+    id: 'starter',
+    title: '🚀 Starter',
+    priceRange: 'Rp 1.650.000',
+    description: 'Cocok untuk UMKM, personal brand, freelancer, dan bisnis yang baru mulai online.',
+    deliverables: [
+      'Hingga 3 Halaman Website',
+      'Desain Modern & Profesional',
+      'Tampilan Responsif (Desktop, Tablet & Mobile)',
+      'Integrasi WhatsApp Langsung',
+      'SEO Dasar',
+      'Domain .web.id / .my.id Gratis 1 Tahun',
+      'Revisi Hingga 2 Kali',
+      'Panduan Penggunaan Website'
+    ]
   },
   {
-    id: 'landing-page',
-    title: 'Landing Page Konversi Tinggi',
-    description: 'Direkayasa dengan presisi untuk mengubah trafik berbayar menjadi klien aktif. Dioptimalkan untuk corong pemasaran, peluncuran produk, pendaftaran acara, dan validasi digital.',
-    priceRange: 'Rp 3,000,000 - Rp 4,500,000',
-    deliverables: ['Integrasi Strategi Copywriting Psikologis', 'Sistem Kisi Terstruktur Uji A/B', 'Peluncuran Kecepatan 1 Detik Ringan', 'CRM Langsung dan Pengiriman Prospek'],
-    features: ['Aset Visual Kustom', 'Mikro-Interaksi', 'Pelacak Prospek Webhook', 'Pengindeksan Perayap Mesin Pencari SEO']
+    id: 'business',
+    title: '⭐ Business',
+    priceRange: 'Rp 3.500.000',
+    description: 'Cocok untuk kontraktor, perusahaan, properti, travel, klinik, dan bisnis yang ingin tampil lebih profesional.',
+    popular: true,
+    extraTitle: 'Semua Fitur Starter +',
+    deliverables: [
+      'Hingga 8 Halaman Website',
+      'Desain Custom Sesuai Branding',
+      'SEO Lanjutan (Open Graph & Sitemap Dinamis)',
+      'Domain .com / .web.id Gratis 1 Tahun',
+      'Hosting Premium Gratis 1 Tahun',
+      'Revisi Hingga 5 Kali',
+      'Optimasi Performa Web (Google Lighthouse 90+)',
+      'Hosting Server Premium & Keamanan Lanjutan (SSL, Rate Limiting, & DDoS protection)',
+      'Custom Ilustrasi & Animasi',
+      'Garansi Dukungan 1 Bulan Setelah Peluncuran',
+      'SSL Grade A'
+    ]
   },
   {
-    id: 'ecommerce',
-    title: 'Hub E-Commerce Ekosistem',
-    description: 'Pengalaman ritel kustom yang memprioritaskan alur checkout yang cepat. Katakan selamat tinggal pada templat perdagangan standar yang berat dan nikmati checkout secepat kilat.',
-    priceRange: 'Rp 6,500,000 - Rp 10,000,000',
-    deliverables: ['Etalase Katalog yang Disesuaikan', 'Sistem Keranjang & Integrasi WhatsApp Mulus', 'Kuitansi Bisnis PDF Otomatis', 'Tampilan Merchant Multi-pembayaran'],
-    features: ['Tanpa Biaya Berlangganan Bulanan', 'Alur Pembayaran Klien yang Aman', 'Panel Inventaris Toko yang Intuitif', 'Cadangan Harian Aman Bencana']
+    id: 'professional',
+    title: '💎 Professional',
+    priceRange: 'Rp 5.990.000',
+    description: 'Untuk perusahaan yang membutuhkan website premium dengan fitur yang lebih lengkap dan siap berkembang.',
+    extraTitle: 'Semua Fitur Business +',
+    deliverables: [
+      'Halaman Tanpa Batas',
+      'Revisi Tanpa Batas Selama Masa Pengerjaan',
+      'Tampilan Responsif di Tablet dan Smartphone',
+      'SEO Lanjutan (Open Graph & Sitemap Dinamis)',
+      'Integrasi WhatsApp atau Email',
+      'Dokumentasi Panduan Penggunaan',
+      'Gratis Domain .com/.id/.co.id + Server (1 Tahun)',
+      'Garansi Dukungan Prioritas 3 Bulan',
+      'Custom Ilustrasi, Aset 3D & Animasi Lanjutan',
+      'CMS Lanjutan dengan Role & Permission',
+      'Marketing Analytics (GA4 + GTM + Meta Pixel)',
+      'Optimasi Performa Web (Google Lighthouse 90+)',
+      'Hosting Server Premium & Keamanan Lanjutan (SSL, Rate Limiting, & DDoS protection)',
+      'SSL Keamanan Grade A',
+      'Sesi Diskusi & Audit Brand di Awal Proyek',
+      'Custom Modul Sesuai Kebutuhan Bisnis',
+      'Booking/Reservasi/Katalog Produk Dinamis',
+      'Integrasi Email Automation & CRM',
+      'Multi-Bahasa (ID/EN) Siap Pakai',
+      'Dokumentasi Design System'
+    ]
   },
   {
-    id: 'custom-web-app',
-    title: 'Aplikasi Web Kustom (Bespoke)',
-    description: 'Selesaikan masalah korporat yang rumit dengan platform utilitas bawaan kustom. Ideal untuk platform reservasi, ruang anggota, dan dasbor cloud terlokalisasi.',
-    priceRange: 'Rp 8,000,000 - Rp 15,000,000+',
-    deliverables: ['Frontend Interaktif Tingkat Lanjut', 'Kontrol Otorisasi yang Aman', 'Sistem State Klien-Server yang Kuat', 'Integrasi Hook REST API'],
-    features: ['Codebase Modular yang Bersih', 'Konfigurasi Sistem Database Lengkap', 'Loop Sinkronisasi State', 'Rencana Infrastruktur Cloud Skala Tinggi']
-  },
-  {
-    id: 'maintenance',
-    title: 'Pemeliharaan Website VIP',
-    description: 'Ketenangan pikiran mengetahui mesin digital Anda berjalan sempurna 24/7. Jaga agar platform bisnis Anda tetap cepat, diperbarui, dan kebal dari serangan siber luar.',
-    priceRange: 'Rp 500.000 - Rp 1.500.000 / bulan',
-    deliverables: ['Audit Performa Dua Mingguan', 'Pembaruan Patch Node / Pustaka Segera', 'Penyesuaian Penyelarasan Desain Rutin', 'Cadangan Cold Storage Multi-Wilayah Harian'],
-    features: ['SLA Dukungan Prioritas 4 Jam', 'Saluran Telepon Pengembang Langsung', 'Laporan Analis Trafik Bulanan', 'Perlindungan Perbaikan Kritis Darurat']
+    id: 'custom-solution',
+    title: '⚙️ Custom Solution',
+    priceRange: 'Mulai Rp 8.000.000',
+    description: 'Untuk kebutuhan khusus dan sistem yang lebih kompleks.',
+    extraTitle: 'Contoh Proyek:',
+    deliverables: [
+      'Booking & Reservasi Online',
+      'Dashboard Admin',
+      'Sistem Membership',
+      'Marketplace',
+      'CRM Internal',
+      'ERP Sederhana',
+      'Sistem Manajemen Data',
+      'Integrasi API Pihak Ketiga',
+      'Payment Gateway',
+      'SaaS Platform'
+    ]
   }
 ];
 
