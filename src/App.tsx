@@ -5,7 +5,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Code2, ArrowUp, Github } from 'lucide-react';
+import { Code2, Github } from 'lucide-react';
 
 import CustomCursor from './components/CustomCursor';
 import MouseSpotlight from './components/MouseSpotlight';
@@ -129,21 +129,9 @@ export default function App() {
 
               </div>
 
-              {/* Bottom Section: Copyright & Back to Top */}
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-6 text-[11px] font-mono text-white/40">
-                <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-center sm:text-left">
-                  <span>© {new Date().getFullYear()} VYNORA.ID. ALL RIGHTS RESERVED.</span>
-                  <span className="hidden sm:inline text-white/10">|</span>
-                  <span>KARYA DIKEMBANGKAN OLEH ALDI FADILLA</span>
-                </div>
-                
-                <a 
-                  href="#home" 
-                  className="group flex items-center space-x-1.5 text-white/50 hover:text-brand-gold transition-all duration-300 uppercase tracking-widest text-[10px] bg-white/5 hover:bg-brand-gold/10 px-4 py-2 border border-white/10 hover:border-brand-gold/30 rounded-xl"
-                >
-                  <span>KEMBALI KE ATAS</span>
-                  <ArrowUp className="w-3.5 h-3.5 group-hover:-translate-y-0.5 transition-transform" />
-                </a>
+              {/* Bottom Section: Copyright */}
+              <div className="flex justify-end text-[11px] font-mono text-white/40">
+                <span>© {new Date().getFullYear()} VYNORA.ID. ALL RIGHTS RESERVED.</span>
               </div>
 
             </div>
