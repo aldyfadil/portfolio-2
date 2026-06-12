@@ -31,32 +31,39 @@ export default function Contact() {
 
     setFormState('sending');
 
-    // Meneruskan data formulir langsung ke email aldifadilla883@gmail.com via link mailto otomatis
-    const emailTo = 'aldifadilla883@gmail.com';
-    const emailSubject = `Draft Kebutuhan Proyek Website - ${formData.name}`;
-    const emailBody = `Halo Aldi,%0D%0A%0D%0AAda draf kebutuhan proyek website baru yang dikirimkan via formulir portofolio:%0D%0A%0D%0A` +
-      `--------------------------------------------------%0D%0A` +
-      `* Nama Lengkap / Perusahaan : ${formData.name}%0D%0A` +
-      `* Alamat Email Kontak       : ${formData.email}%0D%0A` +
-      `* Kebutuhan / Target Sistem :%0D%0A  ${formData.message.replace(/\s+/g, ' ').replace(/\n/g, '%0D%0A  ')}%0D%0A` +
-      `--------------------------------------------------%0D%0A%0D%0A` +
-      `Silakan balas email ini atau hubungi kembali kontak klien di atas untuk langkah diskusi awal.`;
-
-    const mailtoUrl = `mailto:${emailTo}?subject=${emailSubject}&body=${emailBody}`;
-
-    setTimeout(() => {
+    fetch("https://formsubmit.co/ajax/aldifadilla883@gmail.com", {
+      method: "POST",
+      headers: { 
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify({
+        "Nama Pengirim": formData.name,
+        "Email Kontak": formData.email,
+        "Draft Kebutuhan / Pesan": formData.message,
+        "_subject": `Formulir Portfolio Baru: ${formData.name}`,
+        "_honey": "", // Honeypot to prevent spam
+      })
+    })
+    .then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      throw new Error("HTTP error " + res.status);
+    })
+    .then((data) => {
       setFormState('success');
-      
-      // Buka aplikasi email default pengguna dengan isi draft terisi penuh
-      window.location.href = mailtoUrl;
-
-      // Reset data input form
       setFormData({
         name: '',
         email: '',
         message: ''
       });
-    }, 1000);
+    })
+    .catch((err) => {
+      console.error(err);
+      setFormState('error');
+      setErrorMessage('Gagal mengirimkan data karena kendala jaringan. Silakan hubungi langsung via WhatsApp.');
+    });
   };
 
   return (
@@ -169,8 +176,8 @@ export default function Contact() {
                   >
                     <CheckCircle className="w-5 h-5 shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-bold uppercase tracking-wider">Membuka Aplikasi Email Anda...</p>
-                      <p className="opacity-80 mt-1">Draf formulir Anda siap dikirimkan langsung ke <strong>aldifadilla883@gmail.com</strong>. Aplikasi email bawaan Anda akan terbuka otomatis.</p>
+                      <p className="font-bold uppercase tracking-wider">Pesan Berhasil Terkirim!</p>
+                      <p className="opacity-80 mt-1">Draf formulir Anda telah dikirimkan langsung ke email <strong>aldifadilla883@gmail.com</strong> secara instan di latar belakang tanpa membuka aplikasi eksternal.</p>
                     </div>
                   </motion.div>
                 )}
