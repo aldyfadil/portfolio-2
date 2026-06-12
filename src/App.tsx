@@ -87,8 +87,8 @@ export default function App() {
                 </div>
 
                 {/* Quick Navigation Column */}
-                <div className="md:col-span-3 space-y-4">
-                  <h4 className="font-mono text-xs font-bold text-white uppercase tracking-widest">// NAVIGASI</h4>
+                <div className="md:col-span-3 space-y-4 md:text-left">
+                  <h4 className="font-mono text-xs font-bold text-white uppercase tracking-widest">NAVIGASI</h4>
                   <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
                     <li><a href="#home" className="text-white/50 hover:text-brand-gold transition-colors block">Beranda</a></li>
                     <li><a href="#about" className="text-white/50 hover:text-brand-gold transition-colors block">Tentang</a></li>
@@ -100,12 +100,12 @@ export default function App() {
                 </div>
 
                 {/* Contacts & Availability Column */}
-                <div className="md:col-span-3 space-y-4">
-                  <h4 className="font-mono text-xs font-bold text-white uppercase tracking-widest">// HUBUNGI KAMI</h4>
-                  <div className="space-y-2 text-xs text-white/60">
+                <div className="md:col-span-3 space-y-4 md:text-right">
+                  <h4 className="font-mono text-xs font-bold text-white uppercase tracking-widest">HUBUNGI KAMI</h4>
+                  <div className="space-y-2 text-xs text-white/60 flex flex-col md:items-end">
                     <p className="flex items-center space-x-2">
                       <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-ping shrink-0" />
-                      <span>Online / Tersedia Diskusi</span>
+                      <span>Tersedia Diskusi</span>
                     </p>
                     <p className="hover:text-brand-gold transition-colors">
                       <a href="mailto:aldifadilla883@gmail.com">aldifadilla883@gmail.com</a>
