@@ -1,4 +1,4 @@
-import { Project, Service, Testimonial, ProcessStep, TechItem } from './types';
+import { Project, Service, Testimonial, ProcessStep } from './types';
 
 export const PROJECTS_DATA: Project[] = [
   {
@@ -214,15 +214,4 @@ export const PROCESS_STEPS: ProcessStep[] = [
   }
 ];
 
-export const TECH_ITEMS: TechItem[] = [
-  { name: 'HTML5', category: 'frontend', iconName: 'Html5', level: 'Ahli / Markup Semantik' },
-  { name: 'CSS3', category: 'frontend', iconName: 'Css3', level: 'Ahli / Tata Letak Kustom' },
-  { name: 'JavaScript', category: 'frontend', iconName: 'Js', level: 'Ahli / Standar ESNext' },
-  { name: 'React', category: 'frontend', iconName: 'React', level: 'Ahli / Hook & State Kompleks' },
-  { name: 'TypeScript', category: 'frontend', iconName: 'Ts', level: 'Lanjutan / Skema Sepenuhnya Modular' },
-  { name: 'Tailwind CSS', category: 'frontend', iconName: 'Tailwind', level: 'Ahli / Kisi Ukuran Fleksibel' },
-  { name: 'Node.js', category: 'backend', iconName: 'Node', level: 'Menengah / Perutean Express' },
-  { name: 'Git', category: 'tools', iconName: 'Git', level: 'Ahli / Penggabungan Cabang Versi' },
-  { name: 'GitHub', category: 'tools', iconName: 'Github', level: 'Ahli / Alur Kerja Pull Request' },
-  { name: 'Figma', category: 'tools', iconName: 'Figma', level: 'Lanjutan / Prototipe Desain Estetis' }
-];
+
