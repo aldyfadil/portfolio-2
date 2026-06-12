@@ -44,7 +44,7 @@ export default function Services() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-white/5">
           <div className="space-y-4 max-w-2xl">
             <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em] block">
-              // SKEMA INVESTASI TRANSPARAN
+              SKEMA INVESTASI TRANSPARAN
             </span>
             <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-white leading-tight">
               Pilihan Paket Website Sesuai Kebutuhan Bisnis Anda

@@ -61,7 +61,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
         <div className="flex justify-between items-end border-b border-white/10 pb-4">
           <div className="space-y-1">
             <h3 className="text-sm text-yellow-500/80 font-bold tracking-widest uppercase">
-              AL_DI FAD_ILL_A // PORTFOLIO
+              AL_DI FAD_ILL_A | PORTFOLIO
             </h3>
             <p className="text-xs text-white/40 tracking-wider">
               PENGEMBANG & DESAINER KREATIF

@@ -79,7 +79,7 @@ export default function Contact() {
         {/* Header Title */}
         <div className="text-center max-w-2xl mx-auto space-y-4 mb-16">
           <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em] block">
-            // GERBANG AMAN KLIEN BISNIS
+            GERBANG AMAN KLIEN BISNIS
           </span>
           <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-white leading-tight">
             Mari luncurkan profil web premium Anda.
@@ -96,7 +96,7 @@ export default function Contact() {
             
             <div className="bg-bg-card border border-white/5 p-8 rounded-3xl space-y-6">
               <div className="space-y-2">
-                <span className="font-mono text-[9px] text-brand-gold uppercase tracking-widest block">// HOTLINE LANGSUNG KLIEN</span>
+                <span className="font-mono text-[9px] text-brand-gold uppercase tracking-widest block">HOTLINE LANGSUNG KLIEN</span>
                 <h3 className="font-display font-semibold text-lg text-white">Hubungi langsung</h3>
                 <p className="text-white/50 text-xs font-sans">Lewati formulir sepenuhnya jika Anda lebih menyukai komunikasi langsung. Saya online setiap hari.</p>
               </div>
@@ -118,7 +118,7 @@ export default function Contact() {
                       <p className="text-sm font-semibold text-white group-hover:text-brand-gold transition-colors">+62 812-3456-7890</p>
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono text-brand-gold font-bold tracking-wider">// CHAT_WA</span>
+                  <span className="text-[10px] font-mono text-brand-gold font-bold tracking-wider">CHAT_WA</span>
                 </a>
 
                  {/* Email direct anchor */}
@@ -135,7 +135,7 @@ export default function Contact() {
                       <p className="text-sm font-semibold text-white group-hover:text-brand-gold transition-colors">aldifadilla883@gmail.com</p>
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono text-brand-gold font-bold tracking-wider">// KIRIM_EMAIL</span>
+                  <span className="text-[10px] font-mono text-brand-gold font-bold tracking-wider">KIRIM_EMAIL</span>
                 </a>
 
               </div>
@@ -159,7 +159,7 @@ export default function Contact() {
             
             <form ref={formRef} onSubmit={handleFormSubmit} className="space-y-6">
               <div className="space-y-2 border-b border-white/5 pb-4">
-                <span className="font-mono text-[9px] text-yellow-500/80 uppercase tracking-widest block">// FORMULIR PENGUNJUNG TERENKRIPSI</span>
+                <span className="font-mono text-[9px] text-yellow-500/80 uppercase tracking-widest block">FORMULIR PENGUNJUNG TERENKRIPSI</span>
                 <h3 className="font-display font-semibold text-lg text-white">Ruang Diskusi Pembuatan Proyek</h3>
                 <p className="text-white/50 text-xs font-sans">Berikan kontak bisnis yang benar untuk meminta penawaran instan dan membuat draf rancangan awal.</p>
               </div>

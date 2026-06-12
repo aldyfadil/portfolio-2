@@ -15,7 +15,7 @@ export default function Process() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em]">
-            // PROSES KERJA KAMI
+            PROSES KERJA KAMI
           </span>
           <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-white leading-tight">
             Dari Ide Hingga Website Siap Digunakan
