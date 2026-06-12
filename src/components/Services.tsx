@@ -6,26 +6,26 @@ export default function Services() {
   // Map decorative accents individually to guarantee "Every section feels unique and not repetitive"
   const layouts = [
     {
-      borderColor: 'hover:border-amber-500/20',
-      accentColor: 'text-amber-400 bg-amber-500/10',
+      borderColor: 'hover:border-brand-gold/20',
+      accentColor: 'text-brand-gold bg-brand-gold/10',
       badge: 'STARTER KIT',
       icon: Terminal
     },
     {
-      borderColor: 'border-yellow-500/30 hover:border-yellow-500/50 bg-gradient-to-b from-white/[0.02] to-yellow-500/[0.01]',
-      accentColor: 'text-yellow-400 bg-yellow-500/10',
+      borderColor: 'border-brand-gold/30 hover:border-brand-gold/50 bg-gradient-to-b from-white/[0.02] to-brand-gold/[0.01]',
+      accentColor: 'text-brand-accent bg-brand-accent/10',
       badge: 'PALING POPULER',
       icon: Sparkles
     },
     {
-      borderColor: 'hover:border-cyan-500/20',
-      accentColor: 'text-cyan-400 bg-cyan-500/10',
+      borderColor: 'hover:border-brand-gold/25',
+      accentColor: 'text-brand-gold bg-brand-gold/10',
       badge: 'PREMIUM ENTERPRISE',
       icon: Coins
     },
     {
-      borderColor: 'hover:border-purple-500/20',
-      accentColor: 'text-purple-400 bg-purple-500/10',
+      borderColor: 'hover:border-brand-accent/20',
+      accentColor: 'text-brand-accent bg-brand-accent/10',
       badge: 'BESPOKE SYSTEM',
       icon: ClipboardCheck
     }

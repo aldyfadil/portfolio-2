@@ -98,7 +98,7 @@ export default function About() {
 
         {/* Animated counter widgets - Full Width Side-by-Side (1 Row filled with 4 cards) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-8">
-          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-yellow-500/20 transition-colors">
+          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-brand-gold/20 transition-colors">
             <div className="absolute top-0 left-0 w-1 h-full bg-brand-gold" />
             <div className="flex justify-between items-start">
               <Rocket className="w-5 h-5 text-brand-gold mb-3" />
@@ -110,10 +110,10 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-cyan-500/20 transition-colors">
-            <div className="absolute top-0 left-0 w-1 h-full bg-brand-cyan" />
+          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-brand-gold/20 transition-colors">
+            <div className="absolute top-0 left-0 w-1 h-full bg-brand-gold" />
             <div className="flex justify-between items-start">
-              <Timer className="w-5 h-5 text-brand-cyan mb-3" />
+              <Timer className="w-5 h-5 text-brand-gold mb-3" />
               <span className="font-mono text-[9px] text-white/30">PERFORMA_INTI</span>
             </div>
             <h4 className="text-4xl font-extrabold font-display text-white">{counts.performance}%</h4>
@@ -122,10 +122,10 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-emerald-500/20 transition-colors">
-            <div className="absolute top-0 left-0 w-1 h-full bg-brand-emerald" />
+          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-brand-gold/20 transition-colors">
+            <div className="absolute top-0 left-0 w-1 h-full bg-brand-gold" />
             <div className="flex justify-between items-start">
-              <Award className="w-5 h-5 text-brand-emerald mb-3" />
+              <Award className="w-5 h-5 text-brand-gold mb-3" />
               <span className="font-mono text-[9px] text-white/30">GARANSI</span>
             </div>
             <h4 className="text-4xl font-extrabold font-display text-white">{counts.launch} Tahun</h4>
@@ -134,10 +134,10 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-indigo-500/20 transition-colors">
-            <div className="absolute top-0 left-0 w-1 h-full bg-indigo-500" />
+          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-brand-gold/20 transition-colors">
+            <div className="absolute top-0 left-0 w-1 h-full bg-brand-gold" />
             <div className="flex justify-between items-start">
-              <UserCheck className="w-5 h-5 text-indigo-400 mb-3" />
+              <UserCheck className="w-5 h-5 text-brand-gold mb-3" />
               <span className="font-mono text-[9px] text-white/30">RETENSI</span>
             </div>
             <h4 className="text-4xl font-extrabold font-display text-white">{counts.speed}%+</h4>

@@ -102,24 +102,23 @@ export default function Contact() {
               </div>
 
               <div className="space-y-4">
-                
-                {/* Whatsapp direct anchor */}
+                                {/* Whatsapp direct anchor */}
                 <a
                   href={directWhatsAppUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-between p-4 bg-emerald-500/5 hover:bg-emerald-500/10 border border-emerald-500/15 rounded-2xl transition-all"
+                  className="group flex items-center justify-between p-4 bg-brand-gold/5 hover:bg-brand-gold/10 border border-brand-gold/15 rounded-2xl transition-all"
                 >
                   <div className="flex items-center space-x-4">
-                    <div className="w-10 h-10 rounded-xl bg-emerald-500/[0.12] flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+                    <div className="w-10 h-10 rounded-xl bg-brand-gold/[0.12] flex items-center justify-center text-brand-gold group-hover:scale-110 transition-transform">
                       <Phone className="w-5 h-5" />
                     </div>
                     <div>
                       <h4 className="text-xs font-mono text-white/40 uppercase">WhatsApp Chat</h4>
-                      <p className="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">+62 812-3456-7890</p>
+                      <p className="text-sm font-semibold text-white group-hover:text-brand-gold transition-colors">+62 812-3456-7890</p>
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono text-emerald-400 font-bold tracking-wider">// CHAT_WA</span>
+                  <span className="text-[10px] font-mono text-brand-gold font-bold tracking-wider">// CHAT_WA</span>
                 </a>
 
                  {/* Email direct anchor */}
@@ -172,7 +171,7 @@ export default function Contact() {
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: 'auto' }}
                     exit={{ opacity: 0, height: 0 }}
-                    className="p-4 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 rounded-xl flex items-start space-x-3 text-xs"
+                    className="p-4 bg-brand-gold/10 border border-brand-gold/30 text-brand-gold rounded-xl flex items-start space-x-3 text-xs"
                   >
                     <CheckCircle className="w-5 h-5 shrink-0 mt-0.5" />
                     <div>

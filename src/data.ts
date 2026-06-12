@@ -219,7 +219,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     description: 'Kami memahami bisnis, target pelanggan, dan tujuan website Anda sebelum memulai pengerjaan.',
     timeline: '',
     deliverables: ['Diskusi kebutuhan bisnis', 'Analisis target pelanggan', 'Rencana pengerjaan proyek'],
-    color: 'from-amber-400 to-amber-600'
+    color: 'from-brand-gold to-brand-accent'
   },
   {
     phase: '02',
@@ -228,7 +228,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     description: 'Membuat desain modern yang profesional, mudah digunakan, dan sesuai identitas bisnis Anda.',
     timeline: '',
     deliverables: ['Desain responsif desktop & mobile', 'Struktur halaman yang jelas', 'Tampilan sesuai branding bisnis'],
-    color: 'from-cyan-400 to-cyan-600'
+    color: 'from-brand-accent to-yellow-400'
   },
   {
     phase: '03',
@@ -237,7 +237,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     description: 'Website dibangun dengan teknologi modern yang cepat, aman, dan mudah diakses di semua perangkat.',
     timeline: '',
     deliverables: ['Website cepat dan responsif', 'Optimasi performa', 'Integrasi formulir & WhatsApp'],
-    color: 'from-emerald-400 to-emerald-600'
+    color: 'from-yellow-400 to-brand-gold'
   },
   {
     phase: '04',
@@ -246,7 +246,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     description: 'Website dipersiapkan agar mudah ditemukan oleh Google dan memiliki fondasi SEO yang baik.',
     timeline: '',
     deliverables: ['Meta title & description', 'Sitemap XML', 'Google Search Console setup'],
-    color: 'from-indigo-400 to-indigo-600'
+    color: 'from-brand-gold to-brand-accent'
   },
   {
     phase: '05',
@@ -255,7 +255,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     description: 'Setelah website selesai, kami membantu proses publikasi dan memberikan panduan penggunaan.',
     timeline: '',
     deliverables: ['Website online dengan domain sendiri', 'Panduan penggunaan', 'Dukungan setelah website aktif'],
-    color: 'from-purple-400 to-purple-600'
+    color: 'from-brand-accent to-yellow-300'
   }
 ];
 

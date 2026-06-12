@@ -6,13 +6,13 @@
   --font-display: "Space Grotesk", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   
-  --color-brand-gold: #d4af37;
-  --color-brand-accent: #f59e0b; /* Amber */
-  --color-brand-emerald: #10b981;
-  --color-brand-cyan: #06b6d4;
-  --color-bg-dark: #070708;
-  --color-bg-card: #0f0f12;
-  --color-bg-panel: #141419;
+  --color-brand-gold: #ffd200; /* Pure premium yellow representing 15% of components */
+  --color-brand-accent: #facc15; /* Saturated yellow for bright highlights */
+  --color-brand-emerald: #facc15; /* Aligned to yellow theme */
+  --color-brand-cyan: #ffd200; /* Aligned to yellow theme */
+  --color-bg-dark: #000000; /* 60% Black base background */
+  --color-bg-card: #08080a; /* 60% Black secondary card color */
+  --color-bg-panel: #111114; /* 60% Black tertiary panel color */
 }
 
 @layer base {
@@ -34,21 +34,21 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #070708;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1e1e24;
+  background: #222226;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2a2a35;
+  background: #ffe000;
 }
 
 /* Custom selection styling */
 ::selection {
-  background: rgba(212, 175, 55, 0.2);
+  background: rgba(255, 210, 0, 0.25);
   color: #ffffff;
 }
 
