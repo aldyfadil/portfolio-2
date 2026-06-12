@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Send, Phone, Mail, Github, CheckCircle, AlertTriangle, Sparkles, MessageSquareCode } from 'lucide-react';
-import emailjs from '@emailjs/browser';
+import { Send, Phone, Mail, CheckCircle, AlertTriangle, Sparkles, MessageSquareCode } from 'lucide-react';
 
 export default function Contact() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -16,14 +15,13 @@ export default function Contact() {
   const [errorMessage, setErrorMessage] = useState('');
 
   const directWhatsAppUrl = "https://wa.me/6281234567890?text=Halo%20Aldi%2C%20saya%20tertarik%20untuk%20mengkonsultasikan%20pembuatan%20website%20company%20profile%20/%20landing%20page.";
-  const directGithubUrl = "https://github.com";
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleFormSubmit = async (e: React.FormEvent) => {
+  const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
       setFormState('error');
@@ -33,48 +31,32 @@ export default function Contact() {
 
     setFormState('sending');
 
-    try {
-      // Direct EmailJS send formulation. We use sample testing credentials or fallback cleanly
-      // User can replace with their specific keys easily. 
-      // We handle the case where service key is absent elegantly by offering a direct mail fallback!
-      const serviceID = 'service_default';
-      const templateID = 'template_portfolio';
-      const publicKey = 'user_dummy_key_public';
+    // Meneruskan data formulir langsung ke email aldifadilla883@gmail.com via link mailto otomatis
+    const emailTo = 'aldifadilla883@gmail.com';
+    const emailSubject = `Draft Kebutuhan Proyek Website - ${formData.name}`;
+    const emailBody = `Halo Aldi,%0D%0A%0D%0AAda draf kebutuhan proyek website baru yang dikirimkan via formulir portofolio:%0D%0A%0D%0A` +
+      `--------------------------------------------------%0D%0A` +
+      `* Nama Lengkap / Perusahaan : ${formData.name}%0D%0A` +
+      `* Alamat Email Kontak       : ${formData.email}%0D%0A` +
+      `* Kebutuhan / Target Sistem :%0D%0A  ${formData.message.replace(/\s+/g, ' ').replace(/\n/g, '%0D%0A  ')}%0D%0A` +
+      `--------------------------------------------------%0D%0A%0D%0A` +
+      `Silakan balas email ini atau hubungi kembali kontak klien di atas untuk langkah diskusi awal.`;
 
-      // Simulate delivery or invoke real emailjs.send
-      // For immediate preview, as we don't have public keys configured, we check if keys has custom parameters
-      const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
-        message: formData.message,
-        to_name: 'Aldi Fadilla'
-      };
+    const mailtoUrl = `mailto:${emailTo}?subject=${emailSubject}&body=${emailBody}`;
 
-      // Since the actual EmailJS keys require the user to configure them on their EmailJS dashboard, 
-      // we check first and provide a high-fidelity confirmation message, explaining that we have integrated EmailJS
-      // but also provide a direct Mailto / WhatsApp links fallback for fail-proof reliability.
-      
-      // Let's attempt the real direct call.
-      const response = await emailjs.send(
-        serviceID, 
-        templateID, 
-        templateParams, 
-        publicKey
-      );
-
+    setTimeout(() => {
       setFormState('success');
-      setFormData({ name: '', email: '', message: '' });
-    } catch (err: any) {
-      // Handle the dummy key warning but simulate high-performance human response
-      // Indonesia corporate clients prioritize immediate connection, so we trigger a helpful modal
-      console.log('EmailJS integration initialized successfully:', err);
       
-      // We simulate actual submission success with clear debug logs for preview, and explain how to configure
-      setTimeout(() => {
-        setFormState('success');
-        setFormData({ name: '', email: '', message: '' });
-      }, 1000);
-    }
+      // Buka aplikasi email default pengguna dengan isi draft terisi penuh
+      window.location.href = mailtoUrl;
+
+      // Reset data input form
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
+      });
+    }, 1000);
   };
 
   return (
@@ -133,7 +115,7 @@ export default function Contact() {
                   <span className="text-[10px] font-mono text-emerald-400 font-bold tracking-wider">// CHAT_WA</span>
                 </a>
 
-                {/* Email direct anchor */}
+                 {/* Email direct anchor */}
                 <a
                   href="mailto:aldifadilla883@gmail.com"
                   className="group flex items-center justify-between p-4 bg-yellow-500/5 hover:bg-yellow-500/10 border border-yellow-500/15 rounded-2xl transition-all"
@@ -148,25 +130,6 @@ export default function Contact() {
                     </div>
                   </div>
                   <span className="text-[10px] font-mono text-brand-gold font-bold tracking-wider">// KIRIM_EMAIL</span>
-                </a>
-
-                {/* GitHub profile links */}
-                <a
-                  href={directGithubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center justify-between p-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl transition-all"
-                >
-                  <div className="flex items-center space-x-4">
-                    <div className="w-10 h-10 rounded-xl bg-white/[0.08] flex items-center justify-center text-white group-hover:scale-110 transition-transform">
-                      <Github className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h4 className="text-xs font-mono text-white/40 uppercase">Repositori Kode Sumber Terbuka</h4>
-                      <p className="text-sm font-semibold text-white group-hover:text-brand-gold transition-colors">github.com/aldifadilla</p>
-                    </div>
-                  </div>
-                  <span className="text-[10px] font-mono text-white/50">// IKUTI</span>
                 </a>
 
               </div>
@@ -206,8 +169,8 @@ export default function Contact() {
                   >
                     <CheckCircle className="w-5 h-5 shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-bold uppercase tracking-wider">Pesan Berhasil Terkirim via EmailJS!</p>
-                      <p className="opacity-80 mt-1">Terima kasih. Aldi akan meninjau rincian kebutuhan Anda secara ketat dan merespons dalam waktu maksimal 4 jam.</p>
+                      <p className="font-bold uppercase tracking-wider">Membuka Aplikasi Email Anda...</p>
+                      <p className="opacity-80 mt-1">Draf formulir Anda siap dikirimkan langsung ke <strong>aldifadilla883@gmail.com</strong>. Aplikasi email bawaan Anda akan terbuka otomatis.</p>
                     </div>
                   </motion.div>
                 )}
