@@ -49,7 +49,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-white/70 max-w-3xl text-xs sm:text-sm md:text-base leading-relaxed font-sans mx-auto"
         >
-          <span className="font-semibold text-white">Website Cepat, Modern, dan Siap Mendukung Pertumbuhan Bisnis Anda. Mulai dari Rp1.750.000 🚀</span>{' '}
+          <span className="font-semibold text-white">Website Cepat, Modern, dan Siap Mendukung Pertumbuhan Bisnis Anda. Mulai dari RP1.650.000 🚀</span>{' '}
           <span className="text-white/60 font-normal">Solusi website custom untuk UMKM, perusahaan, dan bisnis jasa yang ingin tampil lebih profesional di era digital ✨</span>
         </motion.p>
 
