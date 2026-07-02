@@ -31,20 +31,20 @@
 
 /* Custom scrollbar matching agency design */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #0c0c0e;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #222226;
-  border-radius: 3px;
+  background: #ffd200;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffe000;
+  background: #facc15;
 }
 
 /* Custom selection styling */
