@@ -71,20 +71,10 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           </div>
         </div>
 
-        {/* Cinematic progress bar gauge */}
-        <div className="relative h-[2px] w-full bg-white/5 overflow-hidden">
-          <motion.div 
-            className="absolute top-0 left-0 h-full bg-white"
-            initial={{ width: 0 }}
-            animate={{ width: `${progress}%` }}
-            transition={{ ease: "easeOut" }}
-          />
-        </div>
-
         {/* Technical logs subtext */}
         <div className="flex justify-between items-center text-[10px] text-white/50 tracking-wider pt-2">
           <div className="flex items-center">
-            <span className="uppercase text-white">{currentText}</span>
+            <span className="uppercase text-brand-gold">{currentText}</span>
           </div>
         </div>
 
