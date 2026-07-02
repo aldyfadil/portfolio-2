@@ -72,10 +72,9 @@ export default function App() {
                 
                 {/* Brand Column */}
                 <div className="md:col-span-6 space-y-4">
-                  <a href="#home" className="flex items-center space-x-2 font-display select-none">
-                    <Code2 className="w-5 h-5 text-brand-gold animate-pulse" />
+                  <a href="#home" className="flex items-center font-display select-none">
                     <span className="font-extrabold text-white text-lg tracking-tight">
-                      VYNORA<span className="text-brand-gold font-light tracking-widest text-sm ml-1.5 uppercase">.ID</span>
+                      Vynora.id
                     </span>
                   </a>
                   <p className="text-white/60 text-xs leading-relaxed max-w-sm">
@@ -120,7 +119,7 @@ export default function App() {
 
               {/* Bottom Section: Copyright */}
               <div className="flex justify-center text-[11px] font-mono text-white/40">
-                <span>© {new Date().getFullYear()} VYNORA.ID. ALL RIGHTS RESERVED.</span>
+                <span>© {new Date().getFullYear()} Vynora.id. ALL RIGHTS RESERVED.</span>
               </div>
 
             </div>

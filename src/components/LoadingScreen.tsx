@@ -54,13 +54,13 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
   }, [progress]);
 
   return (
-    <div className="fixed inset-0 bg-bg-dark z-[9999] flex flex-col items-center justify-center font-mono select-none px-6">
+    <div className="fixed inset-0 bg-bg-dark z-[9999] flex flex-col items-center justify-center font-display select-none px-6">
       <div className="w-full max-w-lg space-y-8">
         
-        {/* Designer Monogram Indicator */}
+         {/* Designer Monogram Indicator */}
         <div className="flex justify-between items-end border-b border-white/10 pb-4">
           <div className="space-y-1">
-            <h3 className="text-base font-display font-bold text-white tracking-wider">
+            <h3 className="text-base font-bold text-white tracking-wider">
               Vynora.id
             </h3>
           </div>
@@ -74,7 +74,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
         {/* Cinematic progress bar gauge */}
         <div className="relative h-[2px] w-full bg-white/5 overflow-hidden">
           <motion.div 
-            className="absolute top-0 left-0 h-full bg-brand-gold"
+            className="absolute top-0 left-0 h-full bg-white"
             initial={{ width: 0 }}
             animate={{ width: `${progress}%` }}
             transition={{ ease: "easeOut" }}
@@ -84,7 +84,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
         {/* Technical logs subtext */}
         <div className="flex justify-between items-center text-[10px] text-white/50 tracking-wider pt-2">
           <div className="flex items-center">
-            <span className="uppercase text-brand-gold/70">{currentText}</span>
+            <span className="uppercase text-white">{currentText}</span>
           </div>
         </div>
 
