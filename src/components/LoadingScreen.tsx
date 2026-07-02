@@ -60,12 +60,9 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
         {/* Designer Monogram Indicator */}
         <div className="flex justify-between items-end border-b border-white/10 pb-4">
           <div className="space-y-1">
-            <h3 className="text-sm text-yellow-500/80 font-bold tracking-widest uppercase">
-              AL_DI FAD_ILL_A | PORTFOLIO
+            <h3 className="text-sm text-yellow-500/80 font-bold tracking-widest">
+              Vynora.id
             </h3>
-            <p className="text-xs text-white/40 tracking-wider">
-              PENGEMBANG & DESAINER KREATIF
-            </p>
           </div>
           <div className="text-right">
             <span className="text-3xl font-light text-white tracking-tighter">
@@ -89,9 +86,6 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           <div className="flex items-center space-x-2">
             <span className="w-1.5 h-1.5 bg-brand-gold rounded-full animate-ping" />
             <span className="uppercase text-brand-gold/70">{currentText}</span>
-          </div>
-          <div>
-            <span>UTC_MEMENTO_M_R_I</span>
           </div>
         </div>
 
