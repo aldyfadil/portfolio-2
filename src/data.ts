@@ -241,21 +241,12 @@ export const PROCESS_STEPS: ProcessStep[] = [
   },
   {
     phase: '04',
-    title: 'Optimasi SEO Dasar',
-    subtitle: '',
-    description: 'Website dipersiapkan agar mudah ditemukan oleh Google dan memiliki fondasi SEO yang baik.',
-    timeline: '',
-    deliverables: ['Meta title & description', 'Sitemap XML', 'Google Search Console setup'],
-    color: 'from-brand-gold to-brand-accent'
-  },
-  {
-    phase: '05',
     title: 'Launching & Pendampingan',
     subtitle: '',
     description: 'Setelah website selesai, kami membantu proses publikasi dan memberikan panduan penggunaan.',
     timeline: '',
     deliverables: ['Website online dengan domain sendiri', 'Panduan penggunaan', 'Dukungan setelah website aktif'],
-    color: 'from-brand-accent to-yellow-300'
+    color: 'from-brand-gold to-brand-accent'
   }
 ];
 

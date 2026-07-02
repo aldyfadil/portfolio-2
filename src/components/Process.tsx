@@ -26,7 +26,7 @@ export default function Process() {
         </div>
 
         {/* Horizontal & Vertical Timeline Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 pt-6 relative">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 pt-6 relative">
           
           {/* Subtle line across items on desktop */}
           <div className="absolute top-1/3 left-0 w-full h-[1px] bg-white/5 hidden lg:block -z-10" />
