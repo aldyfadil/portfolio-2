@@ -60,7 +60,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
         {/* Designer Monogram Indicator */}
         <div className="flex justify-between items-end border-b border-white/10 pb-4">
           <div className="space-y-1">
-            <h3 className="text-sm text-yellow-500/80 font-bold tracking-widest">
+            <h3 className="text-base font-display font-bold text-white tracking-wider">
               Vynora.id
             </h3>
           </div>
@@ -83,8 +83,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
 
         {/* Technical logs subtext */}
         <div className="flex justify-between items-center text-[10px] text-white/50 tracking-wider pt-2">
-          <div className="flex items-center space-x-2">
-            <span className="w-1.5 h-1.5 bg-brand-gold rounded-full animate-ping" />
+          <div className="flex items-center">
             <span className="uppercase text-brand-gold/70">{currentText}</span>
           </div>
         </div>
