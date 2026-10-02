@@ -77,19 +77,19 @@ export const PROJECTS_DATA: Project[] = [
     solution: 'Merancang hamparan kanvas zoom-dan-geser interaktif yang digabungkan dengan simpul sentuh responsif sederhana yang memberikan sensasi taktil yang jelas.'
   },
   {
-    id: 'cafe-website',
-    title: 'cafe-website-481p.vercel.app',
-    category: 'Situs Pemasaran Kreatif',
-    description: 'Portal kopi barista dan restoran modern yang sangat interaktif, menampilkan animasi biji kopi organik, navigasi menu responsif, dan integrasi pesanan langsung.',
-    fullStory: 'Konsep visual modern yang dikembangkan untuk rantai kedai kopi lokal. Dirancang dengan estetika sensoris yang kaya, termasuk ilustrasi mikro yang bercahaya, gulir horizontal paralaks, dan menu kustom yang dilokalkan.',
-    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'Micro-Interactions'],
-    role: 'Desainer Web Kreatif',
+    id: 'clarivera',
+    title: 'clarivera.id',
+    category: 'E-Commerce / Brand Showcase',
+    description: 'Platform katalog digital dan brand showcase produk perawatan kulit (skincare) dengan presentasi visual modern, formula bahan aktif, dan integrasi kanal marketplace.',
+    fullStory: 'Clarivera adalah brand produk perawatan kulit dan kecantikan modern yang mengusung formulasi bahan aktif bermutu tinggi (seperti Retinoid, Niacinamide, dan Centella Asiatica). Mereka membutuhkan kehadiran web profesional yang elegan, terpercaya, dan informatif untuk memperkuat citra merek sekaligus memfasilitasi konversi pesanan langsung pelanggan.',
+    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'E-Commerce Catalog'],
+    role: 'Desainer UI & Pengembang Web',
     duration: '3 Minggu',
-    url: 'https://cafe-website-481p.vercel.app/',
-    image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80',
-    scope: ['Tema Paralaks Aroma Kopi Barista', 'Komidi Putar Kartu Responsif dengan Geser', 'Simulasi Pemesanan Virtual', 'SVG Kustom untuk Tahap Penuangan Kopi'],
-    challenge: 'Menu kafe statis terasa dingin dan kurang menarik, kehilangan kehangatan taktil dan aroma ruang seduh barista fisik.',
-    solution: 'Mengintegrasikan partikel aroma dinamis yang dipicu gulir, serat kayu bertekstur, tinggi tata letak tampilan yang elegan, dan tombol panggilan aksi langsung untuk cabang terdekat.'
+    url: 'https://clarivera.id/',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&q=80',
+    scope: ['Desain Brand Editorial Skincare', 'Katalog Formulasi & Bahan Aktif', 'Tampilan Responsif Ultra-Cepat', 'Integrasi Kanal Pembelian Resmi'],
+    challenge: 'Menyajikan informasi kandungan ilmiah dan varian produk perawatan kulit dengan estetika mewah tanpa membuat navigasi terasa padat bagi pengunjung ponsel pintar.',
+    solution: 'Merancang arsitektur visual minimalis yang menonjolkan manfaat produk, kartu katalog interaktif yang bersih, serta tombol direct-action menuju kanal pembelian resmi.'
   }
 ];
 
