@@ -17,6 +17,21 @@ export const PROJECTS_DATA: Project[] = [
     solution: 'Dioptimalkan melalui saluran format gambar kustom, blur hashing progresif, dan animasi seret Framer Motion kustom untuk menggeser gambar, menurunkan waktu pemuatan menjadi 1,2 detik.'
   },
   {
+    id: 'clarivera',
+    title: 'clarivera.id',
+    category: 'E-Commerce / Brand Showcase',
+    description: 'Platform katalog digital dan brand showcase produk perawatan kulit (skincare) dengan presentasi visual modern, formula bahan aktif, dan integrasi kanal marketplace.',
+    fullStory: 'Clarivera adalah brand produk perawatan kulit dan kecantikan modern yang mengusung formulasi bahan aktif bermutu tinggi (seperti Retinoid, Niacinamide, dan Centella Asiatica). Mereka membutuhkan kehadiran web profesional yang elegan, terpercaya, dan informatif untuk memperkuat citra merek sekaligus memfasilitasi konversi pesanan langsung pelanggan.',
+    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'E-Commerce Catalog'],
+    role: 'Desainer UI & Pengembang Web',
+    duration: '3 Minggu',
+    url: 'https://clarivera.id/',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&q=80',
+    scope: ['Desain Brand Editorial Skincare', 'Katalog Formulasi & Bahan Aktif', 'Tampilan Responsif Ultra-Cepat', 'Integrasi Kanal Pembelian Resmi'],
+    challenge: 'Menyajikan informasi kandungan ilmiah dan varian produk perawatan kulit dengan estetika mewah tanpa membuat navigasi terasa padat bagi pengunjung ponsel pintar.',
+    solution: 'Merancang arsitektur visual minimalis yang menonjolkan manfaat produk, kartu katalog interaktif yang bersih, serta tombol direct-action menuju kanal pembelian resmi.'
+  },
+  {
     id: 'tridayamanunggal',
     title: 'tridayamanunggalsejahtera.com',
     category: 'Platform Korporat',
@@ -77,19 +92,19 @@ export const PROJECTS_DATA: Project[] = [
     solution: 'Merancang hamparan kanvas zoom-dan-geser interaktif yang digabungkan dengan simpul sentuh responsif sederhana yang memberikan sensasi taktil yang jelas.'
   },
   {
-    id: 'clarivera',
-    title: 'clarivera.id',
-    category: 'E-Commerce / Brand Showcase',
-    description: 'Platform katalog digital dan brand showcase produk perawatan kulit (skincare) dengan presentasi visual modern, formula bahan aktif, dan integrasi kanal marketplace.',
-    fullStory: 'Clarivera adalah brand produk perawatan kulit dan kecantikan modern yang mengusung formulasi bahan aktif bermutu tinggi (seperti Retinoid, Niacinamide, dan Centella Asiatica). Mereka membutuhkan kehadiran web profesional yang elegan, terpercaya, dan informatif untuk memperkuat citra merek sekaligus memfasilitasi konversi pesanan langsung pelanggan.',
-    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'E-Commerce Catalog'],
-    role: 'Desainer UI & Pengembang Web',
-    duration: '3 Minggu',
-    url: 'https://clarivera.id/',
-    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&q=80',
-    scope: ['Desain Brand Editorial Skincare', 'Katalog Formulasi & Bahan Aktif', 'Tampilan Responsif Ultra-Cepat', 'Integrasi Kanal Pembelian Resmi'],
-    challenge: 'Menyajikan informasi kandungan ilmiah dan varian produk perawatan kulit dengan estetika mewah tanpa membuat navigasi terasa padat bagi pengunjung ponsel pintar.',
-    solution: 'Merancang arsitektur visual minimalis yang menonjolkan manfaat produk, kartu katalog interaktif yang bersih, serta tombol direct-action menuju kanal pembelian resmi.'
+    id: 'pmoc-ui',
+    title: 'frontiers.ui.ac.id/pmoc',
+    category: 'Portal Riset & Akademik',
+    description: 'Portal pusat kajian Public Management and Organizational Culture (PMOC) FIA Universitas Indonesia, menyajikan repositori publikasi riset tata kelola, artikel kebijakan publik, dan profil peneliti.',
+    fullStory: 'Grup Riset PMOC (Public Management and Organizational Culture) Departemen Ilmu Administrasi FIA Universitas Indonesia membutuhkan sarana diseminasi ilmiah modern untuk mempublikasikan riset reformasi birokrasi, keterbukaan informasi, dan tata kelola publik kepada civitas akademika, mitra internasional, serta pengambil kebijakan.',
+    techStack: ['React', 'Tailwind CSS', 'TypeScript', 'Academic Portal'],
+    role: 'Arsitek Web & Desainer UI',
+    duration: '4 Minggu',
+    url: 'https://frontiers.ui.ac.id/pmoc/',
+    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80',
+    scope: ['Perancangan Portal Riset Akademik', 'Katalog Publikasi & Jurnal Ilmiah', 'Profil Peneliti & Agenda Diskusi', 'Optimasi Aksesibilitas & Responsivitas'],
+    challenge: 'Menyajikan data publikasi riset, ringkasan kebijakan, dan agenda kegiatan ilmiah secara terstruktur agar mudah ditemukan oleh akademisi dan masyarakat luas tanpa terasa kaku.',
+    solution: 'Mengembangkan tata letak informasi bertingkat yang bersih dengan kategorisasi tema riset, navigasi yang intuitif, serta akses unduh berkas publikasi yang cepat dan responsif.'
   }
 ];
 

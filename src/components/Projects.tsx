@@ -9,15 +9,10 @@ interface ProjectsProps {
 }
 
 export default function Projects({ onNavigateToAllProjects }: ProjectsProps) {
-  const [selectedCategory, setSelectedCategory] = useState('Semua');
   const [activeProject, setActiveProject] = useState<Project | null>(null);
 
-  // Derive unique categories dynamically
-  const categories = ['Semua', ...Array.from(new Set(PROJECTS_DATA.map((p) => p.category)))];
-
-  const filteredProjects = selectedCategory === 'Semua'
-    ? PROJECTS_DATA
-    : PROJECTS_DATA.filter((p) => p.category === selectedCategory);
+  // Only display the 3 main cards on the homepage
+  const mainProjects = PROJECTS_DATA.slice(0, 3);
 
   return (
     <section id="projects" className="py-24 px-6 relative bg-bg-dark border-t border-white/5 overflow-hidden">
@@ -26,42 +21,28 @@ export default function Projects({ onNavigateToAllProjects }: ProjectsProps) {
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-brand-gold/5 rounded-full filter blur-[120px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-yellow-500/5 rounded-full filter blur-[120px] pointer-events-none" />
       
-      <div className="max-w-7xl mx-auto space-y-16 relative z-20">
+      <div className="max-w-7xl mx-auto space-y-14 relative z-20">
         
         {/* Header Block */}
         <div className="flex flex-col items-center text-center gap-4 pb-6 border-b border-white/5 max-w-3xl mx-auto">
           <span className="font-mono text-xs text-brand-gold uppercase tracking-[0.25em] block">
-            My Project
+            PROJEK UNGGULAN
           </span>
+          <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-white leading-tight">
+            Portofolio Utama Pilihan
+          </h2>
           <p className="text-white/60 text-sm md:text-base leading-relaxed font-sans">
-            Berikut adalah beberapa projek yang telah dikerjakan, mulai dari website perusahaan, landing page, hingga aplikasi web custom
+            Menampilkan 3 karya website utama yang telah dikerjakan. Seluruh koleksi proyek dan rincian studi kasus lengkap dapat dilihat pada tombol di bawah.
           </p>
         </div>
 
-        {/* Filter Navigation Bar */}
-        <div className="flex flex-wrap gap-2 pb-4">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 text-xs font-mono uppercase tracking-wider rounded-full border transition-all duration-300 relative focus:outline-none ${
-                selectedCategory === category
-                  ? 'border-brand-gold text-bg-dark bg-brand-gold font-bold'
-                  : 'border-white/10 text-white/60 hover:text-white hover:border-white/30 bg-white/[0.02]'
-              }`}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-
-        {/* Showcase Grid */}
+        {/* Showcase Grid (3 Main Cards) */}
         <motion.div 
           layout
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           <AnimatePresence mode="popLayout">
-            {filteredProjects.map((project) => (
+            {mainProjects.map((project) => (
               <motion.div
                 layout
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -148,7 +129,7 @@ export default function Projects({ onNavigateToAllProjects }: ProjectsProps) {
           </AnimatePresence>
         </motion.div>
 
-        {/* Menu Lihat Lainnya Jelas Berada di Bawah 6 Card */}
+        {/* Menu Lihat Lainnya Jelas Berada di Bawah 3 Card */}
         <div className="pt-8 flex flex-col items-center justify-center text-center space-y-4">
           <div className="relative group">
             {/* Ambient glow behind button */}
@@ -164,7 +145,7 @@ export default function Projects({ onNavigateToAllProjects }: ProjectsProps) {
           </div>
 
           <p className="text-white/50 font-mono text-xs tracking-wider">
-            Klik untuk melihat katalog lengkap dan detail dari seluruh 6 proyek kami
+            Klik untuk melihat katalog lengkap dan dokumentasi seluruh proyek kami
           </p>
         </div>
 

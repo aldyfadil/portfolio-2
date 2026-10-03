@@ -101,7 +101,7 @@ export default function AllProjectsPage({ onBackToHome, selectedProjectId }: All
           </h1>
           
           <p className="text-white/60 text-sm sm:text-base leading-relaxed font-sans">
-            Menampilkan seluruh 6 karya proyek kustom yang telah dibangun. Mulai dari profil perusahaan arsitektur kelas atas, katalog digital e-commerce, portal korporat terintegrasi, hingga aplikasi web kustom.
+            Menampilkan seluruh {PROJECTS_DATA.length} karya proyek kustom yang telah dibangun. Mulai dari profil perusahaan arsitektur kelas atas, katalog digital e-commerce, portal riset akademik universitas, platform korporat terintegrasi, hingga aplikasi web kustom.
           </p>
         </div>
 
