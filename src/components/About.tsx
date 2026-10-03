@@ -45,11 +45,11 @@ export default function About() {
 
 
   return (
-    <section id="about" className="py-24 px-6 relative bg-bg-dark grid-overlay overflow-hidden">
+    <section id="about" className="py-24 px-6 relative bg-slate-50/60 border-t border-sky-100 grid-overlay overflow-hidden">
       
       {/* Decorative vertical lines */}
-      <div className="absolute top-0 left-12 w-[1px] h-full bg-white/[0.015] hidden md:block" />
-      <div className="absolute top-0 right-12 w-[1px] h-full bg-white/[0.015] hidden md:block" />
+      <div className="absolute top-0 left-12 w-[1px] h-full bg-sky-100 hidden md:block" />
+      <div className="absolute top-0 right-12 w-[1px] h-full bg-sky-100 hidden md:block" />
 
       <div ref={containerRef} className="max-w-7xl mx-auto space-y-12 relative z-20">
         
@@ -57,16 +57,16 @@ export default function About() {
           {/* LEFT COLUMN: Story */}
           <div className="w-full lg:w-1/2 space-y-8">
             <div className="space-y-4">
-              <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-white leading-tight">
+              <h2 className="text-3xl md:text-5xl font-bold font-display tracking-tight text-slate-900 leading-tight">
                 Masih Mengandalkan Instagram atau WhatsApp untuk Meyakinkan Calon Pelanggan?
               </h2>
             </div>
 
-            <div className="space-y-6 text-white/70 text-sm md:text-base leading-relaxed font-sans">
+            <div className="space-y-6 text-slate-600 text-sm md:text-base leading-relaxed font-sans">
               <p>
                 Banyak bisnis kehilangan peluang karena belum memiliki website profesional yang mampu menunjukkan kualitas dan kredibilitas mereka secara maksimal.
               </p>
-              <p className="border-l-2 border-brand-gold pl-4 text-white/95 italic font-medium bg-white/[0.01] py-2 pr-2">
+              <p className="border-l-4 border-blue-600 pl-4 text-slate-800 italic font-medium bg-blue-50/50 py-3 pr-3 rounded-r-xl">
                 Kami membantu UMKM, perusahaan, kontraktor, dan bisnis jasa membangun website yang cepat, modern, dan responsif untuk meningkatkan kepercayaan pelanggan serta memperkuat citra profesional di dunia digital.
               </p>
               <p>
@@ -82,7 +82,7 @@ export default function About() {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="relative w-full rounded-2xl overflow-hidden border border-white/10 bg-bg-card/40 shadow-2xl group hover:border-brand-gold/30 transition-all duration-500"
+              className="relative w-full rounded-2xl overflow-hidden border border-sky-200 bg-white shadow-xl group hover:border-blue-300 transition-all duration-500"
             >
               <img 
                 src={seoIllustration}
@@ -90,58 +90,58 @@ export default function About() {
                 className="w-full h-auto object-cover group-hover:scale-[1.015] transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
-              {/* Soft Ambient Gold Outer Shadow Glow */}
-              <div className="absolute -inset-10 bg-brand-gold/5 blur-3xl rounded-full opacity-50 pointer-events-none group-hover:opacity-75 transition-opacity duration-700" />
+              {/* Soft Ambient Outer Shadow Glow */}
+              <div className="absolute -inset-10 bg-sky-400/10 blur-3xl rounded-full opacity-60 pointer-events-none group-hover:opacity-80 transition-opacity duration-700" />
             </motion.div>
           </div>
         </div>
 
         {/* Animated counter widgets - Full Width Side-by-Side (1 Row filled with 4 cards) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-8">
-          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-brand-gold/20 transition-colors">
-            <div className="absolute top-0 left-0 w-1 h-full bg-brand-gold" />
+          <div className="bg-white p-6 border border-sky-100 rounded-2xl relative overflow-hidden group hover:border-blue-300 transition-all shadow-sm hover:shadow-md">
+            <div className="absolute top-0 left-0 w-1.5 h-full bg-blue-600" />
             <div className="flex justify-between items-start">
-              <Rocket className="w-5 h-5 text-brand-gold mb-3" />
-              <span className="font-mono text-[9px] text-white/30">KLIEN_SUKSES</span>
+              <Rocket className="w-5 h-5 text-blue-600 mb-3" />
+              <span className="font-mono text-[9px] text-slate-400 font-semibold">KLIEN_SUKSES</span>
             </div>
-            <h4 className="text-4xl font-extrabold font-display text-white">{counts.projects}+</h4>
-            <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
+            <h4 className="text-4xl font-extrabold font-display text-slate-900">{counts.projects}+</h4>
+            <p className="text-xs text-slate-500 font-mono uppercase tracking-wider mt-1">
               Proyek Kustom Diluncurkan
             </p>
           </div>
 
-          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-brand-gold/20 transition-colors">
-            <div className="absolute top-0 left-0 w-1 h-full bg-brand-gold" />
+          <div className="bg-white p-6 border border-sky-100 rounded-2xl relative overflow-hidden group hover:border-blue-300 transition-all shadow-sm hover:shadow-md">
+            <div className="absolute top-0 left-0 w-1.5 h-full bg-blue-600" />
             <div className="flex justify-between items-start">
-              <Timer className="w-5 h-5 text-brand-gold mb-3" />
-              <span className="font-mono text-[9px] text-white/30">PERFORMA_INTI</span>
+              <Timer className="w-5 h-5 text-blue-600 mb-3" />
+              <span className="font-mono text-[9px] text-slate-400 font-semibold">PERFORMA_INTI</span>
             </div>
-            <h4 className="text-4xl font-extrabold font-display text-white">{counts.performance}%</h4>
-            <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
+            <h4 className="text-4xl font-extrabold font-display text-slate-900">{counts.performance}%</h4>
+            <p className="text-xs text-slate-500 font-mono uppercase tracking-wider mt-1">
               Skor Rata-rata Kecepatan Seluler
             </p>
           </div>
 
-          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-brand-gold/20 transition-colors">
-            <div className="absolute top-0 left-0 w-1 h-full bg-brand-gold" />
+          <div className="bg-white p-6 border border-sky-100 rounded-2xl relative overflow-hidden group hover:border-blue-300 transition-all shadow-sm hover:shadow-md">
+            <div className="absolute top-0 left-0 w-1.5 h-full bg-blue-600" />
             <div className="flex justify-between items-start">
-              <Award className="w-5 h-5 text-brand-gold mb-3" />
-              <span className="font-mono text-[9px] text-white/30">GARANSI</span>
+              <Award className="w-5 h-5 text-blue-600 mb-3" />
+              <span className="font-mono text-[9px] text-slate-400 font-semibold">GARANSI</span>
             </div>
-            <h4 className="text-4xl font-extrabold font-display text-white">{counts.launch} Tahun</h4>
-            <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
+            <h4 className="text-4xl font-extrabold font-display text-slate-900">{counts.launch} Tahun</h4>
+            <p className="text-xs text-slate-500 font-mono uppercase tracking-wider mt-1">
               Pemeliharaan Teknis Gratis
             </p>
           </div>
 
-          <div className="bg-bg-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group hover:border-brand-gold/20 transition-colors">
-            <div className="absolute top-0 left-0 w-1 h-full bg-brand-gold" />
+          <div className="bg-white p-6 border border-sky-100 rounded-2xl relative overflow-hidden group hover:border-blue-300 transition-all shadow-sm hover:shadow-md">
+            <div className="absolute top-0 left-0 w-1.5 h-full bg-blue-600" />
             <div className="flex justify-between items-start">
-              <UserCheck className="w-5 h-5 text-brand-gold mb-3" />
-              <span className="font-mono text-[9px] text-white/30">RETENSI</span>
+              <UserCheck className="w-5 h-5 text-blue-600 mb-3" />
+              <span className="font-mono text-[9px] text-slate-400 font-semibold">RETENSI</span>
             </div>
-            <h4 className="text-4xl font-extrabold font-display text-white">{counts.speed}%+</h4>
-            <p className="text-xs text-white/50 font-mono uppercase tracking-wider mt-1">
+            <h4 className="text-4xl font-extrabold font-display text-slate-900">{counts.speed}%+</h4>
+            <p className="text-xs text-slate-500 font-mono uppercase tracking-wider mt-1">
               Pertumbuhan Konversi Langsung
             </p>
           </div>

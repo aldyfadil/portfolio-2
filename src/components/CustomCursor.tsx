@@ -60,28 +60,28 @@ export default function CustomCursor() {
     <>
       {/* Dynamic Cursor Ball */}
       <motion.div
-        className="fixed top-0 left-0 w-5 h-5 bg-brand-gold rounded-full pointer-events-none z-50 mix-blend-difference hidden md:block"
+        className="fixed top-0 left-0 w-4 h-4 bg-blue-600 rounded-full pointer-events-none z-50 hidden md:block shadow-sm"
         style={{
           x: cursorXSpring,
           y: cursorYSpring,
-          scale: isHovered ? 2.5 : isClicking ? 0.8 : 1,
+          scale: isHovered ? 2 : isClicking ? 0.8 : 1,
         }}
         animate={{
-          opacity: 1,
+          opacity: 0.9,
         }}
         transition={{ type: 'spring', damping: 25, stiffness: 350 }}
       />
       {/* Outer subtle tracker ring */}
       <motion.div
-        className="fixed top-0 left-0 w-9 h-9 border border-yellow-500/30 rounded-full pointer-events-none z-50 hidden md:block"
+        className="fixed top-0 left-0 w-8 h-8 border border-sky-400/60 rounded-full pointer-events-none z-50 hidden md:block"
         style={{
           x: cursorX,
           y: cursorY,
-          transform: 'translate(-10px, -10px)',
+          transform: 'translate(-8px, -8px)',
         }}
         animate={{
           scale: isHovered ? 1.5 : 1,
-          opacity: isHovered ? 0.3 : 0.8,
+          opacity: isHovered ? 0.4 : 0.8,
         }}
         transition={{ ease: "easeOut", duration: 0.2 }}
       />

@@ -54,27 +54,27 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
   }, [progress]);
 
   return (
-    <div className="fixed inset-0 bg-bg-dark z-[9999] flex flex-col items-center justify-center font-display select-none px-6">
+    <div className="fixed inset-0 bg-white z-[9999] flex flex-col items-center justify-center font-display select-none px-6">
       <div className="w-full max-w-lg space-y-8">
         
          {/* Designer Monogram Indicator */}
         <div className="flex justify-between items-end pb-4">
           <div className="space-y-1">
-            <h3 className="text-base font-bold text-white tracking-wider">
+            <h3 className="text-base font-bold text-slate-900 tracking-wider">
               Vynora.id
             </h3>
           </div>
           <div className="text-right">
-            <span className="text-3xl font-light text-white tracking-tighter">
+            <span className="text-3xl font-light text-slate-900 tracking-tighter">
               {progress}%
             </span>
           </div>
         </div>
 
         {/* Cinematic progress bar gauge */}
-        <div className="relative h-[2px] w-full overflow-hidden">
+        <div className="relative h-[3px] w-full bg-sky-100 overflow-hidden rounded-full">
           <motion.div 
-            className="absolute top-0 left-0 h-full bg-brand-gold"
+            className="absolute top-0 left-0 h-full bg-blue-600 rounded-full"
             initial={{ width: 0 }}
             animate={{ width: `${progress}%` }}
             transition={{ ease: "easeOut" }}
@@ -82,9 +82,9 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
         </div>
 
         {/* Technical logs subtext */}
-        <div className="flex justify-between items-center text-[10px] text-white/50 tracking-wider pt-2">
+        <div className="flex justify-between items-center text-[10px] text-slate-500 tracking-wider pt-2">
           <div className="flex items-center">
-            <span className="uppercase text-white">{currentText}</span>
+            <span className="uppercase text-blue-600 font-semibold">{currentText}</span>
           </div>
         </div>
 

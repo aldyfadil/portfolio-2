@@ -7,66 +7,68 @@
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   --font-montserrat: "Montserrat", sans-serif;
   
-  --color-brand-gold: #ffd200; /* Pure premium yellow representing 15% of components */
-  --color-brand-accent: #facc15; /* Saturated yellow for bright highlights */
-  --color-brand-emerald: #facc15; /* Aligned to yellow theme */
-  --color-brand-cyan: #ffd200; /* Aligned to yellow theme */
-  --color-bg-dark: #000000; /* 60% Black base background */
-  --color-bg-card: #08080a; /* 60% Black secondary card color */
-  --color-bg-panel: #111114; /* 60% Black tertiary panel color */
+  --color-brand-gold: #2563eb; /* Primary royal blue for actions and prominent accents */
+  --color-brand-accent: #0284c7; /* Vibrant sky blue */
+  --color-brand-emerald: #0ea5e9; /* Light ocean blue */
+  --color-brand-cyan: #38bdf8; /* Soft ice/sky blue */
+  --color-bg-dark: #ffffff; /* White base background */
+  --color-bg-card: #f8fafc; /* Crisp light slate/sky card background */
+  --color-bg-panel: #ffffff; /* Crisp white panel background */
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
-    background-color: var(--color-bg-dark);
-    color: #f3f4f6;
+    background-color: #ffffff;
+    color: #0f172a;
   }
   
   body {
     font-family: var(--font-sans);
     overflow-x: hidden;
+    background-color: #ffffff;
+    color: #0f172a;
   }
 }
 
-/* Custom scrollbar matching agency design */
+/* Custom scrollbar matching agency design in light blue style */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0c0c0e;
+  background: #f1f5f9;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffd200;
+  background: #93c5fd;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #facc15;
+  background: #3b82f6;
 }
 
 /* Custom selection styling */
 ::selection {
-  background: rgba(255, 210, 0, 0.25);
-  color: #ffffff;
+  background: rgba(37, 99, 235, 0.15);
+  color: #1e3a8a;
 }
 
-/* Non-deterministic grids or subtle overlay line elements to invoke "human handcrafted agency" feels */
+/* Non-deterministic grids with subtle light blue line elements */
 .grid-overlay {
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    linear-gradient(to right, rgba(14, 165, 233, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(14, 165, 233, 0.05) 1px, transparent 1px);
   background-size: 80px 80px;
 }
 
 /* Text glow */
 .text-glow {
-  text-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+  text-shadow: 0 0 20px rgba(37, 99, 235, 0.15);
 }
 
 /* Subtle border glow */
 .border-glow {
-  box-shadow: 0 0 15px rgba(214, 175, 55, 0.05);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.12);
 }

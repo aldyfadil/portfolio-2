@@ -68,7 +68,7 @@ export default function Navbar({ currentPage = 'home', onNavigateHome, onNavigat
     <header 
       className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ${
         scrollActive 
-          ? 'py-3 bg-bg-dark/80 backdrop-blur-md border-b border-white/5' 
+          ? 'py-3 bg-white/85 backdrop-blur-md border-b border-sky-100 shadow-sm' 
           : 'py-6 bg-transparent'
       }`}
     >
@@ -85,13 +85,13 @@ export default function Navbar({ currentPage = 'home', onNavigateHome, onNavigat
           }}
           className="group flex items-center font-display text-lg tracking-tight select-none focus:outline-none cursor-pointer"
         >
-          <span className="font-extrabold text-white text-base md:text-lg">
+          <span className="font-extrabold text-slate-900 text-base md:text-lg">
             Vynora.id
           </span>
         </a>
 
         {/* Desktop floating capsules */}
-        <nav className="hidden lg:flex items-center space-x-1 bg-white/5 p-1 rounded-full border border-white/10 backdrop-blur-sm shadow-xl">
+        <nav className="hidden lg:flex items-center space-x-1 bg-sky-50/80 p-1 rounded-full border border-sky-200/80 backdrop-blur-sm shadow-sm">
           {navLinks.map((link) => {
             const isActive = currentPage === 'all-projects' 
               ? link.id === 'projects'
@@ -107,13 +107,13 @@ export default function Navbar({ currentPage = 'home', onNavigateHome, onNavigat
                   }
                 }}
                 className={`relative px-4 py-1.5 text-xs font-medium tracking-wide uppercase transition-all duration-300 rounded-full cursor-pointer ${
-                  isActive ? 'text-bg-dark font-semibold' : 'text-white/70 hover:text-white'
+                  isActive ? 'text-white font-bold' : 'text-slate-600 hover:text-blue-600'
                 }`}
               >
                 {isActive && (
                   <motion.span
                     layoutId="activeNavIndicator"
-                    className="absolute inset-0 bg-brand-gold rounded-full -z-10"
+                    className="absolute inset-0 bg-blue-600 rounded-full -z-10 shadow-sm"
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -129,10 +129,9 @@ export default function Navbar({ currentPage = 'home', onNavigateHome, onNavigat
             href="https://wa.me/6281234567890?text=Halo%2520Aldi%252C%2520saya%2520tertarik%2520untuk%2520mengkonsultasikan%2520pembuatan%2520website%2520company%2520profile%2520%252F%2520landing%2520page."
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative inline-flex items-center justify-center overflow-hidden rounded-full border border-brand-gold px-5 py-2 text-xs font-medium tracking-widest uppercase text-white transition-all duration-300 focus:outline-none"
+            className="inline-flex items-center justify-center rounded-full bg-blue-600 hover:bg-blue-700 px-5 py-2 text-xs font-bold tracking-widest uppercase text-white shadow-sm transition-all duration-300 focus:outline-none"
           >
-            <span className="absolute inset-x-0 h-0 bg-brand-gold transition-all duration-300 group-hover:h-full top-0 left-0 -z-10" />
-            <span className="flex items-center space-x-1.5 transition-colors duration-300 group-hover:text-bg-dark">
+            <span className="flex items-center space-x-1.5">
               <span>WhatsApp Kami</span>
               <MessageCircle className="w-3.5 h-3.5" />
             </span>
@@ -142,7 +141,7 @@ export default function Navbar({ currentPage = 'home', onNavigateHome, onNavigat
         {/* Mobile menu trigger button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden p-2 text-white/80 hover:text-white hover:bg-white/5 rounded-full transition-colors relative z-50 focus:outline-none"
+          className="lg:hidden p-2 text-slate-800 hover:text-blue-600 hover:bg-sky-50 rounded-full transition-colors relative z-50 focus:outline-none cursor-pointer"
           aria-label="Toggle menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -157,7 +156,7 @@ export default function Navbar({ currentPage = 'home', onNavigateHome, onNavigat
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="absolute top-full left-0 w-full bg-bg-dark border-b border-white/10 overflow-hidden lg:hidden"
+            className="absolute top-full left-0 w-full bg-white border-b border-sky-100 shadow-xl overflow-hidden lg:hidden"
           >
             <div className="p-8 space-y-4 flex flex-col">
               {navLinks.map((link) => (
@@ -170,10 +169,10 @@ export default function Navbar({ currentPage = 'home', onNavigateHome, onNavigat
                     }
                     handleNavClick(link.id, link.href);
                   }}
-                  className={`text-sm tracking-widest uppercase font-mono py-2 transition-all duration-200 border-b border-white/5 cursor-pointer ${
+                  className={`text-sm tracking-widest uppercase font-mono py-2 transition-all duration-200 border-b border-sky-100 cursor-pointer ${
                     (currentPage === 'all-projects' ? link.id === 'projects' : activeSection === link.id) 
-                      ? 'text-brand-gold pl-2 font-bold' 
-                      : 'text-white/60 hover:text-white'
+                      ? 'text-blue-600 pl-2 font-bold' 
+                      : 'text-slate-600 hover:text-blue-600'
                   }`}
                 >
                   // {link.name}
@@ -182,7 +181,7 @@ export default function Navbar({ currentPage = 'home', onNavigateHome, onNavigat
               <a
                 href="#contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="mt-4 flex items-center justify-center space-x-2 w-full py-3 border border-brand-gold text-brand-gold text-xs tracking-widest font-bold uppercase hover:bg-brand-gold hover:text-bg-dark transition-all rounded-full"
+                className="mt-4 flex items-center justify-center space-x-2 w-full py-3 bg-blue-600 hover:bg-blue-700 text-white text-xs tracking-widest font-bold uppercase transition-all rounded-full shadow-sm"
               >
                 <span>ADA PROYEK? CHAT SEKARANG</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />

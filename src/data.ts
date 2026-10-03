@@ -234,7 +234,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     description: 'Kami memahami bisnis, target pelanggan, dan tujuan website Anda sebelum memulai pengerjaan.',
     timeline: '',
     deliverables: ['Diskusi kebutuhan bisnis', 'Analisis target pelanggan', 'Rencana pengerjaan proyek'],
-    color: 'from-brand-gold to-brand-accent'
+    color: 'from-blue-600 to-sky-500'
   },
   {
     phase: '02',
@@ -243,7 +243,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     description: 'Membuat desain modern yang profesional, mudah digunakan, dan sesuai identitas bisnis Anda.',
     timeline: '',
     deliverables: ['Desain responsif desktop & mobile', 'Struktur halaman yang jelas', 'Tampilan sesuai branding bisnis'],
-    color: 'from-brand-accent to-yellow-400'
+    color: 'from-sky-500 to-blue-600'
   },
   {
     phase: '03',
@@ -252,7 +252,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     description: 'Website dibangun dengan teknologi modern yang cepat, aman, dan mudah diakses di semua perangkat.',
     timeline: '',
     deliverables: ['Website cepat dan responsif', 'Optimasi performa', 'Integrasi formulir & WhatsApp'],
-    color: 'from-yellow-400 to-brand-gold'
+    color: 'from-blue-700 to-sky-500'
   },
   {
     phase: '04',
@@ -261,7 +261,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     description: 'Setelah website selesai, kami membantu proses publikasi dan memberikan panduan penggunaan.',
     timeline: '',
     deliverables: ['Website online dengan domain sendiri', 'Panduan penggunaan', 'Dukungan setelah website aktif'],
-    color: 'from-brand-gold to-brand-accent'
+    color: 'from-blue-600 to-sky-600'
   }
 ];
 

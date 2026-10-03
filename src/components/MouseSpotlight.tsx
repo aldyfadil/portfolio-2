@@ -34,7 +34,7 @@ export default function MouseSpotlight() {
       className="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300 hidden md:block"
       style={{
         opacity: opacity,
-        background: `radial-gradient(600px at ${coords.x}px ${coords.y}px, rgba(212, 175, 55, 0.035), transparent 80%)`,
+        background: `radial-gradient(600px at ${coords.x}px ${coords.y}px, rgba(56, 189, 248, 0.08), transparent 80%)`,
       }}
     />
   );
