@@ -101,7 +101,7 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Arsitek Web & Desainer UI',
     duration: '4 Minggu',
     url: 'https://frontiers.ui.ac.id/pmoc/',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80',
+    image: '/pmoc_preview.svg',
     scope: ['Perancangan Portal Riset Akademik', 'Katalog Publikasi & Jurnal Ilmiah', 'Profil Peneliti & Agenda Diskusi', 'Optimasi Aksesibilitas & Responsivitas'],
     challenge: 'Menyajikan data publikasi riset, ringkasan kebijakan, dan agenda kegiatan ilmiah secara terstruktur agar mudah ditemukan oleh akademisi dan masyarakat luas tanpa terasa kaku.',
     solution: 'Mengembangkan tata letak informasi bertingkat yang bersih dengan kategorisasi tema riset, navigasi yang intuitif, serta akses unduh berkas publikasi yang cepat dan responsif.'

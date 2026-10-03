@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="50%" stop-color="#0f2b48"/>
+      <stop offset="100%" stop-color="#173b63"/>
+    </linearGradient>
+
+    <!-- Browser Chrome Gradient -->
+    <linearGradient id="browserChrome" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- UI Yellow Accent Gradient -->
+    <linearGradient id="uiYellowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+
+    <!-- UI Blue Accent Gradient -->
+    <linearGradient id="uiBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+
+    <!-- Shadow filter for mockup depth -->
+    <filter id="windowShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="25" stdDeviation="35" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@600;700&amp;display=swap');
+    text { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
+    .display-title { font-family: 'Space Grotesk', sans-serif; font-weight: 700; }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Geometric Grid Lines -->
+  <g opacity="0.07" stroke="#38bdf8" stroke-width="1">
+    <line x1="0" y1="135" x2="1200" y2="135"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="405" x2="1200" y2="405"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="240" y1="0" x2="240" y2="675"/>
+    <line x1="480" y1="0" x2="480" y2="675"/>
+    <line x1="720" y1="0" x2="720" y2="675"/>
+    <line x1="960" y1="0" x2="960" y2="675"/>
+  </g>
+
+  <!-- Ambient Glow Behind Device -->
+  <circle cx="600" cy="340" r="320" fill="#38bdf8" opacity="0.12" filter="blur(60px)"/>
+  <circle cx="950" cy="220" r="220" fill="#fbbf24" opacity="0.08" filter="blur(50px)"/>
+
+  <!-- Main Browser Window Mockup -->
+  <g filter="url(#windowShadow)">
+    
+    <!-- Outer Browser Container -->
+    <rect x="40" y="32" width="1120" height="610" rx="16" fill="#ffffff" stroke="#334155" stroke-width="1"/>
+
+    <!-- Browser Chrome Header -->
+    <path d="M 40 48 Q 40 32 56 32 L 1144 32 Q 1160 32 1160 48 L 1160 84 L 40 84 Z" fill="url(#browserChrome)"/>
+
+    <!-- Window Control Dots -->
+    <circle cx="68" cy="58" r="6" fill="#ef4444"/>
+    <circle cx="88" cy="58" r="6" fill="#f59e0b"/>
+    <circle cx="108" cy="58" r="6" fill="#10b981"/>
+
+    <!-- Browser Tab -->
+    <path d="M 136 84 L 148 48 Q 150 44 156 44 L 360 44 Q 366 44 368 48 L 380 84 Z" fill="#0f172a"/>
+    <!-- UI Yellow Tab Indicator -->
+    <circle cx="166" cy="62" r="4.5" fill="#f59e0b"/>
+    <text x="180" y="66" fill="#f8fafc" font-size="11" font-weight="600">PMOC FIA UI — Frontiers</text>
+
+    <!-- Browser Address Bar -->
+    <rect x="400" y="44" width="540" height="28" rx="7" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <!-- Lock Icon -->
+    <g transform="translate(416, 52)">
+      <rect x="1" y="5" width="10" height="8" rx="1.5" fill="#10b981"/>
+      <path d="M 3.5 5 L 3.5 3 Q 3.5 1 6 1 Q 8.5 1 8.5 3 L 8.5 5" fill="none" stroke="#10b981" stroke-width="1.5"/>
+    </g>
+    <text x="435" y="63" fill="#94a3b8" font-size="11" font-weight="500">https://<tspan fill="#ffffff" font-weight="700">frontiers.ui.ac.id/pmoc</tspan>/</text>
+
+    <!-- Top Badge in Browser Chrome -->
+    <rect x="1000" y="46" width="138" height="24" rx="12" fill="#002D62" stroke="#f59e0b" stroke-width="1"/>
+    <circle cx="1014" cy="58" r="4" fill="#f59e0b"/>
+    <text x="1025" y="62" fill="#fbbf24" font-size="10" font-weight="800" letter-spacing="1">FIA UI DEPOK</text>
+
+    <!-- ================= PORTAL WEBPAGE CONTENT ================= -->
+
+    <!-- Webpage Navbar -->
+    <rect x="40" y="84" width="1120" height="64" fill="#ffffff" stroke="#f1f5f9" stroke-width="1"/>
+    
+    <!-- UI Yellow Makara Symbol Logo -->
+    <g transform="translate(70, 95)">
+      <!-- Yellow UI Makara Circle Motif -->
+      <circle cx="21" cy="21" r="20" fill="#ffc72c"/>
+      <!-- Inner Makara stylized flower petals in dark blue -->
+      <circle cx="21" cy="21" r="14" fill="#002D62"/>
+      <circle cx="21" cy="21" r="7" fill="#ffc72c"/>
+      <path d="M 21 7 L 23 15 L 21 17 L 19 15 Z" fill="#ffc72c"/>
+      <path d="M 21 35 L 23 27 L 21 25 L 19 27 Z" fill="#ffc72c"/>
+      <path d="M 7 21 L 15 23 L 17 21 L 15 19 Z" fill="#ffc72c"/>
+      <path d="M 35 21 L 27 23 L 25 21 L 27 19 Z" fill="#ffc72c"/>
+      
+      <!-- Brand Text -->
+      <text x="52" y="17" fill="#002D62" font-size="13" font-weight="800" letter-spacing="0.5">UNIVERSITAS INDONESIA</text>
+      <text x="52" y="32" fill="#64748b" font-size="10" font-weight="600">Fakultas Ilmu Administrasi • Riset PMOC</text>
+    </g>
+
+    <!-- Nav Links -->
+    <g font-size="11" font-weight="600" fill="#475569">
+      <text x="580" y="121" fill="#002D62" font-weight="800">Beranda</text>
+      <circle cx="602" cy="130" r="2" fill="#2563eb"/>
+      <text x="640" y="121">Tentang PMOC</text>
+      <text x="750" y="121">Publikasi Riset</text>
+      <text x="860" y="121">Policy Brief</text>
+      <text x="960" y="121">Peneliti</text>
+    </g>
+
+    <!-- Nav CTA Button -->
+    <rect x="1035" y="99" width="105" height="34" rx="8" fill="#002D62"/>
+    <text x="1054" y="120" fill="#ffffff" font-size="10.5" font-weight="700">Akses Jurnal</text>
+
+    <!-- ================= PORTAL HERO SECTION ================= -->
+    <rect x="40" y="148" width="1120" height="240" fill="#f8fafc"/>
+    <line x1="40" y1="388" x2="1160" y2="388" stroke="#e2e8f0" stroke-width="1"/>
+
+    <!-- Subtle Hero Gradient Backdrop in Portal -->
+    <rect x="40" y="148" width="1120" height="240" fill="url(#uiBlueGrad)" opacity="0.04"/>
+
+    <!-- Hero Content Left -->
+    <!-- Pill Badge -->
+    <rect x="70" y="174" width="280" height="24" rx="12" fill="#e0f2fe" stroke="#bae6fd" stroke-width="1"/>
+    <circle cx="82" cy="186" r="3.5" fill="#0284c7"/>
+    <text x="94" y="190" fill="#0369a1" font-size="9.5" font-weight="800" letter-spacing="0.5">RESEARCH CLUSTER FIA UI FRONTIERS</text>
+
+    <!-- Main Portal Title -->
+    <text x="70" y="232" fill="#0f172a" class="display-title" font-size="28" font-weight="800" letter-spacing="-0.5">
+      Public Management &amp; Organizational Culture
+    </text>
+
+    <!-- Subtitle Description -->
+    <text x="70" y="260" fill="#475569" font-size="12.5" font-weight="400">
+      Pusat diseminasi riset reformasi birokrasi, keterbukaan tata kelola publik, dan budaya organisasi strategis
+    </text>
+    <text x="70" y="278" fill="#64748b" font-size="11.5" font-weight="400">
+      Departemen Ilmu Administrasi, Fakultas Ilmu Administrasi Universitas Indonesia.
+    </text>
+
+    <!-- Action Buttons -->
+    <g transform="translate(70, 305)">
+      <!-- Primary Blue Action Button -->
+      <rect x="0" y="0" width="165" height="38" rx="8" fill="#2563eb"/>
+      <text x="24" y="24" fill="#ffffff" font-size="11" font-weight="700">Jelajahi Riset &amp; Jurnal</text>
+      
+      <!-- Secondary Outline Button -->
+      <rect x="180" y="0" width="150" height="38" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="202" y="24" fill="#0f172a" font-size="11" font-weight="700">Unduh Policy Brief</text>
+    </g>
+
+    <!-- Right Side Hero Statistics Box -->
+    <g transform="translate(860, 172)">
+      <rect x="0" y="0" width="230" height="175" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#cardShadow)"/>
+      
+      <!-- Top Ribbon UI Yellow -->
+      <path d="M 0 14 Q 0 0 14 0 L 216 0 Q 230 0 230 14 L 230 24 L 0 24 Z" fill="#002D62"/>
+      <text x="16" y="16" fill="#fbbf24" font-size="9" font-weight="800" letter-spacing="1">STATISTIK KAJIAN RISET</text>
+      
+      <!-- Metric 1 -->
+      <text x="16" y="55" fill="#002D62" font-size="22" font-weight="800">120+</text>
+      <text x="16" y="70" fill="#64748b" font-size="10" font-weight="500">Artikel Ilmiah Terindeks</text>
+      
+      <line x1="16" y1="82" x2="214" y2="82" stroke="#f1f5f9" stroke-width="1"/>
+      
+      <!-- Metric 2 -->
+      <text x="16" y="110" fill="#2563eb" font-size="22" font-weight="800">24</text>
+      <text x="16" y="125" fill="#64748b" font-size="10" font-weight="500">Dewan Peneliti &amp; Dosen FIA UI</text>
+
+      <line x1="16" y1="137" x2="214" y2="137" stroke="#f1f5f9" stroke-width="1"/>
+
+      <!-- Metric 3 -->
+      <text x="16" y="157" fill="#10b981" font-size="11" font-weight="700">✓ Akreditasi SINTA &amp; Scopus</text>
+    </g>
+
+    <!-- ================= FEATURED PUBLICATIONS GRID ================= -->
+    <rect x="40" y="388" width="1120" height="254" fill="#ffffff"/>
+
+    <!-- Section Heading -->
+    <text x="70" y="424" fill="#002D62" font-size="14" font-weight="800" letter-spacing="0.5">PUBLIKASI &amp; ARTIKEL RISET TERBARU</text>
+    <text x="70" y="440" fill="#64748b" font-size="10.5">Karya ilmiah berkala dari sivitas akademika kluster PMOC FIA UI</text>
+
+    <!-- Publication Card 1 -->
+    <g transform="translate(70, 458)">
+      <rect x="0" y="0" width="320" height="155" rx="10" fill="url(#cardGrad)" stroke="#e2e8f0" stroke-width="1" filter="url(#cardShadow)"/>
+      <rect x="16" y="14" width="90" height="18" rx="4" fill="#dbeafe"/>
+      <text x="24" y="26" fill="#1e40af" font-size="8.5" font-weight="800">TATA KELOLA</text>
+      <text x="16" y="52" fill="#0f172a" font-size="12" font-weight="700">Indeks Akuntabilitas Birokrasi Publik</text>
+      <text x="16" y="70" fill="#64748b" font-size="10">Kajian sistem merit dan transparansi layanan di era otonomi daerah tingkat provinsi.</text>
+      <line x1="16" y1="115" x2="304" y2="115" stroke="#f1f5f9" stroke-width="1"/>
+      <circle cx="26" cy="133" r="10" fill="#ffc72c"/>
+      <text x="44" y="136" fill="#334155" font-size="9.5" font-weight="600">Dr. Lina Miftahul Jannah, M.Si</text>
+    </g>
+
+    <!-- Publication Card 2 -->
+    <g transform="translate(420, 458)">
+      <rect x="0" y="0" width="320" height="155" rx="10" fill="url(#cardGrad)" stroke="#e2e8f0" stroke-width="1" filter="url(#cardShadow)"/>
+      <rect x="16" y="14" width="115" height="18" rx="4" fill="#fef3c7"/>
+      <text x="24" y="26" fill="#92400e" font-size="8.5" font-weight="800">BUDAYA ORGANISASI</text>
+      <text x="16" y="52" fill="#0f172a" font-size="12" font-weight="700">Transformasi Digital Aparatur Sipil</text>
+      <text x="16" y="70" fill="#64748b" font-size="10">Adaptasi budaya kerja dan kapabilitas digital kelembagaan kementerian negara.</text>
+      <line x1="16" y1="115" x2="304" y2="115" stroke="#f1f5f9" stroke-width="1"/>
+      <circle cx="26" cy="133" r="10" fill="#002D62"/>
+      <text x="44" y="136" fill="#334155" font-size="9.5" font-weight="600">Kelompok Riset PMOC FIA UI</text>
+    </g>
+
+    <!-- Publication Card 3 -->
+    <g transform="translate(770, 458)">
+      <rect x="0" y="0" width="320" height="155" rx="10" fill="url(#cardGrad)" stroke="#e2e8f0" stroke-width="1" filter="url(#cardShadow)"/>
+      <rect x="16" y="14" width="95" height="18" rx="4" fill="#dcfce7"/>
+      <text x="24" y="26" fill="#166534" font-size="8.5" font-weight="800">POLICY BRIEF</text>
+      <text x="16" y="52" fill="#0f172a" font-size="12" font-weight="700">Rekomendasi Kebijakan Terpadu</text>
+      <text x="16" y="70" fill="#64748b" font-size="10">Kertas kebijakan strategis efisiensi anggaran dan kolaborasi multi-pihak pemerintah.</text>
+      <line x1="16" y1="115" x2="304" y2="115" stroke="#f1f5f9" stroke-width="1"/>
+      <circle cx="26" cy="133" r="10" fill="#2563eb"/>
+      <text x="44" y="136" fill="#334155" font-size="9.5" font-weight="600">Diseminasi Ilmiah UI Frontiers</text>
+    </g>
+
+  </g>
+</svg>
