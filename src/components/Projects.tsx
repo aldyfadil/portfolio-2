@@ -120,36 +120,25 @@ export default function Projects({ onNavigateToAllProjects }: ProjectsProps) {
                   </div>
 
                   {/* Actions buttons footer */}
-                  <div className="space-y-2 pt-4 border-t border-white/5">
-                    <div className="flex items-center gap-2.5">
-                      {/* Live Demo Trigger */}
-                      <a
-                        href={project.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2 px-3 bg-white/5 hover:bg-white/10 text-white font-mono text-[11px] uppercase tracking-wider rounded-xl transition-all border border-white/10 hover:border-white/20"
-                      >
-                        <span>Kunjungi</span>
-                        <ExternalLink className="w-3.5 h-3.5" />
-                      </a>
-
-                      {/* Case Study Trigger Modal */}
-                      <button
-                        onClick={() => setActiveProject(project)}
-                        className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2 px-3 bg-brand-gold/10 hover:bg-brand-gold text-brand-gold hover:text-bg-dark font-mono text-[11px] uppercase tracking-wider rounded-xl transition-colors border border-brand-gold/30 hover:border-brand-gold cursor-pointer"
-                      >
-                        <span>Studi Kasus</span>
-                        <Eye className="w-3.5 h-3.5" />
-                      </button>
-                    </div>
-
-                    {/* Pilihan Lihat Lainnya pada setiap card */}
-                    <button
-                      onClick={() => onNavigateToAllProjects?.(project.id)}
-                      className="w-full group/btn flex items-center justify-center space-x-2 py-2.5 px-3 bg-white/[0.03] hover:bg-brand-gold/15 text-white/80 hover:text-brand-gold font-mono text-[11px] font-semibold uppercase tracking-wider rounded-xl transition-all border border-white/10 hover:border-brand-gold/30 cursor-pointer"
+                  <div className="flex items-center gap-3 pt-4 border-t border-white/5">
+                    {/* Live Demo Trigger */}
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2.5 px-4 bg-white/5 hover:bg-white/10 text-white font-mono text-xs uppercase tracking-wider rounded-xl transition-all border border-white/10 hover:border-white/20"
                     >
-                      <span>Lihat Lainnya</span>
-                      <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-1" />
+                      <span>Kunjungi</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+
+                    {/* Case Study Trigger Modal */}
+                    <button
+                      onClick={() => setActiveProject(project)}
+                      className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2.5 px-4 bg-brand-gold/10 hover:bg-brand-gold text-brand-gold hover:text-bg-dark font-mono text-xs uppercase tracking-wider rounded-xl transition-colors border border-brand-gold/30 hover:border-brand-gold cursor-pointer"
+                    >
+                      <span>Studi Kasus</span>
+                      <Eye className="w-3.5 h-3.5" />
                     </button>
                   </div>
                 </div>
@@ -159,29 +148,24 @@ export default function Projects({ onNavigateToAllProjects }: ProjectsProps) {
           </AnimatePresence>
         </motion.div>
 
-        {/* Section Footer Callout Banner */}
-        <div className="pt-6">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-6 sm:p-8 bg-gradient-to-r from-bg-card via-white/[0.02] to-bg-card border border-white/10 rounded-3xl">
-            <div className="space-y-1.5 text-center sm:text-left">
-              <span className="font-mono text-[10px] text-brand-gold uppercase tracking-widest font-bold">
-                KATALOG LENGKAP ({PROJECTS_DATA.length} PROYEK)
-              </span>
-              <h4 className="text-base sm:text-lg font-bold text-white font-display">
-                Jelajahi Semua 6 Proyek Portofolio
-              </h4>
-              <p className="text-white/50 text-xs font-sans max-w-xl">
-                Buka halaman khusus proyek untuk melihat ringkasan lengkap, filter kategori, fitur sistem, dan analisis studi kasus dari semua proyek kami.
-              </p>
-            </div>
-
+        {/* Menu Lihat Lainnya Jelas Berada di Bawah 6 Card */}
+        <div className="pt-8 flex flex-col items-center justify-center text-center space-y-4">
+          <div className="relative group">
+            {/* Ambient glow behind button */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-brand-gold to-yellow-500 rounded-2xl blur-md opacity-40 group-hover:opacity-75 transition duration-300 pointer-events-none" />
+            
             <button
               onClick={() => onNavigateToAllProjects?.()}
-              className="shrink-0 inline-flex items-center space-x-2 bg-brand-gold hover:bg-yellow-400 text-bg-dark font-mono text-xs font-bold uppercase tracking-widest px-6 py-3.5 rounded-xl transition-all shadow-lg shadow-brand-gold/10 hover:scale-[1.02] cursor-pointer"
+              className="relative inline-flex items-center justify-center space-x-3 bg-brand-gold hover:bg-yellow-400 text-bg-dark font-mono text-sm font-extrabold uppercase tracking-widest px-10 py-4.5 rounded-2xl transition-all duration-300 shadow-2xl hover:scale-[1.03] cursor-pointer"
             >
-              <span>Lihat Lainnya ({PROJECTS_DATA.length} Proyek)</span>
-              <ArrowRight className="w-4 h-4" />
+              <span>Lihat Lainnya</span>
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1.5" />
             </button>
           </div>
+
+          <p className="text-white/50 font-mono text-xs tracking-wider">
+            Klik untuk melihat katalog lengkap dan detail dari seluruh 6 proyek kami
+          </p>
         </div>
 
         {/* CASE STUDY OVERLAY MODAL */}
