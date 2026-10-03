@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Code2, Github } from 'lucide-react';
 
@@ -13,6 +13,7 @@ import LoadingScreen from './components/LoadingScreen';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
+import AllProjectsPage from './components/AllProjectsPage';
 import About from './components/About';
 import Process from './components/Process';
 import Services from './components/Services';
@@ -21,6 +22,54 @@ import Contact from './components/Contact';
 
 export default function App() {
   const [loadingComplete, setLoadingComplete] = useState(false);
+  const [currentPage, setCurrentPage] = useState<'home' | 'all-projects'>(() => {
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash;
+      if (hash === '#proyek-lainnya' || hash === '#all-projects') {
+        return 'all-projects';
+      }
+    }
+    return 'home';
+  });
+  const [selectedProjectId, setSelectedProjectId] = useState<string | null>(null);
+
+  // Synchronize hash changes for back/forward browser button support
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash === '#proyek-lainnya' || hash === '#all-projects') {
+        setCurrentPage('all-projects');
+      } else if (hash === '#home' || hash === '' || hash === '#projects') {
+        setCurrentPage('home');
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    window.addEventListener('popstate', handleHashChange);
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+      window.removeEventListener('popstate', handleHashChange);
+    };
+  }, []);
+
+  const handleNavigateToAllProjects = (projectId?: string) => {
+    setSelectedProjectId(projectId || null);
+    setCurrentPage('all-projects');
+    window.location.hash = '#proyek-lainnya';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleBackToHome = () => {
+    setCurrentPage('home');
+    setSelectedProjectId(null);
+    window.location.hash = '#projects';
+    setTimeout(() => {
+      const el = document.getElementById('projects');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 50);
+  };
 
   return (
     <div className="bg-bg-dark text-white selection:bg-brand-gold/20 selection:text-white min-h-screen relative font-sans antialiased overflow-x-hidden">
@@ -47,17 +96,46 @@ export default function App() {
           <CustomCursor />
 
           {/* Floating client navigation hubs */}
-          <Navbar />
+          <Navbar 
+            currentPage={currentPage}
+            onNavigateHome={handleBackToHome}
+            onNavigateToProjects={() => handleNavigateToAllProjects()}
+          />
 
-          {/* Structured Sections Deck */}
+          {/* Structured Sections Deck / Page view switcher */}
           <main className="flex-1">
-            <Hero />
-            <About />
-            <Projects />
-            <Process />
-            <Services />
-            <Testimonials />
-            <Contact />
+            <AnimatePresence mode="wait">
+              {currentPage === 'home' ? (
+                <motion.div
+                  key="home-page"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <Hero />
+                  <About />
+                  <Projects onNavigateToAllProjects={handleNavigateToAllProjects} />
+                  <Process />
+                  <Services />
+                  <Testimonials />
+                  <Contact />
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="all-projects-page"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <AllProjectsPage 
+                    onBackToHome={handleBackToHome} 
+                    selectedProjectId={selectedProjectId}
+                  />
+                </motion.div>
+              )}
+            </AnimatePresence>
           </main>
 
           {/* Premium Handcrafted Footer representation */}
@@ -72,7 +150,16 @@ export default function App() {
                 
                 {/* Brand Column */}
                 <div className="md:col-span-6 space-y-4">
-                  <a href="#home" className="flex items-center font-display select-none">
+                  <a 
+                    href="#home" 
+                    onClick={(e) => {
+                      if (currentPage === 'all-projects') {
+                        e.preventDefault();
+                        handleBackToHome();
+                      }
+                    }}
+                    className="flex items-center font-display select-none cursor-pointer"
+                  >
                     <span className="font-extrabold text-white text-lg tracking-tight">
                       Vynora.id
                     </span>
@@ -89,12 +176,100 @@ export default function App() {
                 <div className="md:col-span-3 space-y-4 md:text-left">
                   <h4 className="font-mono text-xs font-bold text-white uppercase tracking-widest">NAVIGASI</h4>
                   <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
-                    <li><a href="#home" className="text-white/50 hover:text-brand-gold transition-colors block">Beranda</a></li>
-                    <li><a href="#about" className="text-white/50 hover:text-brand-gold transition-colors block">Tentang</a></li>
-                    <li><a href="#projects" className="text-white/50 hover:text-brand-gold transition-colors block">Proyek</a></li>
-                    <li><a href="#process" className="text-white/50 hover:text-brand-gold transition-colors block">Alur Kerja</a></li>
-                    <li><a href="#services" className="text-white/50 hover:text-brand-gold transition-colors block">Layanan</a></li>
-                    <li><a href="#testimonials" className="text-white/50 hover:text-brand-gold transition-colors block">Testimoni</a></li>
+                    <li>
+                      <a 
+                        href="#home" 
+                        onClick={(e) => {
+                          if (currentPage === 'all-projects') {
+                            e.preventDefault();
+                            handleBackToHome();
+                          }
+                        }}
+                        className="text-white/50 hover:text-brand-gold transition-colors block cursor-pointer"
+                      >
+                        Beranda
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                        href="#about" 
+                        onClick={(e) => {
+                          if (currentPage === 'all-projects') {
+                            e.preventDefault();
+                            handleBackToHome();
+                            setTimeout(() => {
+                              document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+                            }, 100);
+                          }
+                        }}
+                        className="text-white/50 hover:text-brand-gold transition-colors block cursor-pointer"
+                      >
+                        Tentang
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                        href="#proyek-lainnya" 
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handleNavigateToAllProjects();
+                        }}
+                        className="text-white/50 hover:text-brand-gold transition-colors block cursor-pointer"
+                      >
+                        Semua Proyek
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                        href="#process" 
+                        onClick={(e) => {
+                          if (currentPage === 'all-projects') {
+                            e.preventDefault();
+                            handleBackToHome();
+                            setTimeout(() => {
+                              document.getElementById('process')?.scrollIntoView({ behavior: 'smooth' });
+                            }, 100);
+                          }
+                        }}
+                        className="text-white/50 hover:text-brand-gold transition-colors block cursor-pointer"
+                      >
+                        Alur Kerja
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                        href="#services" 
+                        onClick={(e) => {
+                          if (currentPage === 'all-projects') {
+                            e.preventDefault();
+                            handleBackToHome();
+                            setTimeout(() => {
+                              document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+                            }, 100);
+                          }
+                        }}
+                        className="text-white/50 hover:text-brand-gold transition-colors block cursor-pointer"
+                      >
+                        Layanan
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                        href="#testimonials" 
+                        onClick={(e) => {
+                          if (currentPage === 'all-projects') {
+                            e.preventDefault();
+                            handleBackToHome();
+                            setTimeout(() => {
+                              document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' });
+                            }, 100);
+                          }
+                        }}
+                        className="text-white/50 hover:text-brand-gold transition-colors block cursor-pointer"
+                      >
+                        Testimoni
+                      </a>
+                    </li>
                   </ul>
                 </div>
 

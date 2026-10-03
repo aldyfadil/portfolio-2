@@ -2,7 +2,13 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, ArrowUpRight, Code2, MessageCircle } from 'lucide-react';
 
-export default function Navbar() {
+interface NavbarProps {
+  currentPage?: 'home' | 'all-projects';
+  onNavigateHome?: () => void;
+  onNavigateToProjects?: () => void;
+}
+
+export default function Navbar({ currentPage = 'home', onNavigateHome, onNavigateToProjects }: NavbarProps) {
   const [scrollActive, setScrollActive] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -16,6 +22,23 @@ export default function Navbar() {
     { name: 'Testimoni', href: '#testimonials', id: 'testimonials' },
     { name: 'Kontak', href: '#contact', id: 'contact' },
   ];
+
+  const handleNavClick = (linkId: string, href: string) => {
+    setMobileMenuOpen(false);
+    if (currentPage === 'all-projects') {
+      if (linkId === 'projects') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+      onNavigateHome?.();
+      setTimeout(() => {
+        const el = document.getElementById(linkId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,7 +77,13 @@ export default function Navbar() {
         {/* Elegant Monogram Logo */}
         <a 
           href="#home" 
-          className="group flex items-center font-display text-lg tracking-tight select-none focus:outline-none"
+          onClick={(e) => {
+            if (currentPage === 'all-projects') {
+              e.preventDefault();
+              onNavigateHome?.();
+            }
+          }}
+          className="group flex items-center font-display text-lg tracking-tight select-none focus:outline-none cursor-pointer"
         >
           <span className="font-extrabold text-white text-base md:text-lg">
             Vynora.id
@@ -64,12 +93,20 @@ export default function Navbar() {
         {/* Desktop floating capsules */}
         <nav className="hidden lg:flex items-center space-x-1 bg-white/5 p-1 rounded-full border border-white/10 backdrop-blur-sm shadow-xl">
           {navLinks.map((link) => {
-            const isActive = activeSection === link.id;
+            const isActive = currentPage === 'all-projects' 
+              ? link.id === 'projects'
+              : activeSection === link.id;
             return (
               <a
                 key={link.id}
                 href={link.href}
-                className={`relative px-4 py-1.5 text-xs font-medium tracking-wide uppercase transition-all duration-300 rounded-full ${
+                onClick={(e) => {
+                  if (currentPage === 'all-projects') {
+                    e.preventDefault();
+                    handleNavClick(link.id, link.href);
+                  }
+                }}
+                className={`relative px-4 py-1.5 text-xs font-medium tracking-wide uppercase transition-all duration-300 rounded-full cursor-pointer ${
                   isActive ? 'text-bg-dark font-semibold' : 'text-white/70 hover:text-white'
                 }`}
               >
@@ -127,9 +164,16 @@ export default function Navbar() {
                 <a
                   key={link.id}
                   href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`text-sm tracking-widest uppercase font-mono py-2 transition-all duration-200 border-b border-white/5 ${
-                    activeSection === link.id ? 'text-brand-gold pl-2 font-bold' : 'text-white/60 hover:text-white'
+                  onClick={(e) => {
+                    if (currentPage === 'all-projects') {
+                      e.preventDefault();
+                    }
+                    handleNavClick(link.id, link.href);
+                  }}
+                  className={`text-sm tracking-widest uppercase font-mono py-2 transition-all duration-200 border-b border-white/5 cursor-pointer ${
+                    (currentPage === 'all-projects' ? link.id === 'projects' : activeSection === link.id) 
+                      ? 'text-brand-gold pl-2 font-bold' 
+                      : 'text-white/60 hover:text-white'
                   }`}
                 >
                   // {link.name}
